@@ -1,0 +1,92 @@
+@import "basics.scss";
+
+
+body {display: flex;}
+
+// Секции, header, footer и т.д. //
+.header {width: 400px; position: relative; background-color: #f5f5f6;
+	&__logoblock {position: absolute; left: 0; top: 0; width: 100%; box-sizing: border-box; padding: 41px 39px;}
+	&__logotext {font-size: 13px; margin-top: 12px; padding-left: 4px; color: $darktwo;}
+	&__burgermenu {float: right; position: relative; right: -4px;
+		svg {transition: all 0.25s ease-in-out;}
+		&.active svg {fill: $darkone;}
+	}
+	&__square {position: absolute; z-index: 2;
+		&_language {top: 49px; right: 35px; width: 36px; height: 36px;}
+		a {display: inline-block; width: 36px; height: 36px; border: 2px solid $darkone; font-size: 15px; text-transform: uppercase; font-weight: 500; position: relative; background-color: #f5f5f6; text-align: right; padding: 0 3px; color: $darktwo;
+			&:hover {background-color: $darkone; color: #fff;
+				svg {fill: #fff;}
+				.icon_inst {fill: none; stroke: #fff;}
+			}
+		}
+		svg {transition: all 0.25s ease-in-out;}
+		&:hover {
+			.header__square-list {opacity: 1; pointer-events: all;}
+		}
+		&_social {right: 80px; top: 49px; width: 36px; height: 36px;}
+	}
+	&__square-list {opacity: 0; pointer-events: none; transition: all 0.25s ease-in-out;
+		a {border-top: 0;}
+	}
+	&__menu {padding-top: 144px;
+		li {position: relative;
+			&:first-child {margin-top: 0;}
+			&:nth-child(2) {
+				a {padding: 39px 41px 61px;}
+				.header__menuicon {top: 51px; right: 41px;}
+			}
+			&:nth-child(3) {
+				a {padding: 39px 41px 52px;}
+				.header__menuicon {top: 165px; right: 35px;}
+				.header__itemtext {color: #131920; font-weight: 500;}
+			}
+			&:nth-child(4) {
+				a {padding: 39px 41px 48px;}
+				.header__menuicon {top: 50px; right: 36px;}
+			}
+			&:nth-child(5) {
+				a {padding: 39px 41px 43px;}
+				.header__menuicon {top: 54px; right: 37px;}
+			}
+		}
+		a {display: inline-block; width: 100%; position: relative;
+			&:before {content: ""; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: #111e2b; transform: scale3d(0,1,1); transition: all 0.25s ease-in-out; transform-origin: right center;}
+			&:hover {
+				&:before {transform: scale3d(1,1,1);}
+				p {color: #fff !important;}
+				.header__menuheading:after {background-color: #fff;}
+				svg {fill: #fff;}
+			}
+			p {position: relative; z-index: 2; transition: all 0.25s ease-in-out;}
+		}
+	}
+	&__menuheading {font-size: 43px; font-weight: 600; color: #221f1f; font-family: $gothic; letter-spacing: -0.04em; position: relative;
+		&:after {content: ""; position: absolute; left: 3px; bottom: -1px; width: 156px; height: 1px; background-color: #221f1f; transition: all 0.25s ease-in-out;}
+	}
+	&__itemtext {font-size: 16px; margin-top: 27px; padding-left: 4px;}
+	&__menuicon {position: absolute; transition: all 0.25s ease-in-out;}
+	&__menuicon_arrow {position: absolute; right: 45px; bottom: 26px; z-index: 2;}
+}
+
+.content {display: inline-block; flex: 1;
+	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden;}
+	&__heading {font-size: 51px; font-weight: 600; color: #fff; font-family: $gothic; letter-spacing: -0.04em;}
+	&__scroll-link {display: inline-block; font-size: 35px; color: #fff; font-family: $gothic; position: relative; padding-left: 90px; margin-top: 234px; letter-spacing: -0.04em;
+		&:before {content: ""; display: inline-block; width: 54px; height: 54px; border-radius: 1000px; border: 2px solid #fff; position: absolute; top: 6px; bottom: 0; left: 0; margin: auto; background-image: url('../img/icon_arrow_2.svg'); background-position: center; background-repeat: no-repeat;}
+	}
+	&__bgmain {position: absolute; left: 0; right: 0; bottom: -397px;}
+	&__bgphone {position: absolute; top: 50%; right: 0; transform: translateY(-43%);}
+}
+// Секции, header, footer и т.д. //
+
+
+
+
+
+
+
+// Всплывающие окна и другие элементы сайта //
+.popup {display:none; width: 350px; padding: 20px;}
+// Всплывающие окна и другие элементы сайта //
+
+@import "adaptive.scss";

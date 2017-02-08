@@ -1,0 +1,173 @@
+@mixin border-radius($topleft, $topright: $topleft, $bottomright: $topleft, $bottomleft: $topleft) {
+    -moz-border-radius-topleft:     $topleft;
+    -moz-border-radius-topright:    $topright;
+    -moz-border-radius-bottomright: $bottomright;
+    -moz-border-radius-bottomleft:  $bottomleft;
+    -webkit-border-radius:          $topleft $topright $bottomright $bottomleft;
+    border-radius:                  $topleft $topright $bottomright $bottomleft;
+}
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin box-shadow($top, $left, $blur, $else, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $else $color;
+    -moz-box-shadow:inset $top $left $blur $else $color;
+    box-shadow:inset $top $left $blur $else $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $else $color;
+    -moz-box-shadow: $top $left $blur $else $color;
+    box-shadow: $top $left $blur $else $color;
+  }
+}
+@mixin gradient($from, $to) {
+  background-color: $from;
+  background-image: -moz-linear-gradient($from, $to);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  background-image: -webkit-linear-gradient($from, $to);
+  background-image: -o-linear-gradient($from, $to);
+}
+@mixin box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
+border: none;
+}
+*:focus {outline: none;}
+
+// Цвет выделения текста
+::selection {background: blue;color:white;}
+::-moz-selection {background: blue;color:white;}
+::-webkit-selection {background: blue;color:white;}
+
+// Цвет плейсхолдера //
+::-webkit-input-placeholder {color:#777}
+::-moz-placeholder {color:#777}
+:-ms-input-placeholder {color:#777}
+:-moz-placeholder {color:#777}
+
+// Фиксирование для body (при кастомных модальных окнах)
+.noscroll {position: fixed;}
+
+// Настройки для автозаполнения Chrome
+input:-webkit-autofill {
+    -webkit-text-fill-color: black !important; // Поменять цвет на аналогичный цвету input'а
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 50000000000s ease-in-out 0s !important;
+}
+
+
+
+
+
+
+
+
+// Сетка //
+$col-m:2.6%; // Расстояние между колонками
+$col:(100-($col-m*11))/12; // Ширина колонки
+
+.one-col {width:$col}
+.two-col {width:$col*2+$col-m*1;}
+.three-col {width:$col*3+$col-m*2;}
+.four-col {width:$col*4+$col-m*3;}
+.five-col {width:$col*5+$col-m*4;}
+.six-col {width:$col*6+$col-m*5;}
+.seven-col {width:$col*7+$col-m*6;}
+.eight-col {width:$col*8+$col-m*7;}
+.nine-col {width:$col*9+$col-m*8;}
+.ten-col {width:$col*10+$col-m*9;}
+.eleven-col {width:$col*11+$col-m*10;}
+.twelve-col {width:$col*12+$col-m*11;}
+
+// Равное расстояние между колонками
+.cols {text-align:justify; text-justify:distribute;
+  &:after {content:""; display:inline-block; height:0.0000000000001px; width:100%;}
+    >* {display:inline-block; @include box-sizing; vertical-align: top;
+  }
+}
+// Сетка //
+
+
+
+
+//Цвета//
+$darkone: #221f1f;
+$darktwo: #1f2124;
+
+
+
+
+// Основы //
+html {width:100%; height:100%}
+body {width:100%; min-height:100%; font-size:0; font-family: 'Open Sans', Arial, sans-serif; color: $darkone;}
+
+header, section, footer {width:100%; float:left;}
+.container {width:1420px; margin:0 auto;}
+// Основы //
+
+
+//Шрифты//
+$gothic: 'Century Gothic', Arial, sans-serif;
+
+
+
+
+
+
+// Типографика //
+h1,h2,h3,h4,h5,h6,p,span,ul,li {margin:0; padding:0}
+ul {list-style:none}
+span {font-style: inherit; font-family: inherit; font-weight: inherit;}
+
+h1,h2,h3,h4,h5 {} // Общие стили для заголовков (если есть)
+
+// Стили заголовков (удалить лишнее)
+h1 {font-size:36px; line-height:1.2em;}
+h2 {font-size:30px; line-height:1.2em;}
+h3 {font-size:24px; line-height:1.2em;}
+h4 {font-size:20px; line-height:1.2em;}
+h5 {font-size:18px; line-height:1.2em;}
+
+// Стили абзацев (удалить лишнее)
+p {font-size:14px; line-height:1.2em;}
+p.small {font-size:12px;}
+p.big {font-size:16px;}
+p.huge {font-size:18px;}
+// Типографика //
+
+
+
+
+
+
+
+
+
+// Формы, кнопки, поля ввода //
+a,input,button,select,textarea {@include transition(all, 0.25s, ease-in-out); @include box-sizing;}
+a {text-decoration: inherit; font-weight: inherit; line-height:inherit; color:inherit;}
+
+select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; border: 0; font-size: 14px; display:inline-block;}
+
+.button {text-align:center; border:0; padding:10px; display:inline-block; color:white; font-size:15px; background-color: green;
+  &::hover {background-color:blue}
+}
+// Формы, кнопки, поля ввода //
