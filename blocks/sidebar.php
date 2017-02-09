@@ -1,7 +1,7 @@
 <header class="header">
 	<div class="header__logoblock"><!-- position:absolute в декстопе -->
 		<div class="header__logo">
-			<img src="img/logo_tecco.svg" alt="@@" width="166" height="41">
+			<a href="index.php"><img src="img/logo_tecco.svg" alt="@@" width="166" height="41"></a>
 			<p class="header__logotext">Web and mobile solutions</p>
 		</div>
 		<span class="header__burgermenu">
@@ -19,7 +19,7 @@
 	  </div>
 
 	  <ul class="header__menu">
-	  	<li class="header__caseslink"><a href="#"><!-- Стиль отличается от других только в десктопе (конкретно тут через @media (min-width:...) задай). На ховере градиенты становятся темными, тексты и иконки белыми -->
+	  	<li class="header__caseslink"><a href="cases.php"><!-- Стиль отличается от других только в десктопе (конкретно тут через @media (min-width:...) задай). На ховере градиенты становятся темными, тексты и иконки белыми -->
 	  		<!-- :before - градиент белый справа -->
 	  		<p class="header__menuheading">Cases</p>
 	  		<p class="header__itemtext">View our recent cases</p>
@@ -29,13 +29,13 @@
 	  		<!-- :after - градиент белый снизу -->
 	  	</a></li>
 
-	  	<li><a href="#">
+	  	<li><a href="services.php">
 				<!-- :before тут и у других ссылок, кроме кейсов. См. анимацию, на ховере меняет с scale3d(0,1,1) на scale3d(1,1,1); transform-origin:right center -->
 	  		<p class="header__menuheading">Services</p>
 	  		<svg class="header__menuicon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.52 67" width="24" height="33" fill="#221f1f"><defs></defs><title>icon_services</title><path class="cls-1" d="M320.89,843.38H279.32a4,4,0,0,0-4,4v59a4,4,0,0,0,4,4h41.56a4,4,0,0,0,4-4v-59a4,4,0,0,0-4-4m1,63a1,1,0,0,1-1,1H279.32a1,1,0,0,1-1-1v-59a1,1,0,0,1,1-1h41.56a1,1,0,0,1,1,1v59Z" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,888.88H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,897.88H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,880H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,871.13H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M296.06,865.25H313.3a1.5,1.5,0,0,0,0-3H296.06a1.5,1.5,0,0,0,0,3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M296.06,856.38H313.3a1.5,1.5,0,0,0,0-3H296.06a1.5,1.5,0,0,0,0,3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,851.67l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,860.83l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,869.7l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,878.58l-2.67,2.67-0.51-.51a1.5,1.5,0,1,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,887.45l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,1,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,896.42l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,1,0-2.12-2.12" transform="translate(-275.35 -843.38)"/></svg>
 	  	</a></li>
 
-	  	<li><a href="#">
+	  	<li><a href="technology.php">
 	  		  <p class="header__menuheading">Technology &amp; competence</p>
 	  		  <p class="header__itemtext">Worked with more than 90<br> brands across 12 industrie...</p>
 	  		  <svg class="header__menuicon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.13 61.13" width="37" height="37" fill="#221f1f"><defs></defs><title>icon_technology</title><path class="cls-1" d="M127.59,1391.92a30.39,30.39,0,0,0,2.24-19.55A30.53,30.53,0,0,0,93.47,1349,30.49,30.49,0,0,0,76,1397.81a1.42,1.42,0,0,0,.18.28,1.54,1.54,0,0,0,.25.24,30.48,30.48,0,0,0,42.5,4.48l0,0,0.08-.08a30.72,30.72,0,0,0,8.41-10.6l0.05-.08s0-.07,0-0.11M126.9,1373a27.4,27.4,0,0,1-1.45,16.36l-24-11.43,0-26.55A27.7,27.7,0,0,1,126.9,1373m-50.11-9a27.57,27.57,0,0,1,21.64-12.63l0,26.8L77.67,1395a27.4,27.4,0,0,1-.88-31m29.07,41.81a27.39,27.39,0,0,1-26.29-8.48L99.75,1381l16.19,20.34a27.39,27.39,0,0,1-10.09,4.46m12.43-6.34L105.2,1383l18.95,9a27.76,27.76,0,0,1-5.87,7.39" transform="translate(-69.41 -1348.32)"/></svg>
