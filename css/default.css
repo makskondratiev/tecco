@@ -354,6 +354,7 @@ body {
     bottom: 26px;
     z-index: 2; }
 
+/*-----------------------------------------------------*/
 .content {
   display: inline-block;
   flex: 1;
@@ -417,6 +418,7 @@ body {
   .content__textblock {
     width: 51.4%; }
 
+/*-----------------------------------------------------*/
 .content-tabs__list li {
   display: inline-block;
   vertical-align: middle;
@@ -434,6 +436,7 @@ body {
   font-family: "Century Gothic", Arial, sans-serif;
   letter-spacing: -0.04em; }
 
+/*-----------------------------------------------------*/
 .services__development {
   background-color: #111e2b;
   padding-top: 127px;
@@ -519,6 +522,7 @@ body {
         margin: auto;
         transform: rotate(90deg); }
 
+/*-----------------------------------------------------*/
 .technology {
   background-color: #111e2b;
   padding-top: 100px;
@@ -631,6 +635,7 @@ body {
           margin: auto;
           transform: rotate(90deg); }
 
+/*-----------------------------------------------------*/
 .cases .social {
   position: fixed;
   right: 0;
@@ -698,6 +703,14 @@ body {
   cursor: pointer;
   transition: all 0.25s ease-in-out; }
 
+.cases__list a {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
 .cases__bg {
   position: absolute;
   left: 0;
@@ -745,6 +758,157 @@ body {
   margin-top: 105px;
   padding-left: 4px;
   transition: all 0.25s ease-in-out; }
+
+/*-----------------------------------------------------*/
+.company {
+  color: #221f1f;
+  padding-bottom: 191px; }
+  .company .content__text {
+    width: 50%;
+    margin-top: 82px; }
+  .company__mainpart {
+    padding-top: 101px;
+    padding-bottom: 27px;
+    background-image: -moz-linear-gradient(131deg, #d7d7d7 0%, white 100%);
+    background-image: -webkit-linear-gradient(131deg, #d7d7d7 0%, white 100%);
+    background-image: -ms-linear-gradient(131deg, #d7d7d7 0%, white 100%); }
+  .company__abouttext {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Century Gothic", Arial, sans-serif;
+    letter-spacing: -0.04em;
+    margin-top: 120px;
+    width: 90%; }
+  .company__features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 137px; }
+    .company__features li {
+      width: 45.8%;
+      padding-right: 183px;
+      padding-bottom: 50px;
+      box-sizing: border-box;
+      min-height: 388px; }
+  .company__feature-name {
+    font-size: 35px;
+    font-family: "Century Gothic", Arial, sans-serif;
+    letter-spacing: -0.04em;
+    position: relative; }
+    .company__feature-name img {
+      position: absolute;
+      right: 7px;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+  .company__feature-text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 58px;
+    line-height: 1.8em; }
+  .company__cityview {
+    height: 913px;
+    position: relative; }
+    .company__cityview img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      object-fit: cover; }
+  .company__quoteblock {
+    display: flex;
+    height: 800px; }
+    .company__quoteblock:hover .company__quote {
+      background-color: #fff;
+      color: #221f1f; }
+    .company__quoteblock:hover .company__quotearrow {
+      opacity: 1;
+      pointer-events: all; }
+    .company__quoteblock > div {
+      width: 50%; }
+  .company__quote {
+    background-color: #1a232c;
+    transition: all 0.25s ease-in-out;
+    color: #fff;
+    position: relative;
+    padding: 10px 167px 10px 87px;
+    box-sizing: border-box; }
+  .company__quotetext {
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Century Gothic", Arial, sans-serif;
+    letter-spacing: -0.04em; }
+  .company__quotes {
+    font-size: 105px;
+    line-height: 1.3em; }
+  .company__quoteauthor {
+    font-size: 23px;
+    font-family: "Century Gothic", Arial, sans-serif;
+    letter-spacing: -0.04em;
+    position: absolute;
+    left: 88px;
+    bottom: 58px; }
+  .company__quotearrow {
+    position: absolute;
+    right: 64px;
+    bottom: 60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out; }
+  .company__quoteimage {
+    position: relative;
+    overflow: hidden; }
+    .company__quoteimage img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 100%;
+      min-height: 100%;
+      width: 0;
+      object-fit: cover; }
+  .company__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 83px; }
+    .company__logos div {
+      width: 20%;
+      text-align: center;
+      margin-top: 21px; }
+  .company__moreinfo {
+    margin-top: 216px;
+    position: relative; }
+    .company__moreinfo .content__text {
+      width: 100%;
+      margin-top: 40px; }
+      .company__moreinfo .content__text_link {
+        position: absolute;
+        left: 42px;
+        bottom: 75px;
+        right: 40px; }
+        .company__moreinfo .content__text_link:after {
+          content: "";
+          position: absolute;
+          left: 3px;
+          bottom: -7px;
+          width: 196px;
+          height: 1px;
+          background-color: #221f1f;
+          transition: all 0.25s ease-in-out; }
+        .company__moreinfo .content__text_link img {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          transform: rotate(90deg); }
 
 .popup {
   display: none;

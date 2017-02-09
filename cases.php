@@ -42,6 +42,7 @@
 	
 	<ul class="cases__list">
 		<li>
+			<a href="case.php"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">Venden Website</p>
 				<p class="cases__subheading">Venden responsive website design and development.</p>
@@ -49,9 +50,9 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_1.jpg" alt="@@">
-			
 		</li>
 		<li>
+			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">SIG service</p>
 				<p class="cases__subheading">Venden responsive website design and development.</p>
@@ -61,6 +62,7 @@
 			<img class="cases__bg" src="img/casebg_2.jpg" alt="@@">
 		</li>
 		<li>
+			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">FOTO - FOX</p>
 				<p class="cases__subheading">Venden responsive website design and development.</p>
@@ -70,6 +72,7 @@
 			<img class="cases__bg" src="img/casebg_3.jpg" alt="@@">
 		</li>
 		<li>
+			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">QUICK NEWS</p>
 				<p class="cases__subheading">Venden responsive website design and development.</p>
@@ -79,6 +82,7 @@
 			<img class="cases__bg" src="img/casebg_4.jpg" alt="@@">
 		</li>
 		<li>
+			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">1TRAVEL</p>
 				<p class="cases__subheading">Venden responsive website design and development.</p>
@@ -88,6 +92,7 @@
 			<img class="cases__bg" src="img/casebg_5.jpg" alt="@@">
 		</li>
 		<li>
+			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">ОБЗОР.PRESS</p>
 				<p class="cases__subheading">Venden responsive website design and development.</p>

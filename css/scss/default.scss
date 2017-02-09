@@ -68,6 +68,8 @@ body {display: flex;}
 	&__menuicon_arrow {position: absolute; right: 45px; bottom: 26px; z-index: 2;}
 }
 
+/*-----------------------------------------------------*/
+
 .content {display: inline-block; flex: 1; color: #fff;
 	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden;}
 	&__heading {font-size: 51px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em;}
@@ -81,6 +83,8 @@ body {display: flex;}
 	&__textblock {width: 51.4%;}
 }
 
+/*-----------------------------------------------------*/
+
 .content-tabs {
 	&__list {
 		li {display: inline-block; vertical-align: middle; padding: 16px 0; margin-left: 70px;
@@ -90,6 +94,8 @@ body {display: flex;}
 		a {font-size: 22px; font-weight: 600; color: $darkone; font-family: $gothic; letter-spacing: -0.04em;}
 	}
 }
+
+/*-----------------------------------------------------*/
 
 .services {
 	&__development {background-color: #111e2b; padding-top: 127px; padding-bottom: 159px;
@@ -117,6 +123,8 @@ body {display: flex;}
 		}
 	}
 }
+
+/*-----------------------------------------------------*/
 
 .technology {background-color: #111e2b; padding-top: 100px; padding-bottom: 124px;
 	.container {position: relative;}
@@ -154,6 +162,8 @@ body {display: flex;}
 	}
 }
 
+/*-----------------------------------------------------*/
+
 .cases {
 	.social {position: fixed; right: 0; top: 228px; z-index: 2;}
 	.content-tabs {position: relative;
@@ -181,6 +191,8 @@ body {display: flex;}
 		}
 		
 		> li {width: 100%; display: inline-block; position: relative; overflow: hidden; padding: 133px 0 113px; box-sizing: border-box; text-align: right; cursor: pointer; transition: all 0.25s ease-in-out;}
+		
+		a {display: inline-block; position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 	}
 	&__bg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover; pointer-events: none; z-index: -1;}
 	&__arrow {position: absolute; right: 60px; bottom: 74px; transition: all 0.25s ease-in-out;}
@@ -189,6 +201,51 @@ body {display: flex;}
 	&__subheading {font-size: 16px; color: #ababac; margin-top: 10px; padding-left: 4px;}
 	&__text {font-size: 16px; background: linear-gradient(to bottom, #fff 0%, transparent 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 105px; padding-left: 4px; transition: all 0.25s ease-in-out;}
 }
+
+/*-----------------------------------------------------*/
+
+.company {color: $darkone; padding-bottom: 191px;
+	.content__text {width: 50%; margin-top: 82px;}
+	&__mainpart {padding-top: 101px; padding-bottom: 27px; background-image: -moz-linear-gradient( 131deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%); background-image: -webkit-linear-gradient( 131deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%); background-image: -ms-linear-gradient( 131deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);}
+	&__abouttext {font-size: 30px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em; margin-top: 120px; width: 90%;}
+	&__features {display: flex; flex-wrap: wrap; margin-top: 137px;
+		li {width: 45.8%; padding-right: 183px; padding-bottom: 50px; box-sizing: border-box; min-height: 388px;}
+	}
+	&__feature-name {font-size: 35px; font-family: $gothic; letter-spacing: -0.04em; position: relative;
+		img {position: absolute; right: 7px; top: 0; bottom: 0; margin: auto;}
+	}
+	&__feature-text {font-size: 18px; font-weight: 300; margin-top: 58px; line-height: 1.8em;}
+	&__cityview {height: 913px; position: relative;
+		img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
+	}
+	&__quoteblock {display: flex; height: 800px;
+		&:hover {
+			.company__quote {background-color: #fff; color: $darkone;}
+			.company__quotearrow {opacity: 1; pointer-events: all;}
+		}
+		>div {width: 50%;}
+	}
+	&__quote {background-color: #1a232c; transition: all 0.25s ease-in-out; color: #fff; position: relative; padding: 10px 167px 10px 87px; box-sizing: border-box;}
+	&__quotetext {font-size: 35px; font-style: italic; font-family: $gothic; letter-spacing: -0.04em;}
+	&__quotes {font-size: 105px; line-height: 1.3em;}
+	&__quoteauthor {font-size: 23px; font-family: $gothic; letter-spacing: -0.04em; position: absolute; left: 88px; bottom: 58px;}
+	&__quotearrow {position: absolute; right: 64px; bottom: 60px; opacity: 0; pointer-events: none; transition: all 0.25s ease-in-out;}
+	&__quoteimage {position: relative; overflow: hidden;
+		img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
+	}
+	&__logos {display: flex; flex-wrap: wrap; align-items: center; margin-top: 83px;
+		div {width: 20%; text-align: center; margin-top: 21px;}
+	}
+	&__moreinfo {margin-top: 216px; position: relative;
+		.content__text {width: 100%; margin-top: 40px;
+			&_link {position: absolute; left: 42px; bottom: 75px; right: 40px;
+				&:after {content: ""; position: absolute; left: 3px; bottom: -7px; width: 196px; height: 1px; background-color: #221f1f; transition: all 0.25s ease-in-out;}
+				img {position: absolute; right: 0; top: 0; bottom: 0; margin: auto; transform: rotate(90deg);}
+			}
+		}
+	}
+}
+
 // Секции, header, footer и т.д. //
 
 
