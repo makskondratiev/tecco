@@ -1,4 +1,3 @@
-/* line 40, C:/wamp64/www/tecco/css/basics.scss */
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -8,115 +7,89 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   /* */
   border: none; }
 
-/* line 48, C:/wamp64/www/tecco/css/basics.scss */
 *:focus {
   outline: none; }
 
-/* line 51, C:/wamp64/www/tecco/css/basics.scss */
 ::selection {
   background: blue;
   color: white; }
 
-/* line 52, C:/wamp64/www/tecco/css/basics.scss */
 ::-moz-selection {
   background: blue;
   color: white; }
 
-/* line 53, C:/wamp64/www/tecco/css/basics.scss */
 ::-webkit-selection {
   background: blue;
   color: white; }
 
-/* line 56, C:/wamp64/www/tecco/css/basics.scss */
 ::-webkit-input-placeholder {
   color: #777; }
 
-/* line 57, C:/wamp64/www/tecco/css/basics.scss */
 ::-moz-placeholder {
   color: #777; }
 
-/* line 58, C:/wamp64/www/tecco/css/basics.scss */
 :-ms-input-placeholder {
   color: #777; }
 
-/* line 59, C:/wamp64/www/tecco/css/basics.scss */
 :-moz-placeholder {
   color: #777; }
 
-/* line 62, C:/wamp64/www/tecco/css/basics.scss */
 .noscroll {
   position: fixed; }
 
-/* line 65, C:/wamp64/www/tecco/css/basics.scss */
 input:-webkit-autofill {
   -webkit-text-fill-color: black !important; }
 
-/* line 69, C:/wamp64/www/tecco/css/basics.scss */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 50000000000s ease-in-out 0s !important; }
 
-/* line 87, C:/wamp64/www/tecco/css/basics.scss */
 .one-col {
   width: 5.95%; }
 
-/* line 88, C:/wamp64/www/tecco/css/basics.scss */
 .two-col {
   width: 14.5%; }
 
-/* line 89, C:/wamp64/www/tecco/css/basics.scss */
 .three-col {
   width: 23.05%; }
 
-/* line 90, C:/wamp64/www/tecco/css/basics.scss */
 .four-col {
   width: 31.6%; }
 
-/* line 91, C:/wamp64/www/tecco/css/basics.scss */
 .five-col {
   width: 40.15%; }
 
-/* line 92, C:/wamp64/www/tecco/css/basics.scss */
 .six-col {
   width: 48.7%; }
 
-/* line 93, C:/wamp64/www/tecco/css/basics.scss */
 .seven-col {
   width: 57.25%; }
 
-/* line 94, C:/wamp64/www/tecco/css/basics.scss */
 .eight-col {
   width: 65.8%; }
 
-/* line 95, C:/wamp64/www/tecco/css/basics.scss */
 .nine-col {
   width: 74.35%; }
 
-/* line 96, C:/wamp64/www/tecco/css/basics.scss */
 .ten-col {
   width: 82.9%; }
 
-/* line 97, C:/wamp64/www/tecco/css/basics.scss */
 .eleven-col {
   width: 91.45%; }
 
-/* line 98, C:/wamp64/www/tecco/css/basics.scss */
 .twelve-col {
   width: 100%; }
 
-/* line 101, C:/wamp64/www/tecco/css/basics.scss */
 .cols {
   text-align: justify;
   text-justify: distribute; }
-  /* line 102, C:/wamp64/www/tecco/css/basics.scss */
   .cols:after {
     content: "";
     display: inline-block;
     height: 0.0000000000001px;
     width: 100%; }
-  /* line 103, C:/wamp64/www/tecco/css/basics.scss */
   .cols > * {
     display: inline-block;
     box-sizing: border-box;
@@ -124,12 +97,10 @@ input:-webkit-autofill:active {
     -webkit-box-sizing: border-box;
     vertical-align: top; }
 
-/* line 119, C:/wamp64/www/tecco/css/basics.scss */
 html {
   width: 100%;
   height: 100%; }
 
-/* line 120, C:/wamp64/www/tecco/css/basics.scss */
 body {
   width: 100%;
   min-height: 100%;
@@ -137,74 +108,62 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   color: #221f1f; }
 
-/* line 122, C:/wamp64/www/tecco/css/basics.scss */
+html, body {
+  min-width: 2000px; }
+
 header, section, footer {
   width: 100%;
   float: left; }
 
-/* line 123, C:/wamp64/www/tecco/css/basics.scss */
 .container {
   width: 1420px;
   margin: 0 auto; }
 
-/* line 136, C:/wamp64/www/tecco/css/basics.scss */
 h1, h2, h3, h4, h5, h6, p, span, ul, li {
   margin: 0;
   padding: 0; }
 
-/* line 137, C:/wamp64/www/tecco/css/basics.scss */
 ul {
   list-style: none; }
 
-/* line 138, C:/wamp64/www/tecco/css/basics.scss */
 span {
   font-style: inherit;
   font-family: inherit;
   font-weight: inherit; }
 
-/* line 143, C:/wamp64/www/tecco/css/basics.scss */
 h1 {
   font-size: 36px;
   line-height: 1.2em; }
 
-/* line 144, C:/wamp64/www/tecco/css/basics.scss */
 h2 {
   font-size: 30px;
   line-height: 1.2em; }
 
-/* line 145, C:/wamp64/www/tecco/css/basics.scss */
 h3 {
   font-size: 24px;
   line-height: 1.2em; }
 
-/* line 146, C:/wamp64/www/tecco/css/basics.scss */
 h4 {
   font-size: 20px;
   line-height: 1.2em; }
 
-/* line 147, C:/wamp64/www/tecco/css/basics.scss */
 h5 {
   font-size: 18px;
   line-height: 1.2em; }
 
-/* line 150, C:/wamp64/www/tecco/css/basics.scss */
 p {
   font-size: 14px;
   line-height: 1.2em; }
 
-/* line 151, C:/wamp64/www/tecco/css/basics.scss */
 p.small {
   font-size: 12px; }
 
-/* line 152, C:/wamp64/www/tecco/css/basics.scss */
 p.big {
   font-size: 16px; }
 
-/* line 153, C:/wamp64/www/tecco/css/basics.scss */
 p.huge {
   font-size: 18px; }
 
-/* line 165, C:/wamp64/www/tecco/css/basics.scss */
 a, input, button, select, textarea {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -215,14 +174,12 @@ a, input, button, select, textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
-/* line 166, C:/wamp64/www/tecco/css/basics.scss */
 a {
   text-decoration: inherit;
   font-weight: inherit;
   line-height: inherit;
   color: inherit; }
 
-/* line 168, C:/wamp64/www/tecco/css/basics.scss */
 select, input, textarea {
   padding: 10px;
   text-align: left;
@@ -232,7 +189,6 @@ select, input, textarea {
   font-size: 14px;
   display: inline-block; }
 
-/* line 170, C:/wamp64/www/tecco/css/basics.scss */
 .button {
   text-align: center;
   border: 0;
@@ -241,20 +197,16 @@ select, input, textarea {
   color: white;
   font-size: 15px;
   background-color: green; }
-  /* line 171, C:/wamp64/www/tecco/css/basics.scss */
   .button::hover {
     background-color: blue; }
 
-/* line 4, C:/wamp64/www/tecco/css/default.scss */
 body {
   display: flex; }
 
-/* line 7, C:/wamp64/www/tecco/css/default.scss */
 .header {
   width: 400px;
   position: relative;
   background-color: #f5f5f6; }
-  /* line 8, C:/wamp64/www/tecco/css/default.scss */
   .header__logoblock {
     position: absolute;
     left: 0;
@@ -262,34 +214,27 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 41px 39px; }
-  /* line 9, C:/wamp64/www/tecco/css/default.scss */
   .header__logotext {
     font-size: 13px;
     margin-top: 12px;
     padding-left: 4px;
     color: #1f2124; }
-  /* line 10, C:/wamp64/www/tecco/css/default.scss */
   .header__burgermenu {
     float: right;
     position: relative;
     right: -4px; }
-    /* line 11, C:/wamp64/www/tecco/css/default.scss */
     .header__burgermenu svg {
       transition: all 0.25s ease-in-out; }
-    /* line 12, C:/wamp64/www/tecco/css/default.scss */
     .header__burgermenu.active svg {
       fill: #221f1f; }
-  /* line 14, C:/wamp64/www/tecco/css/default.scss */
   .header__square {
     position: absolute;
     z-index: 2; }
-    /* line 15, C:/wamp64/www/tecco/css/default.scss */
     .header__square_language {
       top: 49px;
       right: 35px;
       width: 36px;
       height: 36px; }
-    /* line 16, C:/wamp64/www/tecco/css/default.scss */
     .header__square a {
       display: inline-block;
       width: 36px;
@@ -303,85 +248,63 @@ body {
       text-align: right;
       padding: 0 3px;
       color: #1f2124; }
-      /* line 17, C:/wamp64/www/tecco/css/default.scss */
       .header__square a:hover {
         background-color: #221f1f;
         color: #fff; }
-        /* line 18, C:/wamp64/www/tecco/css/default.scss */
         .header__square a:hover svg {
           fill: #fff; }
-        /* line 19, C:/wamp64/www/tecco/css/default.scss */
         .header__square a:hover .icon_inst {
           fill: none;
           stroke: #fff; }
-    /* line 22, C:/wamp64/www/tecco/css/default.scss */
     .header__square svg {
       transition: all 0.25s ease-in-out; }
-    /* line 24, C:/wamp64/www/tecco/css/default.scss */
     .header__square:hover .header__square-list {
       opacity: 1;
       pointer-events: all; }
-    /* line 26, C:/wamp64/www/tecco/css/default.scss */
     .header__square_social {
       right: 80px;
       top: 49px;
       width: 36px;
       height: 36px; }
-  /* line 28, C:/wamp64/www/tecco/css/default.scss */
   .header__square-list {
     opacity: 0;
     pointer-events: none;
     transition: all 0.25s ease-in-out; }
-    /* line 29, C:/wamp64/www/tecco/css/default.scss */
     .header__square-list a {
       border-top: 0; }
-  /* line 31, C:/wamp64/www/tecco/css/default.scss */
   .header__menu {
     padding-top: 144px; }
-    /* line 32, C:/wamp64/www/tecco/css/default.scss */
     .header__menu li {
       position: relative; }
-      /* line 33, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:first-child {
         margin-top: 0; }
-      /* line 35, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(2) a {
         padding: 39px 41px 61px; }
-      /* line 36, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(2) .header__menuicon {
         top: 51px;
         right: 41px; }
-      /* line 39, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(3) a {
         padding: 39px 41px 52px; }
-      /* line 40, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(3) .header__menuicon {
         top: 165px;
         right: 35px; }
-      /* line 41, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(3) .header__itemtext {
         color: #131920;
         font-weight: 500; }
-      /* line 44, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(4) a {
         padding: 39px 41px 48px; }
-      /* line 45, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(4) .header__menuicon {
         top: 50px;
         right: 36px; }
-      /* line 48, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(5) a {
         padding: 39px 41px 43px; }
-      /* line 49, C:/wamp64/www/tecco/css/default.scss */
       .header__menu li:nth-child(5) .header__menuicon {
         top: 54px;
         right: 37px; }
-    /* line 52, C:/wamp64/www/tecco/css/default.scss */
     .header__menu a {
       display: inline-block;
       width: 100%;
       position: relative; }
-      /* line 53, C:/wamp64/www/tecco/css/default.scss */
       .header__menu a:before {
         content: "";
         position: absolute;
@@ -393,24 +316,18 @@ body {
         transform: scale3d(0, 1, 1);
         transition: all 0.25s ease-in-out;
         transform-origin: right center; }
-      /* line 55, C:/wamp64/www/tecco/css/default.scss */
       .header__menu a:hover:before {
         transform: scale3d(1, 1, 1); }
-      /* line 56, C:/wamp64/www/tecco/css/default.scss */
       .header__menu a:hover p {
         color: #fff !important; }
-      /* line 57, C:/wamp64/www/tecco/css/default.scss */
       .header__menu a:hover .header__menuheading:after {
         background-color: #fff; }
-      /* line 58, C:/wamp64/www/tecco/css/default.scss */
       .header__menu a:hover svg {
         fill: #fff; }
-      /* line 60, C:/wamp64/www/tecco/css/default.scss */
       .header__menu a p {
         position: relative;
         z-index: 2;
         transition: all 0.25s ease-in-out; }
-  /* line 63, C:/wamp64/www/tecco/css/default.scss */
   .header__menuheading {
     font-size: 43px;
     font-weight: 600;
@@ -418,7 +335,6 @@ body {
     font-family: "Century Gothic", Arial, sans-serif;
     letter-spacing: -0.04em;
     position: relative; }
-    /* line 64, C:/wamp64/www/tecco/css/default.scss */
     .header__menuheading:after {
       content: "";
       position: absolute;
@@ -428,27 +344,23 @@ body {
       height: 1px;
       background-color: #221f1f;
       transition: all 0.25s ease-in-out; }
-  /* line 66, C:/wamp64/www/tecco/css/default.scss */
   .header__itemtext {
     font-size: 16px;
     margin-top: 27px;
     padding-left: 4px; }
-  /* line 67, C:/wamp64/www/tecco/css/default.scss */
   .header__menuicon {
     position: absolute;
     transition: all 0.25s ease-in-out; }
-  /* line 68, C:/wamp64/www/tecco/css/default.scss */
   .header__menuicon_arrow {
     position: absolute;
     right: 45px;
     bottom: 26px;
     z-index: 2; }
 
-/* line 71, C:/wamp64/www/tecco/css/default.scss */
 .content {
   display: inline-block;
-  flex: 1; }
-  /* line 72, C:/wamp64/www/tecco/css/default.scss */
+  flex: 1;
+  color: #fff; }
   .content_main {
     background-image: url("../img/bg_main2.jpg");
     background-size: cover;
@@ -456,24 +368,19 @@ body {
     padding-top: 270px;
     position: relative;
     overflow: hidden; }
-  /* line 73, C:/wamp64/www/tecco/css/default.scss */
   .content__heading {
     font-size: 51px;
     font-weight: 600;
-    color: #fff;
     font-family: "Century Gothic", Arial, sans-serif;
     letter-spacing: -0.04em; }
-  /* line 74, C:/wamp64/www/tecco/css/default.scss */
   .content__scroll-link {
     display: inline-block;
     font-size: 35px;
-    color: #fff;
     font-family: "Century Gothic", Arial, sans-serif;
     position: relative;
     padding-left: 90px;
     margin-top: 234px;
     letter-spacing: -0.04em; }
-    /* line 75, C:/wamp64/www/tecco/css/default.scss */
     .content__scroll-link:before {
       content: "";
       display: inline-block;
@@ -489,38 +396,419 @@ body {
       background-image: url("../img/icon_arrow_2.svg");
       background-position: center;
       background-repeat: no-repeat; }
-  /* line 77, C:/wamp64/www/tecco/css/default.scss */
   .content__bgmain {
     position: absolute;
     left: 0;
     right: 0;
     bottom: -397px; }
-  /* line 78, C:/wamp64/www/tecco/css/default.scss */
   .content__bgphone {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-43%); }
+  .content__text {
+    font-size: 35px;
+    font-family: "Century Gothic", Arial, sans-serif;
+    letter-spacing: -0.04em;
+    margin-top: 79px; }
+  .content__smalltext {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-top: 66px;
+    letter-spacing: -0.04em; }
+  .content__textblock {
+    width: 51.4%; }
 
-/* line 89, C:/wamp64/www/tecco/css/default.scss */
+.content-tabs__list li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 0;
+  margin-left: 70px; }
+  .content-tabs__list li:first-child {
+    margin-left: 0; }
+  .content-tabs__list li.active {
+    box-shadow: inset 0 3px 0 0 #221f1f; }
+
+.content-tabs__list a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #221f1f;
+  font-family: "Century Gothic", Arial, sans-serif;
+  letter-spacing: -0.04em; }
+
+.services__development {
+  background-color: #111e2b;
+  padding-top: 127px;
+  padding-bottom: 159px; }
+  .services__development .container {
+    position: relative; }
+
+.services__list {
+  margin-top: 94px; }
+  .services__list li {
+    padding-left: 19px;
+    position: relative;
+    margin-top: 11px; }
+    .services__list li:before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      border-radius: 1000px;
+      background-color: #fff;
+      position: absolute;
+      left: 4px;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+    .services__list li:first-child {
+      margin-top: 0; }
+  .services__list p {
+    font-size: 18px;
+    font-weight: 300; }
+
+.services__quote {
+  position: absolute;
+  top: 19px;
+  right: 26px; }
+
+.services__quotetext {
+  font-size: 35px;
+  font-style: italic;
+  font-family: "Century Gothic", Arial, sans-serif;
+  margin-top: -4px;
+  letter-spacing: -0.04em; }
+
+.services__quotes {
+  font-size: 105px;
+  line-height: 1.3em; }
+
+.services__quoteauthor {
+  font-size: 23px;
+  font-family: "Century Gothic", Arial, sans-serif;
+  letter-spacing: -0.04em;
+  margin-top: 103px; }
+
+.services__outsourcing {
+  color: #221f1f;
+  padding-top: 102px;
+  padding-bottom: 186px; }
+
+.services__moreinfo {
+  margin-top: 128px;
+  position: relative; }
+  .services__moreinfo .content__text {
+    margin-top: 40px; }
+    .services__moreinfo .content__text_link {
+      position: absolute;
+      left: 42px;
+      bottom: 75px;
+      right: 40px; }
+      .services__moreinfo .content__text_link:after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        bottom: -7px;
+        width: 196px;
+        height: 1px;
+        background-color: #221f1f;
+        transition: all 0.25s ease-in-out; }
+      .services__moreinfo .content__text_link img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(90deg); }
+
+.technology {
+  background-color: #111e2b;
+  padding-top: 100px;
+  padding-bottom: 124px; }
+  .technology .container {
+    position: relative; }
+  .technology__icon {
+    position: absolute;
+    right: -31px;
+    top: 15px; }
+  .technology .content__text {
+    margin-top: 122px; }
+  .technology .content__scroll-link {
+    margin-top: 125px;
+    padding-left: 82px;
+    padding-right: 100px; }
+  .technology__list {
+    margin-top: 122px;
+    display: flex;
+    justify-content: space-between;
+    width: 102%; }
+  .technology__column {
+    align-self: flex-start;
+    width: 18.6%; }
+  .technology__card {
+    border: 2px solid #fff;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 16px;
+    min-height: 269px;
+    max-height: 269px;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+    margin-top: 25px; }
+    .technology__card:first-child {
+      margin-top: 0; }
+    .technology__card svg {
+      position: absolute;
+      left: 18px;
+      bottom: 23px;
+      transition: all 0.25s ease-in-out; }
+    .technology__card:hover {
+      background-color: #fff;
+      color: #221f1f; }
+      .technology__card:hover li:before {
+        background-color: #221f1f; }
+      .technology__card:hover svg {
+        stroke: #d86956; }
+    .technology__card.active {
+      max-height: 1000px; }
+      .technology__card.active .technology__hiddenlist {
+        opacity: 1;
+        pointer-events: all; }
+      .technology__card.active svg {
+        transform: rotate(180deg); }
+  .technology__name {
+    font-size: 30px;
+    font-family: "Century Gothic", Arial, sans-serif;
+    letter-spacing: -0.04em; }
+  .technology__hiddenlist {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+    margin-top: 33px;
+    padding-bottom: 45px; }
+    .technology__hiddenlist li {
+      padding-left: 21px;
+      position: relative;
+      margin-top: 16px; }
+      .technology__hiddenlist li:before {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        border-radius: 1000px;
+        background-color: #fff;
+        position: absolute;
+        left: 4px;
+        top: 7px; }
+      .technology__hiddenlist li:first-child {
+        margin-top: 0; }
+  .technology__moreinfo {
+    margin-top: 155px;
+    position: relative; }
+    .technology__moreinfo .content__text {
+      margin-top: 40px;
+      padding-left: 5px; }
+      .technology__moreinfo .content__text_link {
+        position: absolute;
+        left: 42px;
+        bottom: 75px;
+        right: 40px; }
+        .technology__moreinfo .content__text_link:after {
+          content: "";
+          position: absolute;
+          left: 3px;
+          bottom: -7px;
+          width: 196px;
+          height: 1px;
+          background-color: #fff;
+          transition: all 0.25s ease-in-out; }
+        .technology__moreinfo .content__text_link svg {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          transform: rotate(90deg); }
+
+.cases .social {
+  position: fixed;
+  right: 0;
+  top: 228px;
+  z-index: 2; }
+
+.cases .content-tabs {
+  position: relative; }
+  .cases .content-tabs__switcher {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex; }
+    .cases .content-tabs__switcher li {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 20px;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer; }
+      .cases .content-tabs__switcher li svg {
+        transition: all 0.25s ease-in-out; }
+      .cases .content-tabs__switcher li.active {
+        background-color: #221f1f; }
+        .cases .content-tabs__switcher li.active svg {
+          stroke: #fff; }
+
+.cases .content-tabs__list li {
+  margin-left: 49px;
+  padding: 16px 0 18px; }
+  .cases .content-tabs__list li:first-child {
+    margin-left: 0; }
+
+.cases__list.squares > li {
+  width: 33.3333%;
+  padding: 390px 0 50px;
+  height: 532px; }
+  .cases__list.squares > li:hover .cases__textblock {
+    opacity: 1;
+    pointer-events: all; }
+
+.cases__list.squares .cases__textblock {
+  width: auto;
+  text-align: center;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none; }
+
+.cases__list.squares .cases__text {
+  max-height: 0;
+  margin-top: 0; }
+
+.cases__list.squares .cases__arrow {
+  opacity: 0;
+  pointer-events: none; }
+
+.cases__list > li {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding: 133px 0 113px;
+  box-sizing: border-box;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out; }
+
+.cases__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: 0;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1; }
+
+.cases__arrow {
+  position: absolute;
+  right: 60px;
+  bottom: 74px;
+  transition: all 0.25s ease-in-out; }
+
+.cases__textblock {
+  display: inline-block;
+  text-align: left;
+  width: 470px;
+  margin-right: 127px;
+  transition: all 0.25s ease-in-out; }
+
+.cases__heading {
+  font-size: 43px;
+  font-weight: 600;
+  font-family: "Century Gothic", Arial, sans-serif;
+  letter-spacing: -0.04em; }
+
+.cases__subheading {
+  font-size: 16px;
+  color: #ababac;
+  margin-top: 10px;
+  padding-left: 4px; }
+
+.cases__text {
+  font-size: 16px;
+  background: linear-gradient(to bottom, #fff 0%, transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 105px;
+  padding-left: 4px;
+  transition: all 0.25s ease-in-out; }
+
 .popup {
   display: none;
   width: 350px;
   padding: 20px; }
 
+.squareblock {
+  width: 550px;
+  height: 550px;
+  border: 2px solid #fff;
+  padding: 0 30px 47px 36px;
+  box-sizing: border-box; }
+  .squareblock_dark {
+    border-color: #221f1f;
+    padding-left: 42px; }
+
+.social {
+  border: 4px solid #000;
+  border-right: 0;
+  height: 200px;
+  box-sizing: border-box; }
+  .social li {
+    width: 46px;
+    height: 47px;
+    border-top: 1px solid #000; }
+    .social li:first-child {
+      border-top: 0; }
+  .social__link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .social__link_fb {
+      background-color: #3d6f9a; }
+    .social__link_inst {
+      background-color: #324453; }
+    .social__link_yt {
+      background-color: #b25b3d; }
+    .social__link_be {
+      background-color: #0584bf; }
+    .social__link img {
+      transition: all 0.25s ease-in-out;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: translate3d(42%, -45%, 0); }
+    .social__link:hover img {
+      transform: translate3d(0, 0, 0) scale3d(1.5, 1.5, 1); }
+
 @media (min-width: 769px) {
-  /* line 6, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__burgermenu {
     display: none; }
-  /* line 7, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__caseslink {
     background-color: #fff;
     overflow: hidden; }
-    /* line 8, C:/wamp64/www/tecco/css/adaptive.scss */
     .header__caseslink a {
       padding: 181px 41px 21px;
       position: relative; }
-      /* line 9, C:/wamp64/www/tecco/css/adaptive.scss */
       .header__caseslink a:before {
         content: "";
         width: 57%;
@@ -534,7 +822,6 @@ body {
         z-index: 1;
         transform: scale3d(1, 1, 1);
         transition: all 0.25s ease-in-out; }
-      /* line 10, C:/wamp64/www/tecco/css/adaptive.scss */
       .header__caseslink a:after {
         content: "";
         width: 100%;
@@ -548,26 +835,20 @@ body {
         z-index: 1;
         transform: scale3d(1, 1, 1);
         transition: all 0.25s ease-in-out; }
-      /* line 12, C:/wamp64/www/tecco/css/adaptive.scss */
       .header__caseslink a:hover:before {
         background: linear-gradient(to right, rgba(34, 34, 31, 0) 0%, #22221f 50%, #22221f 100%); }
-      /* line 13, C:/wamp64/www/tecco/css/adaptive.scss */
       .header__caseslink a:hover:after {
         background: linear-gradient(to bottom, rgba(34, 34, 31, 0) 0%, #22221f 50%, #22221f 100%); }
-    /* line 16, C:/wamp64/www/tecco/css/adaptive.scss */
     .header__caseslink p {
       position: relative;
       z-index: 2;
       color: #221f1f !important; }
-    /* line 17, C:/wamp64/www/tecco/css/adaptive.scss */
     .header__caseslink .header__menuicon {
       top: 32px;
       right: 34px;
       z-index: 2; }
-    /* line 18, C:/wamp64/www/tecco/css/adaptive.scss */
     .header__caseslink .header__menuheading:after {
       display: none; }
-  /* line 20, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__casesimage {
     position: absolute;
     left: 0;
@@ -575,36 +856,26 @@ body {
     z-index: 0; } }
 
 @media (max-width: 768px) {
-  /* line 24, C:/wamp64/www/tecco/css/adaptive.scss */
   body {
     flex-direction: column; }
-  /* line 25, C:/wamp64/www/tecco/css/adaptive.scss */
   .header {
     width: 100%; }
-  /* line 26, C:/wamp64/www/tecco/css/adaptive.scss */
   .content {
     width: 100%; }
-  /* line 27, C:/wamp64/www/tecco/css/adaptive.scss */
   .container {
     width: 450px; }
-  /* line 29, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__logoblock {
     position: relative;
     padding: 17px 20px; }
-  /* line 30, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__logo {
     display: inline-block; }
-  /* line 31, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__logo img {
     width: 143px;
     height: 35px; }
-  /* line 32, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square {
     position: relative; }
-  /* line 33, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__logotext {
     display: none; }
-  /* line 34, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__side {
     width: 400px;
     position: absolute;
@@ -615,10 +886,8 @@ body {
     padding-bottom: 80px;
     transform: translate3d(100%, 0, 0);
     transition: all 0.25s ease-in-out; }
-  /* line 35, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__side.active {
     transform: translate3d(0, 0, 0); }
-  /* line 36, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_language {
     top: auto;
     right: auto;
@@ -626,62 +895,47 @@ body {
     height: auto;
     margin-top: 33px;
     margin-left: 42px; }
-  /* line 37, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square-list {
     display: inline-block;
     opacity: 1;
     pointer-events: all;
     vertical-align: top; }
-  /* line 38, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square-list li {
     display: inline-block;
     margin-left: 17px; }
-  /* line 39, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square-list a {
     border-top: 2px solid #221f1f;
     vertical-align: top; }
-  /* line 40, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square a {
     width: 70px;
     height: 70px;
     font-size: 23px;
     font-weight: 600;
     padding: 2px 6px; }
-  /* line 41, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__casesimage {
     display: none; }
-  /* line 42, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menuicon_arrow {
     display: none; }
-  /* line 43, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__itemtext {
     color: #131920;
     font-weight: 500;
     margin-top: 9px; }
-  /* line 44, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu {
     padding-top: 21px; }
-  /* line 45, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__caseslink a {
     padding: 39px 41px 16px; }
-  /* line 46, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__caseslink .header__menuicon {
     position: absolute;
     right: 35px;
     top: 82px; }
-  /* line 47, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(2) a {
     padding: 39px 41px 40px; }
-  /* line 48, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(3) .header__itemtext {
     margin-top: 25px; }
-  /* line 49, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(3) a {
     padding: 39px 41px 35px; }
-  /* line 50, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(4) a {
     padding: 39px 41px 40px; }
-  /* line 51, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social {
     top: auto;
     right: auto;
@@ -689,36 +943,27 @@ body {
     height: auto;
     margin-top: 40px;
     margin-left: 25px; }
-  /* line 52, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social > a {
     display: none; }
-  /* line 53, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social li:nth-child(1) svg {
     width: 12px; }
-  /* line 54, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social li:nth-child(2) svg {
     width: 22px; }
-  /* line 55, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social li:nth-child(3) svg {
     width: 22px; }
-  /* line 57, C:/wamp64/www/tecco/css/adaptive.scss */
   .content_main {
     padding-top: 116px;
     padding-bottom: 700px; }
-  /* line 58, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__scroll-link {
     display: block;
     margin-top: 194px;
     text-align: center;
     padding-left: 0; }
-  /* line 59, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__scroll-link:before {
     right: 0;
     top: -180px; }
-  /* line 60, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__bgmain {
     display: none; }
-  /* line 61, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__bgphone {
     width: 90%;
     top: auto;
@@ -726,119 +971,90 @@ body {
     transform: translate(0); } }
 
 @media (max-width: 480px) {
-  /* line 65, C:/wamp64/www/tecco/css/adaptive.scss */
   .container {
     width: 280px; }
-  /* line 67, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__logoblock {
     padding: 12px 24px; }
-  /* line 68, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__logo img {
     width: 95px; }
-  /* line 69, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__side {
     width: 200px;
     top: 59px;
     right: 0; }
-  /* line 70, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_language {
     margin-top: 23px;
     margin-left: 20px; }
-  /* line 71, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square-list li {
     margin-left: 10px; }
-  /* line 72, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square a {
     width: 44px;
     height: 44px;
     font-size: 16px; }
-  /* line 73, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__itemtext {
     font-size: 12px; }
-  /* line 74, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li a {
     padding-top: 39px !important;
     padding-left: 20px !important;
     padding-right: 30px !important; }
-  /* line 75, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__caseslink a {
     padding-bottom: 16px; }
-  /* line 76, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__caseslink .header__menuicon {
     right: 10px;
     top: 65px;
     width: 24px; }
-  /* line 77, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social {
     margin-left: 20px; }
-  /* line 78, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social li:nth-child(1) svg {
     width: 8px; }
-  /* line 79, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social li:nth-child(2) svg {
     width: 14px; }
-  /* line 80, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social li:nth-child(3) svg {
     width: 14px; }
-  /* line 81, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menuheading {
     font-size: 24px; }
-  /* line 82, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menuheading:after {
     width: 98px; }
-  /* line 83, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(2) .header__menuicon {
     width: 16px;
     top: 37px;
     right: 14px; }
-  /* line 84, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(3) .header__itemtext {
     margin-top: 15px; }
-  /* line 85, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(3) .header__menuicon {
     width: 23px;
     top: 135px;
     right: 10px; }
-  /* line 86, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(4) .header__menuicon {
     width: 25px;
     top: 39px;
     right: 10px; }
-  /* line 87, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__menu li:nth-child(5) .header__menuicon {
     width: 26px;
     top: 40px;
     right: 10px; }
-  /* line 88, C:/wamp64/www/tecco/css/adaptive.scss */
   .header__square_social .header__square-list li:first-child {
     margin-left: 0; }
-  /* line 90, C:/wamp64/www/tecco/css/adaptive.scss */
   .content_main {
     padding-top: 72px;
     padding-bottom: 360px; }
-  /* line 91, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__scroll-link {
     display: block;
     margin-top: 120px;
     text-align: center;
     padding-left: 0;
     font-size: 23px; }
-  /* line 92, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__scroll-link:before {
     right: 0;
     top: -110px;
     width: 40px;
     height: 40px; }
-  /* line 93, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__bgmain {
     display: none; }
-  /* line 94, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__bgphone {
     width: 90%;
     top: auto;
     bottom: -10px;
     transform: translate(0); }
-  /* line 95, C:/wamp64/www/tecco/css/adaptive.scss */
   .content__heading {
     font-size: 30px; } }
 
