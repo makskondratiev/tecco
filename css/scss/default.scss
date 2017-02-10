@@ -246,6 +246,74 @@ body {display: flex;}
 	}
 }
 
+/*-----------------------------------------------------*/
+
+.case {
+	.content-tabs {position: relative; padding: 17px 0;
+		.container {position: relative;}
+		p {display: inline-block;}
+	}
+	&__name {font-size: 22px; font-weight: 600; color: $darkone; font-family: $gothic; padding-left: 13px; letter-spacing: -0.04em;}
+	&__sitetype {font-size: 22px; color: #a6a6a6; border-left: 1px solid #a6a6a6; padding-left: 20px; font-family: $gothic; margin-left: 23px; line-height: 0.95em; letter-spacing: -0.04em;}
+	&__tags {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+		li {display: inline-block; margin: 0 7px;}
+		p {font-size: 16px; color: #a6a6a6; font-family: $gothic; letter-spacing: -0.04em;}
+	}
+	&__backbutton {font-size: 22px; font-weight: 600; color: $darkone; font-family: $gothic; position: absolute; right: 28px; top: 50%; transform: translateY(-50%); padding-left: 44px; letter-spacing: -0.04em;
+		svg {position: absolute; left: 0; top: 0; bottom: 0; margin: auto;}
+	}
+	&__firstscreen {height: 1087px; box-sizing: border-box; position: relative; padding-top: 77px; padding-bottom: 70px;
+		.container {height: 100%; width: 1376px;}
+		>img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover; z-index: -1;}
+	}
+	&__logo {margin-left: -11px;
+		&_bottom {position: absolute; left: 6.3%; top: 44.4%; margin: 0;}
+	}
+	&__subheading {font-size: 16px; color: #ababac; margin-top: 20px;}
+	&__link {font-size: 25px; font-weight: 600; font-family: $gothic; color: #fff; letter-spacing: -0.04em; position: relative; display: inline-block; margin-top: 66px;
+		&:after {content: ""; display: inline-block; width: 107px; height: 1px; background-color: #fff; position: absolute; left: 0; bottom: -3px;}
+	}
+	&__smalltext {font-size: 16px; margin-top: 84px; width: 34%;}
+	&__text {margin-top: 297px; width: 80%;}
+	&__infoblock {height: 570px; display: flex;}
+	&__image {width: 50%; position: relative; overflow: hidden;
+		img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
+	}
+	&__textblock {width: 50%; display: flex; box-sizing: border-box; padding: 50px 90px 80px 111px; align-items: center;
+		&_bottom {padding: 50px 90px 80px 103px;}
+	}
+	&__infotext {color: #32333c; margin-top: 0;}
+	&__designblock {background-color: #d7dbe3; text-align: center; padding-top: 127px; padding-bottom: 84px;
+		p {font-size: 35px; font-weight: 600; font-family: $gothic; color: #485165; letter-spacing: -0.04em;}
+		img {margin-top: 138px; max-width: 1512px; max-height: 708px;}
+	}
+	&__slider {margin-top: -3px; overflow: hidden; height: 1010px; position: relative;}
+	&__wrapper {position: relative; height: 100%; width: 200%;}
+	&__slide {height: 100%; display: inline-block; width: 50%; position: relative;
+		img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
+	}
+	&__slidearrows {position: absolute; height: 73px; top: 50%; transform: translateY(-91%); width: 100%;
+		div {position: absolute; width: 73px; height: 73px; background-color: #c2c2c4; cursor: pointer;
+			svg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
+		}
+		.prev {left: 0;
+			svg {transform: rotate(180deg);}
+		}
+		.next {right: 0;}
+	}
+	&__bigimage {height: 1100px; position: relative; overflow: hidden;}
+	&__bg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
+	&__contactblock {padding-top: 122px; padding-bottom: 210px;
+		.container {width: 1397px;}
+		.squareblock {padding: 40px 160px 40px 40px; position: relative;}
+		.content__text {margin: 0;}
+		.content__text_link {position: absolute; bottom: 74px; width: 85%;
+			&:after {content: ""; position: absolute; left: 4px; bottom: -6px; width: 195px; height: 1px; background-color: $darkone; display: inline-block;}
+			img {transform: rotate(90deg); position: absolute; right: 0; top: 0; bottom: 0; margin: auto;}
+		}
+	}
+}
+
 // Секции, header, footer и т.д. //
 
 
@@ -257,8 +325,11 @@ body {display: flex;}
 // Всплывающие окна и другие элементы сайта //
 .popup {display:none; width: 350px; padding: 20px;}
 
-.squareblock {width: 550px; height: 550px; border: 2px solid #fff; padding: 0 30px 47px 36px; box-sizing: border-box;
-	&_dark {border-color: $darkone; padding-left: 42px;}
+.squareblock {width: 550px; height: 550px; border: 2px solid #fff; padding: 0 30px 47px 36px; box-sizing: border-box; position: relative;
+	&_dark {border-color: $darkone; padding-left: 42px; color: $darkone;}
+	&__social {display: inline-block; position: absolute; right: 41px; top: 46px; border: 2px solid $darkone; width: 94px; height: 94px; box-sizing: border-box; padding: 60px 8px 0; font-size: 20px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em;
+		svg {position: absolute; right: 9px; top: 8px;}
+	}
 }
 
 .social {border: 4px solid #000; border-right: 0; height: 200px; box-sizing: border-box;

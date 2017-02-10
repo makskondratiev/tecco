@@ -20,11 +20,11 @@
 			<p class="case__sitetype">Corporate website</p>
 			<ul class="case__tags">
 				<li><p>#Responsive design</p></li>
-				<li><p>#Corporaate website</p></li>
+				<li><p>#Corporate website</p></li>
 				<li><p>#Illustration</p></li>
 			</ul>
 		</div>
-		<a href="#" class="backbutton"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.83 19.75" width="28" height="20" fill="none" stroke="#0d0705" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><title>icon_burger</title><line x1="1.5" y1="1.5" x2="26.33" y2="1.5"/><line x1="1.5" y1="9.88" x2="26.33" y2="9.88"/><line x1="1.5" y1="18.25" x2="26.33" y2="18.25"/></svg>Back to case</a>
+		<a href="cases.php" class="case__backbutton"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.83 19.75" width="28" height="20" fill="none" stroke="#0d0705" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px"><title>icon_burger</title><line x1="1.5" y1="1.5" x2="26.33" y2="1.5"/><line x1="1.5" y1="9.88" x2="26.33" y2="9.88"/><line x1="1.5" y1="18.25" x2="26.33" y2="18.25"/></svg>Back to case</a>
 	</div>
 	<div class="case__firstscreen">
 		<img src="img/deer.jpg" alt="@@">
@@ -38,44 +38,56 @@
 	</div>
 	<div class="case__infoblock">
 		<div class="case__image">
-			<img src="" alt="">
+			<img src="img/design_1.jpg" alt="@@">
 		</div>
 		<div class="case__textblock">
-			<p class="case__text content__text"></p>
+			<p class="case__infotext content__text">Fully responsive design created for 3 different brekpoints allows Venden to show their product in most convenient and good looking way.</p>
 		</div>
 	</div>
 	<div class="case__designblock">
-		<img src="" alt="">
-		<p></p>
+		<p>Fully responsive design</p>
+		<img src="img/devices.png" alt="@@">
 	</div>
 	<div class="case__infoblock">
-		<div class="case__textblock">
-			<p class="case__text content__text"></p>
+		<div class="case__textblock case__textblock_bottom">
+			<p class="case__infotext content__text">Fully responsive design created for 3 different brekpoints allows Venden to show their product in most convenient and good looking way.</p>
 		</div>
 		<div class="case__image">
-			<img src="" alt="">
+			<img src="img/mineralwater.jpg" alt="@@">
 		</div>
 	</div>
 	<div class="case__slider">
 		<div class="case__wrapper">
 			<div class="case__slide">
-				<img src="" alt="">
+				<img src="img/site.jpg" alt="@@">
+			</div>
+			<div class="case__slide">
+				<img src="img/site.jpg" alt="@@">
 			</div>
 		</div>
 		<div class="case__slidearrows">
-			<img src="" alt="" class="prev">
-			<img src="" alt="" class="next">
+			<div class="prev">
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.62 34.25" width="19" height="35"><title>icon_arrow_5</title><polyline points="1.5 1.5 17.12 17.12 1.5 32.75" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg>
+			</div>
+			<div class="next">
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.62 34.25" width="19" height="35"><title>icon_arrow_5</title><polyline points="1.5 1.5 17.12 17.12 1.5 32.75" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg>
+			</div>
 		</div>
 	</div>
 	<div class="case__bigimage">
-		<img src="" alt="">
+		<img class="case__bg" src="img/nature.jpg" alt="@@">
+		<img class="case__logo_bottom case__logo_bottom" src="img/logo_venden_white.svg" alt="@@" width="323" height="97">
 	</div>
 	<div class="case__contactblock">
-		<div class="squareblock squareblock_dark">
-			<p class="content__text"><b></b></p>
-			<p class="content__text"></p>
-			<p class="content__text"><a class="content__text_link" href="#"><img src="img/icon_arrow_3.svg" alt="@@" width="26" height="31"></a></p>
-			<a href="#" class="squareblock__social"><img src="" alt=""></a>
+		<div class="container">
+			<div class="squareblock squareblock_dark">
+				<p class="content__text"><b>You like the project?</b><br><br>
+				Wana make something as good as this?</p>
+				<a class="content__text content__text_link" href="#">Contact us!<img src="img/icon_arrow_3.svg" alt="@@" width="26" height="31"></a>
+				<a href="#" class="squareblock__social">Share
+					<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.5 9.66" width="17" height="34" fill="#221f1f"><defs></defs><title>icon_fb</title><path class="cls-1" d="M-713.19,218.56h1.51l-0.18,1.66h-1.33v4.83h-2v-4.83h-1v-1.66h1v-1a2.31,2.31,0,0,1,.5-1.62,2.16,2.16,0,0,1,1.66-.55h1.33v1.66h-0.83a1.43,1.43,0,0,0-.37,0,0.32,0.32,0,0,0-.2.14,0.56,0.56,0,0,0-.08.2,1.84,1.84,0,0,0,0,.29v0.83Z" transform="translate(716.19 -215.4)"/></svg>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
