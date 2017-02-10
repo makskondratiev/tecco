@@ -108,9 +108,6 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   color: #221f1f; }
 
-html, body {
-  overflow-x: hidden; }
-
 header, section, footer {
   width: 100%;
   float: left; }
