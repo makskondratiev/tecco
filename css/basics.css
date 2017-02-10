@@ -23,16 +23,16 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: white; }
 
 ::-webkit-input-placeholder {
-  color: #777; }
+  color: #75767e; }
 
 ::-moz-placeholder {
-  color: #777; }
+  color: #75767e; }
 
 :-ms-input-placeholder {
-  color: #777; }
+  color: #75767e; }
 
 :-moz-placeholder {
-  color: #777; }
+  color: #75767e; }
 
 .noscroll {
   position: fixed; }
@@ -113,7 +113,8 @@ header, section, footer {
   float: left; }
 
 .container {
-  width: 1420px;
+  width: auto;
+  padding: 0 90px;
   margin: 0 auto; }
 
 h1, h2, h3, h4, h5, h6, p, span, ul, li {
@@ -185,16 +186,5 @@ select, input, textarea {
   border: 0;
   font-size: 14px;
   display: inline-block; }
-
-.button {
-  text-align: center;
-  border: 0;
-  padding: 10px;
-  display: inline-block;
-  color: white;
-  font-size: 15px;
-  background-color: green; }
-  .button::hover {
-    background-color: blue; }
 
 /*# sourceMappingURL=basics.css.map */

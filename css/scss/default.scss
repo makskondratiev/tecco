@@ -3,6 +3,12 @@
 html,body{overflow-x: hidden;}
 body {display: flex;}
 
+/*------ уйдет в basics --------*/
+
+.button {text-align:center; border:0; padding:0 10px 8px; line-height: 72px; display:inline-block; color:#32333c; font-size:35px; font-weight: 600; background-color: #fff; font-family: $gothic; letter-spacing: -0.04em;
+	&:hover {background-color: #32333c; color: #fff;}
+}
+
 .scrollbutton {display: inline-block; width: 54px; height: 54px; border-radius: 1000px; border: 2px solid #fff; position: absolute; top: 6px; bottom: 0; left: 0; margin: auto;
 	svg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
 }
@@ -29,11 +35,13 @@ body {display: flex;}
 }
 
 .content {display: inline-block; flex: 1; color: #fff;
-	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden;}
+	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden;
+		.container {position: relative; z-index: 2;}
+	}
 	&__heading {font-size: 51px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em;}
 	&__scroll-link {display: inline-block; font-size: 35px; font-family: $gothic; position: relative; padding-left: 90px; margin-top: 234px; letter-spacing: -0.04em;}
-	&__bgmain {position: absolute; left: 0; right: 0; bottom: -397px;}
-	&__bgphone {position: absolute; top: 50%; right: 0; transform: translateY(-43%);}
+	&__bgmain {position: absolute; left: 50%; transform: translateX(-50%); bottom: -397px;}
+	&__bgphone {position: absolute; top: 50%; right: 0; transform: translateY(-43%); z-index: 1; pointer-events: none;}
 	&__text {font-size: 35px; font-family: $gothic; letter-spacing: -0.04em; margin-top: 79px;}
 	&__smalltext {font-size: 18px; font-weight: 300; line-height: 1.4em; margin-top: 66px; letter-spacing: -0.04em;}
 	&__textblock {width: 51.4%;}
@@ -351,6 +359,32 @@ body {display: flex;}
 		}
 	}
 }
+
+/*-----------------------------------------------------*/
+
+.contacts {position: relative;
+	.content__text {margin-top: 0;}
+	&__leftside {width: 50%; min-height: 100%; background-color: #1a1a23; box-sizing: border-box; padding-top: 160px; padding-bottom: 150px;
+		.container {padding: 0 100px;}
+	}
+	&__map {position: absolute; width: 50%; height: 100%; right: 0; top: 0; background-color: #ccc;}
+	&__address {line-height: 1.7em; position: relative;
+		svg {position: absolute; right: -41px; bottom: 15px;}
+	}
+	&__phonemail {display: flex; justify-content: space-between; align-items: center; margin-top: 85px; padding-left: 3px; padding-right: 20px;}
+	&__mail {position: relative;
+		&:after {content: ""; position: absolute; left: 3px; bottom: -1px; width: 128px; height: 1px; background-color: #fff; transition: all 0.25s ease-in-out;}
+	}
+	&__form {margin-top: 96px; padding: 0 10px;
+		input, textarea {width: 100%; border: 1px solid #fff; font-size: 25px; background-color: transparent; font-family: $gothic; letter-spacing: -0.04em; padding: 0 15px;}
+		input {line-height: 72px; padding-bottom: 6px;}
+		textarea {margin-top: 44px; height: 311px; resize: none; padding: 22px 15px;}
+		.button {margin-top: 46px; width: 100%; transition: all 0.25s ease-in-out;}
+	}
+	&__pinsquare {display: none;}
+	&__social {display: none;}
+}
+
 
 // Секции, header, footer и т.д. //
 
