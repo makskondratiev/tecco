@@ -29,7 +29,7 @@
 			</div>
 			<ul class="contacts__social">
 	  			<li><a href="#">
-	  				<svg class="icon_inst" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.71 8.71" fill="none" stroke="#fff" stroke-miterlimit="10" width="37" heiht="37"><title>icon_inst</title><rect x="0.5" y="0.5" width="7.71" height="7.71" rx="1.98" ry="1.98"/><path d="M-763.67,197.57h0a1.63,1.63,0,0,1-1.62-1.62h0a1.63,1.63,0,0,1,1.62-1.62h0a1.63,1.63,0,0,1,1.62,1.62h0A1.63,1.63,0,0,1-763.67,197.57Z" transform="translate(768.02 -191.59)"/><circle cx="6.64" cy="2.12" r="0.08"/></svg>
+	  				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.71 8.71" fill="none" stroke="#fff" stroke-miterlimit="10" width="37" height="37"><title>icon_inst</title><rect x="0.5" y="0.5" width="7.71" height="7.71" rx="1.98" ry="1.98"/><rect x="2.73" y="2.73" width="3.24" height="3.24" rx="1.62" ry="1.62"/><circle cx="6.64" cy="2.12" r="0.08"/></svg>
 	  			</a></li>
 	  			<li><a href="#">
 	  				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.5 7.5" width="37" height="27" fill="#fff"><defs></defs><title>icon_yt</title><path d="M-812.23,239.73q0,0.32,0,.88t0,0.88c0,0.21,0,.48,0,0.8a6.49,6.49,0,0,1-.13.87,1.37,1.37,0,0,1-.4.72,1.24,1.24,0,0,1-.73.34,38.4,38.4,0,0,1-3.93.15,38.4,38.4,0,0,1-3.93-.15,1.25,1.25,0,0,1-.73-0.34,1.36,1.36,0,0,1-.41-0.72,7.27,7.27,0,0,1-.13-0.87c0-.32,0-0.59,0-0.8s0-.5,0-0.88,0-.67,0-0.88,0-.48,0-0.8a6.46,6.46,0,0,1,.13-0.86,1.37,1.37,0,0,1,.4-0.72,1.24,1.24,0,0,1,.73-0.34,38.4,38.4,0,0,1,3.93-.15,38.4,38.4,0,0,1,3.93.15,1.25,1.25,0,0,1,.73.34,1.36,1.36,0,0,1,.41.72,7.25,7.25,0,0,1,.13.86C-812.25,239.26-812.23,239.52-812.23,239.73Zm-3.17,1.2a0.34,0.34,0,0,0,.18-0.32,0.34,0.34,0,0,0-.18-0.32l-3-1.87a0.35,0.35,0,0,0-.38,0,0.35,0.35,0,0,0-.19.33v3.75a0.35,0.35,0,0,0,.19.33,0.4,0.4,0,0,0,.18,0,0.33,0.33,0,0,0,.2-0.06l3-1.87h0Z" transform="translate(822.72 -236.86)"/></svg>
@@ -45,10 +45,43 @@
 			</form>
 		</div>
 	</div>
-	<div class="contacts__map"></div>
+	<div class="contacts__map" id="map">
+		<img src="img/cloud.png" alt="@@" class="contacts__mapimage" width="106">
+		<img src="img/cloud.png" alt="@@" class="contacts__mapimage" width="144">
+		<img src="img/cloud.png" alt="@@" class="contacts__mapimage" width="144">
+	</div>
 </section>
 
 <?php include "blocks/forms.php"; ?>
 <?php include "blocks/scripts.php"; ?>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUaCNfcDZQL7nZK07DQmAHsEetCCMIQ5w&callback=initMap" async defer></script>
+
+<script>
+  function initMap() {
+    var myLatLng = {lat: 56.975652, lng: 24.136556};
+
+	var image = new google.maps.MarkerImage(
+    	'img/icon_pin.svg',
+		new google.maps.Size(42,59)
+	);
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 15,
+	  noClear: true
+    });
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+	  icon: image,
+      position: myLatLng,
+      title: 'Tecco'
+    });
+  }
+</script>
+
 </body>
 </html>

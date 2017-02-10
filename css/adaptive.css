@@ -6,7 +6,14 @@
   .services__quote {
     height: 600px; }
   .content__bgphone {
-    max-width: 750px; } }
+    max-width: 750px; }
+  .contacts__leftside .container {
+    padding: 0 80px; }
+  .contacts .content__text {
+    font-size: 28px; }
+  .button {
+    line-height: 62px;
+    font-size: 30px; } }
 
 @media (max-width: 1600px) {
   .technology__column {
@@ -18,7 +25,18 @@
   .services__textblock {
     width: 53.4%; }
   .content__bgphone {
-    max-width: 550px; } }
+    max-width: 550px; }
+  .contacts__leftside .container {
+    padding: 0 60px; }
+  .contacts .content__text {
+    font-size: 25px; }
+  .contacts__address svg {
+    right: -41px;
+    bottom: 8px; }
+  .button {
+    line-height: 60px;
+    font-size: 25px;
+    padding-bottom: 0px; } }
 
 @media (max-width: 1440px) {
   .content__textblock {
@@ -35,7 +53,17 @@
     font-size: 75px;
     top: -96px; }
   .services__quoteauthor {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .contacts__mapimage:nth-child(1) {
+    left: 13%; }
+  .contacts__mapimage:nth-child(3) {
+    right: 4%; }
+  .contacts__leftside .container {
+    padding: 0 40px; }
+  .contacts__address {
+    padding-right: 50px; }
+  .contacts__address svg {
+    right: 0; } }
 
 @media (max-width: 1280px) {
   .content__textblock {
@@ -65,7 +93,17 @@
     position: static;
     margin-top: 90px; }
   .services__textblock {
-    width: 100%; } }
+    width: 100%; }
+  .contacts .content__text {
+    font-size: 22px; }
+  .contacts__phonemail {
+    flex-wrap: wrap; }
+  .contacts .contacts__phone {
+    margin-top: 20px; }
+  .contacts__form input, .contacts__form textarea {
+    font-size: 20px; }
+  .contacts__mapimage {
+    width: 100px; } }
 
 @media (max-width: 1120px) {
   .content__text {
@@ -132,7 +170,11 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0; } }
+    z-index: 0; }
+  .contacts__pinsquare {
+    display: none; }
+  .contacts__social {
+    display: none; } }
 
 @media (max-width: 999px) {
   body {
@@ -340,7 +382,47 @@
   .services__moreinfo .content__text {
     margin-top: 0; }
   .services__moreinfo .content__text_link {
-    right: 50px; } }
+    right: 50px; }
+  .contacts__leftside {
+    width: 100%;
+    padding-top: 61px;
+    padding-bottom: 63px; }
+  .contacts__map {
+    width: 100%;
+    transform: translateX(-100%);
+    top: 215px;
+    height: auto;
+    bottom: 150px; }
+  .contacts .content__text {
+    font-size: 35px; }
+  .contacts__address > svg {
+    display: none; }
+  .contacts__leftside .container {
+    padding: 0 25px; }
+  .contacts__phonemail {
+    margin-top: 86px; }
+  .contacts .contacts__phone {
+    margin-top: 0; }
+  .contacts__form {
+    margin-top: 89px; }
+  .contacts__form input, .contacts__form textarea {
+    font-size: 25px; }
+  .button {
+    line-height: 72px;
+    font-size: 35px;
+    padding-bottom: 8px; }
+  .contacts__mapimage {
+    width: 136px; }
+  .contacts__mapimage:nth-child(1) {
+    width: 108px;
+    left: 13%;
+    bottom: 5%; }
+  .contacts__mapimage:nth-child(2) {
+    left: 20%;
+    top: 21%; }
+  .contacts__mapimage:nth-child(3) {
+    bottom: 32%;
+    right: 7%; } }
 
 @media (max-width: 640px) {
   .container {
@@ -523,7 +605,58 @@
   .services__moreinfo .content__text_link svg {
     width: 16px; }
   .content_main .scrollbutton {
-    top: -60px; } }
+    top: -60px; }
+  .contacts .content__text {
+    font-size: 22px; }
+  .contacts__leftside {
+    padding-top: 36px;
+    padding-bottom: 40px; }
+  .contacts__leftside .container {
+    padding: 0 19px; }
+  .contacts__pinsquare {
+    width: 55px;
+    height: 55px;
+    right: -18px;
+    bottom: -12px; }
+  .contacts__phonemail {
+    margin-top: 54px; }
+  .contacts__mail:after {
+    width: 76px; }
+  .contacts__social {
+    margin-top: 39px; }
+  .contacts__social li {
+    width: 34px;
+    height: 34px;
+    margin-left: 12px; }
+  .contacts__pinsquare svg {
+    width: 20px; }
+  .contacts__social li svg {
+    height: 70%;
+    width: 65%; }
+  .contacts__form {
+    margin-top: 55px; }
+  .contacts__form input, .contacts__form textarea {
+    font-size: 16px;
+    padding: 0 10px; }
+  .contacts__form input {
+    line-height: 44px;
+    padding-bottom: 4px; }
+  .contacts__form textarea {
+    margin-top: 27px;
+    padding: 13px 10px;
+    height: 195px; }
+  .contacts__form .button {
+    margin-top: 28px;
+    line-height: 45px;
+    font-size: 22px;
+    padding-bottom: 5px; }
+  .contacts__map {
+    top: 131px;
+    bottom: 93px; }
+  .contacts__mapimage {
+    width: 90px; }
+  .contacts__mapimage:nth-child(1) {
+    width: 68px; } }
 
 @media (max-width: 350px) {
   .technology .squareblock .content__text_link {

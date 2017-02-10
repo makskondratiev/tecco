@@ -367,22 +367,39 @@ body {display: flex;}
 	&__leftside {width: 50%; min-height: 100%; background-color: #1a1a23; box-sizing: border-box; padding-top: 160px; padding-bottom: 150px;
 		.container {padding: 0 100px;}
 	}
-	&__map {position: absolute; width: 50%; height: 100%; right: 0; top: 0; background-color: #ccc;}
-	&__address {line-height: 1.7em; position: relative;
-		svg {position: absolute; right: -41px; bottom: 15px;}
+	&__map {position: absolute; width: 50%; height: 100%; right: 0; top: 0; background-color: #ccc;
+		&.active {transform: translateX(0);}
 	}
-	&__phonemail {display: flex; justify-content: space-between; align-items: center; margin-top: 85px; padding-left: 3px; padding-right: 20px;}
+	&__address {line-height: 1.7em; position: relative;
+		svg {position: absolute; right: -51px; bottom: 15px;}
+	}
+	&__phonemail {display: flex; justify-content: space-between; align-items: center; margin-top: 85px;}
 	&__mail {position: relative;
 		&:after {content: ""; position: absolute; left: 3px; bottom: -1px; width: 128px; height: 1px; background-color: #fff; transition: all 0.25s ease-in-out;}
 	}
-	&__form {margin-top: 96px; padding: 0 10px;
+	&__form {margin-top: 96px;
 		input, textarea {width: 100%; border: 1px solid #fff; font-size: 25px; background-color: transparent; font-family: $gothic; letter-spacing: -0.04em; padding: 0 15px;}
 		input {line-height: 72px; padding-bottom: 6px;}
 		textarea {margin-top: 44px; height: 311px; resize: none; padding: 22px 15px;}
 		.button {margin-top: 46px; width: 100%; transition: all 0.25s ease-in-out;}
 	}
-	&__pinsquare {display: none;}
-	&__social {display: none;}
+	&__pinsquare {display: inline-block; width: 89px; height: 89px; border: 1px solid #fff; position: absolute; right: -22px; bottom: -20px; transition: all 0.25s ease-in-out;
+		svg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; transition: all 0.25s ease-in-out;}
+		&.active {background-color: #fff;
+			svg {fill: #1a1a23;}
+		}
+	}
+	&__mapimage {position: absolute; z-index: 1;
+		&:nth-child(1) {left: 23%; bottom: 28%;}
+		&:nth-child(2) {left: 28%; top: 24%;}
+		&:nth-child(3) {right: 12%; bottom: 46%;}
+	}
+	&__social {margin-top: 63px;
+		li {display: inline-block; margin-left: 20px; position: relative; width: 56px; height: 56px; border: 2px solid #fff;
+			&:first-child {margin-left: 0;}
+			svg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
+		}
+	}
 }
 
 
