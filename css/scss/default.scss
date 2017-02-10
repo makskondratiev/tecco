@@ -73,9 +73,7 @@ body {display: flex;}
 .content {display: inline-block; flex: 1; color: #fff;
 	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden;}
 	&__heading {font-size: 51px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em;}
-	&__scroll-link {display: inline-block; font-size: 35px; font-family: $gothic; position: relative; padding-left: 90px; margin-top: 234px; letter-spacing: -0.04em;
-		&:before {content: ""; display: inline-block; width: 54px; height: 54px; border-radius: 1000px; border: 2px solid #fff; position: absolute; top: 6px; bottom: 0; left: 0; margin: auto; background-image: url('../img/icon_arrow_2.svg'); background-position: center; background-repeat: no-repeat;}
-	}
+	&__scroll-link {display: inline-block; font-size: 35px; font-family: $gothic; position: relative; padding-left: 90px; margin-top: 234px; letter-spacing: -0.04em;}
 	&__bgmain {position: absolute; left: 0; right: 0; bottom: -397px;}
 	&__bgphone {position: absolute; top: 50%; right: 0; transform: translateY(-43%);}
 	&__text {font-size: 35px; font-family: $gothic; letter-spacing: -0.04em; margin-top: 79px;}
@@ -127,14 +125,13 @@ body {display: flex;}
 /*-----------------------------------------------------*/
 
 .technology {background-color: #111e2b; padding-top: 100px; padding-bottom: 124px;
-	.container {position: relative;}
-	&__icon {position: absolute; right: -31px; top: 15px;}
+	.container {position: relative; width: auto; padding: 0 90px;}
+	&__icon {position: absolute; right: 59px; top: 15px;}
 	.content__text {margin-top: 122px;}
-	.content__scroll-link {margin-top: 125px; padding-left: 82px; padding-right: 100px;}
-	&__list {margin-top: 122px; display: flex; justify-content: space-between; width: 102%;}
+	.content__scroll-link {margin-top: 125px; padding-left: 82px; font-weight: 600;}
+	&__list {margin-top: 96px; display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap;}
 	&__column {align-self: flex-start; width: 18.6%;}
-	&__card {border: 2px solid #fff; position: relative; cursor: pointer;  box-sizing: border-box; padding: 16px; min-height: 269px; max-height: 269px; transition: all 0.25s ease-in-out; position: relative; margin-top: 25px;
-		&:first-child {margin-top: 0;}
+	&__card {border: 2px solid #fff; position: relative; cursor: pointer;  box-sizing: border-box; padding: 16px; min-height: 269px; max-height: 269px; transition: all 0.5s ease-in-out; position: relative; margin-top: 9.5%;
 		svg {position: absolute; left: 18px; bottom: 23px; transition: all 0.25s ease-in-out;}
 		&:hover {background-color: #fff; color: $darkone;
 			li:before {background-color: $darkone;}
@@ -145,18 +142,26 @@ body {display: flex;}
 			svg {transform: rotate(180deg);}
 		}
 	}
-	&__name {font-size: 30px; font-family: $gothic; letter-spacing: -0.04em;}
+	&__name {font-size: 30px; font-family: $gothic; letter-spacing: -0.04em; min-height: 2.4em;}
 	&__hiddenlist {font-size: 18px; font-weight: 300; opacity: 0; pointer-events: none; transition: all 0.25s ease-in-out; margin-top: 33px; padding-bottom: 45px;
 		li {padding-left: 21px; position: relative; margin-top: 16px;
 			&:before {content: ""; display: inline-block; width: 1px; height: 1px; border-radius: 1000px; background-color: #fff; position: absolute; left: 4px; top: 7px;}
 			&:first-child {margin-top: 0;}
 		}
 	}
-	&__moreinfo {margin-top: 155px; position: relative;
-		.content__text {margin-top: 40px; padding-left: 5px;
+	.squareblock {margin-top: 155px; position: relative; padding-top: 40px; display: inline-block;
+		&:before {content: ""; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: #fff; transform: scale3d(0,1,1); transition: all 0.25s ease-in-out; transform-origin: right center; z-index: 1;}
+		&:hover {
+			&:before {transform: scale3d(1,1,1);}
+			.content__text {color: #111e2b;
+				&_link:after {background-color: #111e2b;}
+			}
+			svg {fill: #111e2b;}
+		}
+		.content__text {margin-top: 0; transition: all 0.25s ease-in-out; position: relative; z-index: 2;
 			&_link {position: absolute; left: 42px; bottom: 75px; right: 40px;
-				&:after {content: ""; position: absolute; left: 3px; bottom: -7px; width: 196px; height: 1px; background-color: #fff; transition: all 0.25s ease-in-out;}
-				svg {position: absolute; right: 0; top: 0; bottom: 0; margin: auto; transform: rotate(90deg);}
+				&:after {content: ""; position: absolute; left: 3px; bottom: -7px; width: 196px; height: 1px; background-color: #fff; transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out;}
+				svg {position: absolute; right: 0; top: 0; bottom: 0; margin: auto; transform: rotate(90deg); transition: all 0.25s ease-in-out;}
 			}
 		}
 	}
@@ -324,6 +329,10 @@ body {display: flex;}
 
 // Всплывающие окна и другие элементы сайта //
 .popup {display:none; width: 350px; padding: 20px;}
+
+.scrollbutton {display: inline-block; width: 54px; height: 54px; border-radius: 1000px; border: 2px solid #fff; position: absolute; top: 6px; bottom: 0; left: 0; margin: auto;
+	svg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
+}
 
 .squareblock {width: 550px; height: 550px; border: 2px solid #fff; padding: 0 30px 47px 36px; box-sizing: border-box; position: relative;
 	&_dark {border-color: $darkone; padding-left: 42px; color: $darkone;}

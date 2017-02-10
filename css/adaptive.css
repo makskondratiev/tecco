@@ -1,4 +1,51 @@
-@media (min-width: 769px) {
+@media (max-width: 1800px) {
+  .technology__column {
+    width: 22.6%; }
+  .technology .content__scroll-link br {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .technology__column {
+    width: 31.6%; } }
+
+@media (max-width: 1440px) {
+  .content__textblock {
+    width: 63.4%; } }
+
+@media (max-width: 1280px) {
+  .content__textblock {
+    width: 78.4%; }
+  .content__text {
+    font-size: 29px; }
+  .content__scroll-link {
+    font-size: 29px; }
+  .technology .content__scroll-link {
+    margin-top: 85px; }
+  .technology__name {
+    font-size: 24px; }
+  .technology__card {
+    min-height: 200px;
+    max-height: 200px; }
+  .technology__icon {
+    width: 130px;
+    height: 130px; }
+  .content__heading {
+    font-size: 45px; }
+  .technology .content__text {
+    margin-top: 82px; }
+  .squareblock {
+    width: 450px;
+    height: 450px; } }
+
+@media (max-width: 1120px) {
+  .content__text {
+    font-size: 24px; }
+  .content__scroll-link {
+    font-size: 24px; }
+  .technology__column {
+    width: 47.7%; } }
+
+@media (min-width: 1000px) {
   .header__burgermenu {
     display: none; }
   .header__caseslink {
@@ -53,7 +100,7 @@
     top: 0;
     z-index: 0; } }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   body {
     flex-direction: column; }
   .header {
@@ -64,7 +111,7 @@
     width: 450px; }
   .header__logoblock {
     position: relative;
-    padding: 17px 20px; }
+    padding: 17px 35px; }
   .header__logo {
     display: inline-block; }
   .header__logo img {
@@ -166,18 +213,64 @@
     width: 90%;
     top: auto;
     bottom: -10px;
-    transform: translate(0); } }
+    transform: translate(0); }
+  .technology .container {
+    padding: 0 39px; }
+  .content__heading {
+    font-size: 51px; }
+  .technology {
+    padding-top: 91px; }
+  .technology__icon {
+    width: 107px;
+    height: 107px;
+    right: 31px;
+    top: 0; }
+  .content__text {
+    font-size: 35px; }
+  .technology .content__text {
+    margin-top: 120px; }
+  .content__textblock {
+    width: 100%; }
+  .content__scroll-link {
+    font-size: 35px; }
+  .technology .content__scroll-link {
+    padding-left: 0;
+    text-align: left;
+    margin-top: 165px; }
+  .scrollbutton {
+    top: auto;
+    bottom: -138px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .technology__list {
+    margin-top: 233px; }
+  .technology__name {
+    font-size: 30px; }
+  .technology__card {
+    min-height: 269px;
+    max-height: 269px;
+    margin-top: 9%; }
+  .technology .squareblock {
+    margin-top: 183px;
+    width: 100%;
+    height: 564px;
+    padding: 40px 45px 47px 36px; }
+  .technology .squareblock .content__text_link {
+    bottom: 88px;
+    right: 55px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .container {
     width: 280px; }
   .header__logoblock {
-    padding: 12px 24px; }
+    padding: 5px 23px; }
   .header__logo img {
-    width: 95px; }
+    width: 89px; }
+  .header__burgermenu svg {
+    width: 28px; }
   .header__side {
     width: 200px;
-    top: 59px;
+    top: 45px;
     right: 0; }
   .header__square_language {
     margin-top: 23px;
@@ -240,7 +333,7 @@
     margin-top: 120px;
     text-align: center;
     padding-left: 0;
-    font-size: 23px; }
+    font-size: 22px; }
   .content__scroll-link:before {
     right: 0;
     top: -110px;
@@ -254,6 +347,48 @@
     bottom: -10px;
     transform: translate(0); }
   .content__heading {
-    font-size: 30px; } }
+    font-size: 32px; }
+  .technology .container {
+    padding: 0 25px; }
+  .technology {
+    padding-top: 56px;
+    padding-bottom: 60px; }
+  .technology__icon {
+    width: 67px;
+    height: 67px;
+    right: 18px; }
+  .content__text {
+    font-size: 22px; }
+  .technology .content__text {
+    margin-top: 76px; }
+  .technology .content__scroll-link {
+    margin-top: 103px;
+    letter-spacing: -0.045em; }
+  .scrollbutton {
+    bottom: -86px;
+    width: 32px;
+    height: 32px; }
+  .scrollbutton svg {
+    width: 15px; }
+  .technology__column {
+    width: 100%; }
+  .technology__list {
+    margin-top: 131px; }
+  .technology .squareblock {
+    margin-top: 53px;
+    padding: 25px 45px 47px 24px;
+    height: 353px; }
+  .technology .squareblock .content__text_link {
+    bottom: 55px;
+    left: 24px;
+    right: 32px; }
+  .technology .squareblock .content__text_link:after {
+    width: 123px; }
+  .technology .squareblock .content__text_link svg {
+    width: 16px; } }
+
+@media (max-width: 350px) {
+  .technology .squareblock .content__text_link {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=adaptive.css.map */
