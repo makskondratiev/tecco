@@ -14,20 +14,24 @@
 <?php include "blocks/sidebar.php"; ?>
 
 <section class="content cases">
-	<ul class="social">
-		<li><a class="social__link social__link_fb" href="#"><img src="img/icon_fb.svg" alt="@@" width="9" height="18"></a></li>
-		<li><a class="social__link social__link_inst" href="#"><img src="img/icon_inst.svg" alt="@@" width="18" height="18"></a></li>
-		<li><a class="social__link social__link_yt" href="#"><img src="img/icon_yt.svg" alt="@@" width="17" height="12"></a></li>
-		<li><a class="social__link social__link_be" href="#"><img src="img/icon_be.svg" alt="@@" width="20" height="13"></a></li>
-	</ul>
 	<div class="content-tabs">
 		<div class="container">
 			<ul class="content-tabs__list">
-				<li class="active"><a class="content-tabs__link" href="#">All cases</a></li>
-				<li><a class="content-tabs__link" href="#">Online services</a></li>
-				<li><a class="content-tabs__link" href="#">Mobile apps</a></li>
-				<li><a class="content-tabs__link" href="#">Corporate</a></li>
-				<li><a class="content-tabs__link" href="#">Logo &amp; identity</a></li>
+				<li class="active case__filter" data-category="all">
+					<a class="content-tabs__link" href="#">All cases</a>
+				</li>
+				<li class="case__filter" data-category="onlineservices">
+					<a class="content-tabs__link" href="#">Online services</a>
+				</li>
+				<li class="case__filter" data-category="mobileapps">
+					<a class="content-tabs__link" href="#">Mobile apps</a>
+				</li>
+				<li class="case__filter" data-category="corporate">
+					<a class="content-tabs__link" href="#">Corporate</a>
+				</li>
+				<li class="case__filter" data-category="logoidentity">
+					<a class="content-tabs__link" href="#">Logo &amp; identity</a>
+				</li>
 			</ul>
 		</div>
 		<ul class="content-tabs__switcher cases__switcher">
@@ -39,9 +43,8 @@
 			</li>
 		</ul>
 	</div>
-	
 	<ul class="cases__list">
-		<li>
+		<li data-category="onlineservices">
 			<a href="case.php"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">Venden Website</p>
@@ -50,8 +53,9 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_1.jpg" alt="@@">
+			<?php include "blocks/casesocial.php"; ?>
 		</li>
-		<li>
+		<li data-category="mobileapps">
 			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">SIG service</p>
@@ -60,8 +64,9 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_2.jpg" alt="@@">
+			<?php include "blocks/casesocial.php"; ?>
 		</li>
-		<li>
+		<li data-category="corporate">
 			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">FOTO - FOX</p>
@@ -70,8 +75,9 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_3.jpg" alt="@@">
+			<?php include "blocks/casesocial.php"; ?>
 		</li>
-		<li>
+		<li data-category="logoidentity">
 			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">QUICK NEWS</p>
@@ -80,8 +86,9 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_4.jpg" alt="@@">
+			<?php include "blocks/casesocial.php"; ?>
 		</li>
-		<li>
+		<li data-category="onlineservices">
 			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">1TRAVEL</p>
@@ -90,8 +97,9 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_5.jpg" alt="@@">
+			<?php include "blocks/casesocial.php"; ?>
 		</li>
-		<li>
+		<li data-category="mobileapps">
 			<a href="#"></a>
 			<div class="cases__textblock">
 				<p class="cases__heading">ОБЗОР.PRESS</p>
@@ -100,6 +108,7 @@
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
 			<img class="cases__bg" src="img/casebg_6.jpg" alt="@@">
+			<?php include "blocks/casesocial.php"; ?>
 		</li>
 	</ul>
 </section>

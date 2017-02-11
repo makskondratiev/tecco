@@ -40,22 +40,23 @@
 		</div>
 	</div>
 	<div class="company__cityview">
-		<img src="img/cityview.jpg" alt="@@">
+		<img src="img/cityview_color.jpg" alt="@@">
+		<img src="img/cityview.png" alt="@@">
 	</div>
 	<a href="#" class="company__quoteblock">
 		<div class="company__quoteimage">
 			<img src="img/person_1.jpg" alt="@@">
 		</div>
 		<div class="company__quote">
-			<p class="company__quotetext"><span class="company__quotes">«</span><br>
+			<p class="company__quotetext">
 			Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
 			<p class="company__quoteauthor">Максим Кондратьев<br>Tecco IT CEO</p>
 			<img class="company__quotearrow" src="img/icon_arrow_5.svg" alt="@@" width="19" height="35">
 		</div>
 	</a>
-	<a href="#" class="company__quoteblock">
+	<a href="#" class="company__quoteblock company__quoteblock_bottom">
 		<div class="company__quote">
-			<p class="company__quotetext"><span class="company__quotes">«</span><br>
+			<p class="company__quotetext">
 			Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
 			<p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
 			<img class="company__quotearrow" src="img/icon_arrow_5.svg" alt="@@" width="19" height="35">
@@ -64,7 +65,7 @@
 			<img src="img/person_2.jpg" alt="@@">
 		</div>
 	</a>
-	<div class="container">
+	<div class="container container_bottom">
 		<div class="company__logos">
 			<div>
 				<img src="img/logo_atrais.png" alt="@@">
@@ -103,10 +104,12 @@
 				<img src="img/logo_yamaha.png" alt="@@">
 			</div>
 		</div>
-		<div class="squareblock squareblock_dark company__moreinfo">
+		<a href="#" class="squareblock squareblock_dark company__moreinfo">
 			<p class="content__text">Для получения более подробной информации об услугах компании</p>
-			<p class="content__text"><a class="content__text_link" href="#">Свяжитесь с нами<img src="img/icon_arrow_3.svg" alt="@@" width="26" height="31"></a></p>
-		</div>
+			<p class="content__text content__text_link">Свяжитесь с нами
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.16 30.39" width="26" height="31" fill="#221f1f"><title>icon_arrow_3</title><path d="M-47.26,887.51a1.52,1.52,0,0,0-.55.11h0a1.49,1.49,0,0,0-.49.33l-11,11a1.5,1.5,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0l8.47-8.47v23.77a1.5,1.5,0,0,0,1.5,1.5,1.5,1.5,0,0,0,1.5-1.5V892.63l8.57,8.57a1.5,1.5,0,0,0,2.12,0,1.49,1.49,0,0,0,.44-1.06,1.5,1.5,0,0,0-.44-1.06L-46.2,888a1.49,1.49,0,0,0-.49-0.33h0a1.52,1.52,0,0,0-.55-0.11" transform="translate(59.8 -887.51)"/></svg>
+			</p>
+		</a>
 	</div>
 </section>
 

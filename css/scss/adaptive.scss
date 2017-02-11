@@ -10,6 +10,11 @@ $darktwo: #1f2124;
 	.contacts__leftside .container {padding: 0 80px;}
 	.contacts .content__text {font-size: 28px;}
 	.button {line-height: 62px; font-size: 30px;}
+	.company__logos div {width: 25%;}
+	.case .content-tabs .container {padding: 0 50px;}
+	.case__name {padding: 0; font-size: 20px;}
+	.case__sitetype {font-size: 20px; padding-left: 10px; margin-left: 13px;}
+	.case__backbutton {font-size: 20px;}
 }
 
 @media (max-width:1600px) {
@@ -22,6 +27,17 @@ $darktwo: #1f2124;
 	.contacts .content__text {font-size: 25px;}
 	.contacts__address svg {right: -41px; bottom: 8px;}
 	.button {line-height: 60px; font-size: 25px; padding-bottom: 0px;}
+	.company .content__text {width: 80%;}
+	.company__quote {padding: 145px 87px;}
+	.company__logos div img {max-width: 80%;}
+	.company__cityview {height: 813px;}
+	.company__quoteblock {height: 700px;}
+	.cases .content-tabs__list li {margin-left: 40px;}
+	.content-tabs__list a {font-size: 20px;}
+	.cases__list.squares > li {width: 50%;}
+	.case__tags {position: static; transform: translate(0); margin-top: 15px;}
+	.case__tags li:first-child {margin-left: 0;}
+	.case__textblock, .case__textblock_bottom {padding: 50px 90px 80px;}
 }
 
 @media (max-width:1440px) {
@@ -36,6 +52,16 @@ $darktwo: #1f2124;
 	.contacts__leftside .container {padding: 0 40px;}
 	.contacts__address {padding-right: 50px;}
 	.contacts__address svg {right: 0;}
+	.company__feature-name {font-size: 30px;}
+	.company__feature-name img {max-width: 35px;}
+	.company__cityview {height: 713px;}
+	.company__quotetext {font-size: 30px;}
+	.company__quote {padding: 145px 50px;}
+	.company__quoteblock {height: 600px;}
+	.content-tabs__list a {font-size: 18px;}
+	.cases .content-tabs__list li {margin-left: 30px;}
+	.case__textblock, .case__textblock_bottom {padding: 50px 70px 80px;}
+	.case .content__text {font-size: 30px;}
 }
 
 @media (max-width:1280px) {
@@ -56,6 +82,18 @@ $darktwo: #1f2124;
 	.contacts .contacts__phone {margin-top: 20px;}
 	.contacts__form input, .contacts__form textarea {font-size: 20px;}
 	.contacts__mapimage {width: 100px;}
+	.company__features li {width: 80%; min-height: 0; padding-bottom: 0; margin-bottom: 50px;}
+	.company__feature-text {margin-top: 25px;}
+	.company__cityview {height: 600px;}
+	.company__quotetext {font-size: 25px;}
+	.company__quoteauthor {left: 50px; bottom: 38px; font-size: 20px;}
+	.company__quoteblock {height: 500px;}
+	.cases .content-tabs .container {padding: 0 30px;}
+	.content-tabs__list a {font-size: 16px;}
+	.cases .content-tabs__list li {margin-left: 24px;}
+	.cases__list.squares > li {padding-top: 250px; height: 400px;}
+	.case__text {margin-top: 200px;}
+	.case__firstscreen {height: auto;}
 }
 
 @media (max-width:1120px) {
@@ -64,6 +102,25 @@ $darktwo: #1f2124;
 	.technology__column {width: 47.7%;}
 	.content-tabs__list li {margin-left: 50px;}
 	.content-tabs__list a {font-size: 20px;}
+	.company .content__text {width: 100%;}
+	.company__abouttext {width: 100%;}
+	.company__features li {width: 100%;}
+	.company__cityview {height: 500px;}
+	.company__quotetext {font-size: 23px;}
+	.company__quote {padding: 145px 30px;}
+	.company__quoteauthor {left: 30px;}
+	.company__moreinfo .content__text {width: auto;}
+	.cases .content-tabs .container {padding: 0;}
+	.cases .content-tabs__list li {margin-left: 24px !important;}
+	.cases .content-tabs__list {padding-right: 160px;}
+	.cases__textblock {margin-right: 60px;}
+	.case .content-tabs .container {padding: 0 30px;}
+	.case__text {margin-top: 100px;}
+	.case__textblock, .case__textblock_bottom {padding: 50px;}
+	.case .content__text {font-size: 26px;}
+	.case__infoblock {height: 400px;}
+	.case__designblock {padding-top: 70px;}
+	.case__designblock img {margin-top: 70px;}
 }
 
 @media (min-width:1000px) {
@@ -90,6 +147,7 @@ $darktwo: #1f2124;
 	body {flex-direction: column;}
 	.header {width: 100%;}
 	.content {width: 100%;}
+	.container {padding: 0 35px;}
 	
 	.header__logoblock {position: relative; padding: 17px 35px;}
 	.header__logo {display: inline-block;}
@@ -171,6 +229,62 @@ $darktwo: #1f2124;
 	.contacts__mapimage:nth-child(1) {width: 108px; left: 13%; bottom: 5%;}
 	.contacts__mapimage:nth-child(2) {left: 20%; top: 21%;}
 	.contacts__mapimage:nth-child(3) {bottom: 32%; right: 7%;}
+	.company__mainpart {padding-top: 91px;}
+	.company__abouttext {margin-top: 123px;}
+	.company__feature-name {font-size: 35px;}
+	.company__feature-name img {max-width: none;}
+	.company__features {margin-top: 124px;}
+	.company__feature-text {margin-top: 58px; padding-right: 10px;}
+	.company__features li {margin-bottom: 120px;}
+	.company__features li:nth-child(1) {order: 1;}
+	.company__features li:nth-child(2) {order: 4; margin-bottom: 37px;}
+	.company__features li:nth-child(3) {order: 2;}
+	.company__features li:nth-child(4) {order: 3;}
+	.company__cityview {height: 914px;}
+	.company__quoteblock {flex-wrap: wrap; height: auto;}
+	.company__quoteblock > div {width: 100%;}
+	.company__quoteimage {height: 643px;}
+	.company__quote {padding: 152px 58px; height: 635px;}
+	.company__quotetext {font-size: 35px;}
+	.company__quoteblock_bottom .company__quoteimage {order: 1;}
+	.company__quoteblock_bottom .company__quote {order: 2;}
+	.company__quoteauthor {left: 56px; bottom: 69px; font-size: 23px;}
+	.company__quoteblock_bottom .company__quoteauthor {bottom: 81px;}
+	.company__logos {margin-top: 26px;}
+	.company__logos div {width: 50%; margin-top: 54px;}
+	.company__logos div:nth-child(8) {display: none;}
+	.company__logos div:nth-child(9) {display: none;}
+	.company .container_bottom {padding: 0 45px;}
+	.company__moreinfo {width: 100%; margin-top: 171px; height: 551px;}
+	.company {padding-bottom: 160px;}
+	.cases .content-tabs__list {display: none;}
+	.cases .content-tabs__switcher {display: none;}
+	.cases__list > li {text-align: center; height: 640px;}
+	.cases__textblock {margin: auto; position: absolute; bottom: 100px; left: 0; right: 0; text-align: center; z-index: 2;}
+	.cases__text {display: none;}
+	.cases__arrow {display: none;}
+	.cases__social {display: none;}
+	.cases__list > li:after {opacity: 1;}
+	.case .content-tabs {display: none;}
+	.case__firstscreen {background-image: -moz-linear-gradient( 135deg, rgb(74,79,101) 0%, rgb(37,39,48) 51%, rgb(2,8,18) 99%); background-image: -webkit-linear-gradient( 135deg, rgb(74,79,101) 0%, rgb(37,39,48) 51%, rgb(2,8,18) 99%); background-image: -ms-linear-gradient( 135deg, rgb(74,79,101) 0%, rgb(37,39,48) 51%, rgb(2,8,18) 99%); padding-top: 79px; padding-bottom: 0;}
+	.case__firstscreen .container {padding: 0 43px; position: relative;}
+	.case__logo {margin-left: 2px;}
+	.case__subheading {padding-left: 13px;}
+	.case__smalltext {max-width: 100%;}
+	.case__text.content__text {font-size: 35px; margin-top: 222px; padding-top: 87px; padding-bottom: 138px;}
+	.case__firstscreen > img {z-index: 0; top: auto; min-height: 30%;}
+	.case__image {width: 100%; height: 453px;}
+	.case__textblock, .case__textblock_bottom {width: 100%; min-height: 453px; padding: 44px;}
+	.case__infoblock {height: auto;}
+	.case .content__text {font-size: 35px;}
+	.case__designblock {padding-top: 42px; padding-bottom: 33px;}
+	.case__designblock img {margin-top: 39px; width: 95%;}
+	.case__slider {margin-top: 3px;}
+	.case__slidearrows {top: auto; bottom: 0; transform: translate(0);}
+	.case__logo_bottom {width: 130px; top: 37.4%;}
+	.case__contactblock {padding-top: 43px; padding-bottom: 60px;}
+	.case__contactblock .container {padding: 0 47px;}
+	.case__contactblock .squareblock {width: 100%; height: 550px;}
 }
 
 @media (max-width:640px) {
@@ -262,6 +376,61 @@ $darktwo: #1f2124;
 	.contacts__map {top: 131px; bottom: 93px;}
 	.contacts__mapimage {width: 90px;}
 	.contacts__mapimage:nth-child(1) {width: 68px;}
+	.company__mainpart {padding-top: 56px; padding-bottom: 0;}
+	.company .content__text {margin-top: 51px;}
+	.company__abouttext {margin-top: 84px; font-size: 18px;}
+	.company__features {margin-top: 82px;}
+	.company__feature-name {font-size: 22px;}
+	.company__feature-name img {max-width: 31px;}
+	.company__feature-text {font-size: 14px; padding-right: 0; margin-top: 35px;}
+	.company__feature-text br {display: none;}
+	.company__features li {margin-bottom: 73px;}
+	.company__cityview {height: 569px;}
+	.company__quoteimage {height: 402px;}
+	.company__quote {padding: 96px 38px; height: 397px;}
+	.company__quotetext {font-size: 22px;}
+	.company__quotetext:before {font-size: 66px; top: -86px;}
+	.company__quoteauthor {font-size: 15px; left: 34px; bottom: 42px;}
+	.company__quotearrow {right: 28px; bottom: 39px;}
+	.company__logos {margin-top: 24px;}
+	.company__logos div {margin-top: 20px;}
+	.company .container_bottom {padding: 0 28px;}
+	.company__moreinfo {margin-top: 82px; padding: 26px 23px; height: 346px;}
+	.company__moreinfo .content__text {margin-top: 0;}
+	.company__moreinfo .content__text_link {left: 22px; bottom: 47px;}
+	.company__moreinfo .content__text_link:after {bottom: -4px; width: 122px;}
+	.company__moreinfo .content__text_link svg {width: 16px;}
+	.company {padding-bottom: 100px;}
+	.cases__list > li {height: 400px;}
+	.cases__heading {font-size: 27px;}
+	.cases__subheading {padding: 0; font-size: 10px;}
+	.cases__textblock {width: auto; bottom: 60px;}
+	.case__firstscreen .container {padding: 0 27px;}
+	.case__firstscreen {padding-top: 29px;}
+	.case__logo {margin-left: 0; width: 203px;}
+	.case__subheading {padding-left: 8px; font-size: 12px; margin-top: -6px;}
+	.case__link {font-size: 18px; margin-top: 42px;}
+	.case__link:after {bottom: -1px; width: 66px;}
+	.case__smalltext {font-size: 14px; margin-top: 51px;}
+	.case__text.content__text {font-size: 22px; margin-top: 139px; padding-top: 55px; padding-bottom: 87px;}
+	.case__image {height: 282px;}
+	.case__textblock, .case__textblock_bottom {min-height: 282px; padding: 27px;}
+	.case__designblock p {font-size: 22px;}
+	.case__designblock {padding-top: 28px; padding-bottom: 21px;}
+	.case__designblock img {margin-top: 25px;}
+	.case__slidearrows {height: 45px;}
+	.case__slidearrows div {width: 45px; height: 45px;}
+	.case__slidearrows div svg {height: 25px;}
+	.case__logo_bottom {width: 82px; top: 31.4%;}
+	.case__contactblock {padding-top: 28px; padding-bottom: 38px;}
+	.case__contactblock .container {padding: 0 28px;}
+	.case__contactblock .squareblock {height: 344px; padding: 24px 104px 24px 24px;}
+	.case__contactblock .content__text_link {bottom: 48px;}
+	.case__contactblock .content__text_link:after {width: 122px;}
+	.case__contactblock .content__text_link svg {width: 15px;}
+	.squareblock__social {right: 24px; top: 27px; width: 60px; height: 60px; padding: 37px 5px 0; font-size: 13px;}
+	.squareblock__social svg {right: 2px; top: 5px; height: 21px;}
+	.case .content__text {font-size: 22px;}
 }
 
 @media (max-width:350px) {

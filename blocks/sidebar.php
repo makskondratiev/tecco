@@ -1,17 +1,17 @@
 <header class="header">
-	<div class="header__logoblock"><!-- position:absolute в декстопе -->
+	<div class="header__logoblock">
 		<div class="header__logo">
 			<a href="index.php"><img src="img/logo_tecco.svg" alt="@@" width="166" height="41"></a>
 			<p class="header__logotext">Web and mobile solutions</p>
 		</div>
 		<span class="header__burgermenu">
 			<svg xmlns="http://www.w3.org/2000/svg" width="45" height="36" viewBox="0 0 45 36" fill="#b0b0b8"><defs></defs><path id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" class="cls-1" d="M578,17h45v8H578V17Zm0,14h45v8H578V31Zm0,14h45v8H578V45Z" transform="translate(-578 -17)"/></svg>
-		</span><!-- display:none в десктопе -->
+		</span>
 	</div>
 
-	<div class="header__side"><!-- в десктопе без стилей -->
-		<div class="header__square header__square_language"><!-- absolute в десктопе -->
-	  		<a href="#"><span>RU</span></a><!-- тут свг код, как и у других иконок. см. файл Menu desktopVID -->
+	<div class="header__side">
+		<div class="header__square header__square_language">
+	  		<a href="#"><span>RU</span></a>
 	  		<ul class="header__square-list">
 	  			<li><a href="#"><span>EN</span></a></li>
 	  			<li><a href="#"><span>LV</span></a></li>
@@ -19,18 +19,15 @@
 	  </div>
 
 	  <ul class="header__menu">
-	  	<li class="header__caseslink"><a href="cases.php"><!-- Стиль отличается от других только в десктопе (конкретно тут через @media (min-width:...) задай). На ховере градиенты становятся темными, тексты и иконки белыми -->
-	  		<!-- :before - градиент белый справа -->
+	  	<li class="header__caseslink"><a href="cases.php">
 	  		<p class="header__menuheading">Cases</p>
 	  		<p class="header__itemtext">View our recent cases</p>
 	  		<svg class="header__menuicon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 53.58" width="37" height="30" fill="#221f1f"><defs></defs><title>icon_case</title><path class="cls-1" d="M327.47,560.14H312.22v-5.81a4.16,4.16,0,0,0-4.16-4.16h-16a4.16,4.16,0,0,0-4.16,4.16v5.81h-15.2a6.14,6.14,0,0,0-6.13,6.13v31.35a6.14,6.14,0,0,0,6.13,6.13h54.73a6.14,6.14,0,0,0,6.13-6.13V566.27a6.14,6.14,0,0,0-6.13-6.13m-38,3h23.48v37.62H287.29V563.14h2.15Zm1.5-8.81a1.16,1.16,0,0,1,1.16-1.16h16a1.16,1.16,0,0,1,1.16,1.16v5.81H290.94v-5.81ZM269.6,597.62V566.27a3.14,3.14,0,0,1,3.13-3.13h3.87v37.62h-3.87a3.14,3.14,0,0,1-3.13-3.13m10-34.48h4.68v37.62H279.6V563.14Zm36.32,0h4.69v37.62h-4.69V563.14Zm14.68,34.48a3.14,3.14,0,0,1-3.13,3.13h-3.87V563.14h3.87a3.14,3.14,0,0,1,3.13,3.13v31.35Z" transform="translate(-266.6 -550.17)"/></svg>
-	  		<img class="header__menuicon_arrow" src="img/icon_arrow@2x.png" alt="@@" width="13" height="7"><!-- тут будет свг, запросим иконку у дизайнера -->
-	  		<img class="header__casesimage" src="img/cases.png" alt="@@"><!-- Фоновая картинка -->
-	  		<!-- :after - градиент белый снизу -->
+	  		<img class="header__menuicon_arrow" src="img/icon_arrow@2x.png" alt="@@" width="13" height="7">
+	  		<img class="header__casesimage" src="img/cases.png" alt="@@">
 	  	</a></li>
 
 	  	<li><a href="services.php">
-				<!-- :before тут и у других ссылок, кроме кейсов. См. анимацию, на ховере меняет с scale3d(0,1,1) на scale3d(1,1,1); transform-origin:right center -->
 	  		<p class="header__menuheading">Services</p>
 	  		<svg class="header__menuicon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.52 67" width="24" height="33" fill="#221f1f"><defs></defs><title>icon_services</title><path class="cls-1" d="M320.89,843.38H279.32a4,4,0,0,0-4,4v59a4,4,0,0,0,4,4h41.56a4,4,0,0,0,4-4v-59a4,4,0,0,0-4-4m1,63a1,1,0,0,1-1,1H279.32a1,1,0,0,1-1-1v-59a1,1,0,0,1,1-1h41.56a1,1,0,0,1,1,1v59Z" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,888.88H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,897.88H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,880H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M313.44,871.13H296.06a1.5,1.5,0,0,0,0,3h17.38a1.5,1.5,0,0,0,0-3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M296.06,865.25H313.3a1.5,1.5,0,0,0,0-3H296.06a1.5,1.5,0,0,0,0,3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M296.06,856.38H313.3a1.5,1.5,0,0,0,0-3H296.06a1.5,1.5,0,0,0,0,3" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,851.67l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,860.83l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,869.7l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,878.58l-2.67,2.67-0.51-.51a1.5,1.5,0,1,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,0,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,887.45l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,1,0-2.12-2.12" transform="translate(-275.35 -843.38)"/><path class="cls-1" d="M288.39,896.42l-2.67,2.67-0.51-.51a1.5,1.5,0,0,0-2.12,2.12l1.57,1.57a1.5,1.5,0,0,0,2.12,0l3.73-3.73a1.5,1.5,0,1,0-2.12-2.12" transform="translate(-275.35 -843.38)"/></svg>
 	  	</a></li>
@@ -52,8 +49,8 @@
 	  	</a></li>
 	  </ul>
 
-		<div class="header__square header__square_social"><!-- absolute в десктопе -->
-	  	<a href="#"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.43 14.68" width="12" height="12" fill="#000"><title>icon_share</title><path d="M843.76,111.56a2.62,2.62,0,0,0-1.52.49l-5-2.6,4.94-2.57a2.63,2.63,0,1,0-1.05-2.1s0,0.06,0,.09l-5,2.58a2.61,2.61,0,0,0-1.58-.54,2.64,2.64,0,1,0,1.73,4.61l4.81,2.5c0,0.06,0,.11,0,0.17A2.64,2.64,0,1,0,843.76,111.56Z" transform="translate(-831.96 -102.15)"/></svg></a><!-- тут свг код, как и у других иконок. см. файл Menu desktopVID -->
+		<div class="header__square header__square_social">
+	  	<a href="#"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.43 14.68" width="12" height="12" fill="#000"><title>icon_share</title><path d="M843.76,111.56a2.62,2.62,0,0,0-1.52.49l-5-2.6,4.94-2.57a2.63,2.63,0,1,0-1.05-2.1s0,0.06,0,.09l-5,2.58a2.61,2.61,0,0,0-1.58-.54,2.64,2.64,0,1,0,1.73,4.61l4.81,2.5c0,0.06,0,.11,0,0.17A2.64,2.64,0,1,0,843.76,111.56Z" transform="translate(-831.96 -102.15)"/></svg></a>
 	  	<ul class="header__square-list">
 	  		<li><a href="#">
 	  			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.5 9.66" width="8" height="16" fill="#000"><defs></defs><title>icon_fb</title><path class="cls-1" d="M-713.19,218.56h1.51l-0.18,1.66h-1.33v4.83h-2v-4.83h-1v-1.66h1v-1a2.31,2.31,0,0,1,.5-1.62,2.16,2.16,0,0,1,1.66-.55h1.33v1.66h-0.83a1.43,1.43,0,0,0-.37,0,0.32,0.32,0,0,0-.2.14,0.56,0.56,0,0,0-.08.2,1.84,1.84,0,0,0,0,.29v0.83Z" transform="translate(716.19 -215.4)"/></svg>
