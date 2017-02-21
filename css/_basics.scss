@@ -1,0 +1,199 @@
+@mixin border-radius($topleft, $topright: $topleft, $bottomright: $topleft, $bottomleft: $topleft) {
+    -moz-border-radius-topleft:     $topleft;
+    -moz-border-radius-topright:    $topright;
+    -moz-border-radius-bottomright: $bottomright;
+    -moz-border-radius-bottomleft:  $bottomleft;
+    -webkit-border-radius:          $topleft $topright $bottomright $bottomleft;
+    border-radius:                  $topleft $topright $bottomright $bottomleft;
+}
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin box-shadow($top, $left, $blur, $else, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $else $color;
+    -moz-box-shadow:inset $top $left $blur $else $color;
+    box-shadow:inset $top $left $blur $else $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $else $color;
+    -moz-box-shadow: $top $left $blur $else $color;
+    box-shadow: $top $left $blur $else $color;
+  }
+}
+@mixin gradient($from, $to) {
+  background-color: $from;
+  background-image: -moz-linear-gradient($from, $to);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  background-image: -webkit-linear-gradient($from, $to);
+  background-image: -o-linear-gradient($from, $to);
+}
+@mixin box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
+border: none;
+}
+*:focus {outline: none;}
+
+// Цвет выделения текста
+::selection {background: blue;color:white;}
+::-moz-selection {background: blue;color:white;}
+::-webkit-selection {background: blue;color:white;}
+
+// Цвет плейсхолдера //
+::-webkit-input-placeholder {color:#75767e}
+::-moz-placeholder {color:#75767e}
+:-ms-input-placeholder {color:#75767e}
+:-moz-placeholder {color:#75767e}
+
+// Фиксирование для body (при кастомных модальных окнах)
+.noscroll {position: fixed;}
+
+// Настройки для автозаполнения Chrome
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important; // Поменять цвет на аналогичный цвету input'а
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 50000000000s ease-in-out 0s !important;
+}
+
+
+
+
+
+
+
+
+// Сетка //
+$col-m:2.6%; // Расстояние между колонками
+$col:(100-($col-m*11))/12; // Ширина колонки
+
+.one-col {width:$col}
+.two-col {width:$col*2+$col-m*1;}
+.three-col {width:$col*3+$col-m*2;}
+.four-col {width:$col*4+$col-m*3;}
+.five-col {width:$col*5+$col-m*4;}
+.six-col {width:$col*6+$col-m*5;}
+.seven-col {width:$col*7+$col-m*6;}
+.eight-col {width:$col*8+$col-m*7;}
+.nine-col {width:$col*9+$col-m*8;}
+.ten-col {width:$col*10+$col-m*9;}
+.eleven-col {width:$col*11+$col-m*10;}
+.twelve-col {width:$col*12+$col-m*11;}
+
+// Равное расстояние между колонками
+.cols {text-align:justify; text-justify:distribute;
+  &:after {content:""; display:inline-block; height:0.0000000000001px; width:100%;}
+    >* {display:inline-block; @include box-sizing; vertical-align: top;
+  }
+}
+// Сетка //
+
+
+
+
+//Цвета//
+$darkone: #221f1f;
+$darktwo: #1f2124;
+
+
+
+
+// Основы //
+html {width:100%; height:100%}
+body {width:100%; min-height:100%; font-size:0; font-family: 'Open Sans', Arial, sans-serif; color: $darkone;}
+html,body{overflow-x: hidden;}
+//html,body{min-width: 2000px;}
+
+header, section, footer {width:100%; float:left;}
+.container {width:100%; padding: 0 90px; margin:0 auto; box-sizing: border-box;}
+// Основы //
+
+
+//Шрифты//
+$gothic: 'Century Gothic', Arial, sans-serif;
+
+
+
+
+
+
+// Типографика //
+h1,h2,h3,h4,h5,h6,p,span,ul,li {margin:0; padding:0}
+ul {list-style:none}
+span {font-style: inherit; font-family: inherit; font-weight: inherit;}
+
+h1,h2,h3,h4,h5 {} // Общие стили для заголовков (если есть)
+
+// Стили заголовков (удалить лишнее)
+h1 {font-size:36px; line-height:1.2em;}
+h2 {font-size:30px; line-height:1.2em;}
+h3 {font-size:24px; line-height:1.2em;}
+h4 {font-size:20px; line-height:1.2em;}
+h5 {font-size:18px; line-height:1.2em;}
+
+// Стили абзацев (удалить лишнее)
+p {font-size:14px; line-height:1.2em;}
+p.small {font-size:12px;}
+p.big {font-size:16px;}
+p.huge {font-size:18px;}
+// Типографика //
+
+
+
+
+
+
+
+
+
+// Формы, кнопки, поля ввода //
+a,input,button,select,textarea {@include transition(all, 0.25s, ease-in-out); @include box-sizing;}
+a {text-decoration: inherit; font-weight: inherit; line-height:inherit; color:inherit;}
+
+select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; border: 0; font-size: 14px; display:inline-block;}
+
+.button {text-align:center; border:0; padding:0 10px 8px; line-height: 72px; display:inline-block; color:#32333c; font-size:35px; font-weight: 600; background-color: #fff; font-family: $gothic; letter-spacing: -0.04em;
+	&:hover {background-color: #32333c; color: #fff;}
+}
+
+.scrollbutton {display: inline-block; width: 54px; height: 54px; border-radius: 1000px; border: 2px solid #fff; position: absolute; top: 6px; bottom: 0; left: 0; margin: auto;
+	svg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; transition: all 1s ease-in-out;}
+}
+
+.squareblock {width: 550px; height: 550px; border: 2px solid #fff; padding: 136px 30px 47px 36px; box-sizing: border-box; position: relative;
+	&_dark {border-color: $darkone; padding-left: 42px; color: $darkone;}
+	&__social {display: inline-block; position: absolute; right: 41px; top: 46px; border: 2px solid $darkone; width: 94px; height: 94px; box-sizing: border-box; padding: 60px 8px 0; font-size: 20px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em; z-index: 2; transition: all 0.25s ease-in-out;
+		svg {position: absolute; right: 9px; top: 8px; transition: all 0.25s ease-in-out;}
+		&:hover {background-color: #2a3467;}
+	}
+}
+
+.social {border: 4px solid #000; border-right: 0; box-sizing: border-box; position: fixed; right: 0; top: 50%; z-index: 12; transform: translateY(-50%);
+	li {width: 46px; height: 47px;}
+	&__link {display: inline-block; width: 100%; height: 100%; position: relative;
+		&_fb {background-color: #3d6f9a;}
+		&_inst {background-color: #324453;}
+		&_yt {background-color: #b25b3d;}
+		&_be {background-color: #0584bf;}
+		img {transition: all 0.25s ease-in-out; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; transform: translate3d(42%, -45%, 0);}
+		&:hover img {transform: translate3d(0, 0, 0) scale3d(1.5, 1.5, 1);}
+	}
+}
+// Формы, кнопки, поля ввода //

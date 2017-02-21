@@ -5,20 +5,21 @@
     <?php include "blocks/head.php"; ?>
     <meta name="robots" content="all">
     <?php include "blocks/meta.php"; ?>
-    <title></title>
+    <title>Services | Tecco</title>
     <?php include "blocks/css.php"; ?>
 </head>
 
-<body> 
+<body>
 
 <?php include "blocks/sidebar.php"; ?>
+<?php include "blocks/social.php"; ?>
 
-<section class="content services">
+<section class="content services" data-page="services">
 	<div class="content-tabs">
 		<div class="container">
 			<ul class="content-tabs__list">
 				<li class="active"><a class="content-tabs__link" href="#">Web &amp; mobile Development</a></li>
-				<li><a class="content-tabs__link" href="#">IT Outsourcing</a></li>
+				<li><a class="content-tabs__link nav" href="#outsourcing">IT Outsourcing</a></li>
 			</ul>
 		</div>
 	</div>
@@ -50,7 +51,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="services__outsourcing">
+	<div class="services__outsourcing" id="outsourcing">
 		<div class="container">
 			<div class="content__textblock services__textblock">
 				<h2 class="content__heading">IT outsourcing</h2>
@@ -59,7 +60,7 @@
 				<a href="#" class="squareblock squareblock_dark services__moreinfo">
 					<p class="content__text">Для получения более подробной информации об услугах компании</p>
 					<p class="content__text content__text_link" href="#">Свяжитесь с нами
-						<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.16 30.39" width="26" height="31" fill="#221f1f"><title>icon_arrow_3</title><path d="M-47.26,887.51a1.52,1.52,0,0,0-.55.11h0a1.49,1.49,0,0,0-.49.33l-11,11a1.5,1.5,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0l8.47-8.47v23.77a1.5,1.5,0,0,0,1.5,1.5,1.5,1.5,0,0,0,1.5-1.5V892.63l8.57,8.57a1.5,1.5,0,0,0,2.12,0,1.49,1.49,0,0,0,.44-1.06,1.5,1.5,0,0,0-.44-1.06L-46.2,888a1.49,1.49,0,0,0-.49-0.33h0a1.52,1.52,0,0,0-.55-0.11" transform="translate(59.8 -887.51)"/></svg>
+						<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.16 30.39" width="26" height="31" fill="#221f1f"><title>icon_arrow_3</title><path d="M-47.26,887.51a1.52,1.52,0,0,0-.55.11h0a1.49,1.49,0,0,0-.49.33l-11,11a1.5,1.5,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0l8.47-8.47v23.77a1.5,1.5,0,0,0,1.5,1.5,1.5,1.5,0,0,0,1.5-1.5V892.63l8.57,8.57a1.5,1.5,0,0,0,2.12,0,1.49,1.49,0,0,0,.44-1.06,1.5,1.5,0,0,0-.44-1.06L-46.2,888a1.49,1.49,0,0,0-.49-0.33h0a1.52,1.52,0,0,0-.55-0.11" transform="translate(59.8 -887.51)"/></svg>
 					</p>
 				</a>
 			</div>
