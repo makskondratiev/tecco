@@ -5,7 +5,7 @@
 @import "basics.scss";
 
 .content {display: inline-block; padding-left: 400px; color: #fff; box-sizing: border-box;
-	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden; padding-bottom: 100px;
+	&_main {background-image: url('../img/bg_main2.jpg'); background-size: cover; background-position: center; padding-top: 270px; position: relative; overflow: hidden; padding-bottom: 100px; box-shadow: 0 44px 82px 12px #21222b; z-index:5; transition:box-shadow 0.25s ease-in-out;
 		.container {position: relative; z-index: 2;}
 	}
 	&__heading {font-size: 51px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em;}
@@ -17,7 +17,7 @@
 	&__textblock {width: 51.4%;}
 }
 
-.content-tabs {
+.content-tabs {z-index:4;
 	&__list {
 		li {display: inline-block; vertical-align: middle; padding: 16px 0; margin-left: 70px;
 			&:first-child {margin-left: 0;}
@@ -29,19 +29,24 @@
 
 .page-main {overflow: hidden; transition: all 1s ease-in-out;
 	&__wrapper {display: flex; align-items: flex-end; overflow: hidden; transition: all 1s ease-in-out;}
-	.cases {pointer-events: none; transition: all 1s ease-in-out;
-		.content-tabs {max-height: 0; opacity: 0; pointer-events: none; transition: all 1s ease-in-out;}
+	.cases {position: fixed; top:0; left:0;
+        &.normal {position: relative;}
+		.content-tabs {opacity: 0; pointer-events: none; transition: all .25s ease-in-out; transform: translate3d(0,-100%,0);}
 	}
 	&.active {
-		.cases {pointer-events: all;
-			.content-tabs {max-height: 1000000px; opacity: 1; pointer-events: all;}
+        .content_main {box-shadow: 0 44px 82px 12px transparent;}
+		.cases {
+			.content-tabs {opacity: 1; pointer-events: all; transform: translate3d(0,0,0); z-index:4;}
 		}
 	}
 }
 
-// Секции, header, footer и т.д. //
+// Секции, header, footer и т.д. 
+.page-overlay {position: fixed; top:0; left:0; z-index:1; width:100%; height:100%; background-color:rgba(#111e2b,.8); opacity:0; pointer-events:none; transition:all .25s ease-in-out;
+    &.active {opacity:1; pointer-events:all;}
+}
 
-.header {width: 400px; position: fixed; left: 0; top: 0; background-color: #f5f5f6; height: 100%; z-index: 1;
+.header {width: 400px; position: fixed; left: 0; top: 0; background-color: #f5f5f6; height: 100%; z-index: 10;
 	&__side {position: relative;}
 	&__logoblock {position: absolute; left: 0; top: 0; width: 100%; box-sizing: border-box; padding: 41px 39px; z-index: 1;}
 	&__logotext {font-size: 13px; margin-top: 12px; padding-left: 4px; color: $darktwo;}
@@ -59,7 +64,7 @@
 			}
 		}
 	}
-	&__square {position: absolute; z-index: 2;
+	&__square {position: absolute; z-index: 4;
 		&_language {top: 49px; right: 35px; width: 36px; height: 36px;}
 		a {display: inline-block; width: 36px; height: 36px; border: 2px solid $darkone; font-size: 15px; text-transform: uppercase; font-weight: 500; position: relative; background-color: #f5f5f6; text-align: right; padding: 0 3px; color: $darktwo;
 			&:hover {background-color: $darkone; color: #fff;
@@ -188,8 +193,8 @@
 
 
     
-.cases {transition: all 1s ease-in-out;
-	.content-tabs {position: relative;
+.cases {
+	.content-tabs {position: relative; background-color:white; position: fixed; top:0; left:0; width:100%; padding-left:360px; box-sizing:border-box; z-index:1;
 		&__switcher {position: absolute; right: 0; top: 0; bottom: 0; display: flex;
 			li {display: inline-flex; align-items: center; padding: 0 20px; transition: all 0.25s ease-in-out; cursor: pointer;
 				svg {transition: all 0.25s ease-in-out;}
@@ -203,34 +208,71 @@
 		&:first-child {margin-left: 0;}
 	}
 	&__list {
+        
+        * {pointer-events:none;}
+            a {pointer-events:all}
 
 		&.squares {
-			> li {width: 33.3333%; padding: 390px 10px 50px; height: 532px;
+			> li {width: 33.3333%; padding: 20px 10px 50px; height: 532px; display:inline-flex; height:50vh; flex-direction: column; justify-content: flex-end;
 				&:hover {
-					&:after {opacity: 1;}
-					.cases__textblock {opacity: 1; pointer-events: all;}
+					&:after {opacity: 1; transform:translate3d(0,0,0)}
+                    &:before {opacity:0;}
+					.cases__textblock {opacity: 1; pointer-events: all; transform:translate3d(0,0px,0);}
+                    .cases__bg {transform: scale(1.05);}
 				}
+                .cases__textblock {margin:0 auto;}
+                .cases__bg {display:block}
+                .cases__bg_big {display:none}
 				> a {width: 100%;}
 			}
-			.cases__textblock {width: auto; text-align: center; margin: auto; opacity: 0; pointer-events: none; position: relative; z-index: 2; display:block;}
+			.cases__textblock {width: auto; text-align: center; margin: auto; opacity: 0; pointer-events: none; position: relative; z-index: 2; display:block; transform:translate3d(0,10px,0)}
 			.cases__text {max-height: 0; margin-top: 0;}
 			.cases__arrow {opacity: 0; pointer-events: none;}
 		}
 
-		> li {width: 100%; display: inline-block; position: relative; overflow: hidden; padding: 133px 0 113px; box-sizing: border-box; text-align: right; transition: all 0.25s ease-in-out;
-			&:after {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(13,18,26,0) 0%, rgba(13,18,26,0) 50%,rgba(13,18,26,1) 100%); opacity: 0; pointer-events: none; transition: all 0.25a ease-in-out; z-index: 1;}
-			&:hover .cases__bg {transform: scale(1.05);}
+		> li {width: 100%; display: inline-block; position: relative; overflow: hidden; padding: 133px 0 113px; box-sizing: border-box; text-align: right;  pointer-events:all;
+			&:after {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(13,18,26,0) 0%, rgba(13,18,26,0) 50%,rgba(13,18,26,1) 100%); opacity: 0; pointer-events: none; transition: all 0.25s ease-in-out; z-index: 1; transform:translate3d(0,55px,0)}
+            
+            /* BETA */
+            &:before {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(13,18,26,0) 0%, rgba(13,18,26,.7) 100%); opacity: 0; pointer-events: none; transition: all 0.25s ease-in-out; z-index: 1;}
 
-			> a {display: inline-block; position: absolute; right: 0; top: 0; width: 40%; height: 100%;}
+            &:hover {
+                .cases__bg_big.filtre {opacity:1; transform:translate3d(0,0,0);}
+                &:before {opacity:1;}
+            }
+            /* BETA */
+            
+			> a {display: inline-block; position: absolute; right: 0; top: 0; width: 600px; height: 100%; z-index:3;}
 		}
+        
+        &:not(.squares) {
+            >li {
+                .cases__heading, .cases__subheading, .cases__text {opacity:0; transform: translate3d(0,10px,0); transition:all .25s ease-in-out;}
+                .cases__text {transition-delay:0}
+                .cases__heading {transition-delay:0.2s}
+                .cases__subheading {transition-delay:0.1s}
+                .cases__arrow {opacity:0; transform: translate3d(-10px,0,0)}
+                &:hover {
+                    .cases__heading, .cases__subheading, .cases__text {opacity:1; transform:translate3d(0,0,0);}
+                    .cases__subheading {transition-delay:0.1s}
+                    .cases__text {transition-delay:0.2s}
+                    .cases__heading {transition-delay:0}
+                    .cases__text {transition-delay:0}
+                    .cases__arrow {opacity:1; transform:translate3d(0,0,0)}
+                }
+            }
+        }
 
 	}
-	&__bg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover; pointer-events: none; z-index: -1; transition: all .25s ease-in-out;}
+	&__bg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 101%; min-height: 101%; width: 0; object-fit: cover; pointer-events: none; z-index: -1; transition: all .25s ease-in-out; display:none;
+        &_big {display:block;}
+        &.filtre {-webkit-mask: -webkit-linear-gradient(90deg, transparent, transparent 40%, black 50%, black); -webkit-mask: linear-gradient(90deg, transparent, transparent 40%, black 50%, black); -webkit-filter: blur(8px); mask: url('#mask-linear'); filter: url('#filtre2'); transform:translate3d(0,0,0); opacity:0; transition:all .25s ease-in-out;}
+    }
 	&__arrow {position: absolute; right: 60px; bottom: 74px; transition: all 0.25s ease-in-out;}
-	&__textblock {display: inline-block; text-align: left; width: 470px; margin-right: 127px; transition: all 0.25s ease-in-out;}
-	&__heading {font-size: 43px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em;}
-	&__subheading {font-size: 16px; color: #ababac; margin-top: 10px; padding-left: 4px;}
-	&__text {font-size: 16px; background: linear-gradient(to bottom, #fff 0%, transparent 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 105px; padding-left: 4px; transition: all 0.25s ease-in-out;}
+	&__textblock {display: inline-block; text-align: left; width: 470px; margin-right: 127px; transition: all 0.2s ease-in-out; transition-delay:0.1s;}
+	&__heading {font-size: 43px; font-weight: 600; font-family: $gothic; letter-spacing: -0.04em; position: relative; z-index:3;}
+	&__subheading {font-size: 16px; color: #ababac; margin-top: 10px; padding-left: 4px; position: relative; z-index:3;}
+	&__text {font-size: 16px; background: linear-gradient(to bottom, #fff 0%, transparent 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 105px; padding-left: 4px; transition: all 0.25s ease-in-out; position: relative; z-index:3;}
 }
 
 /*-----------------------------------------------------*/
@@ -314,7 +356,7 @@
 	&__firstscreen {height: 1087px; box-sizing: border-box; overflow: hidden; position: relative; padding-top: 77px; padding-bottom: 70px;
 		&:hover .case__firstscreenbg {transform: scale(1.05);}
 		.container {height: 100%; padding: 0 113px;}
-		>img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover; z-index: -1; transition: all .25s ease-in-out;}
+		>img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover; z-index: -1; transition: all 4s ease-in-out;}
 	}
 	&__logo {margin-left: -11px; width: 323px; height: 97px;
 		&_bottom {position: absolute; left: 6.3%; top: 44.4%; margin: 0;}
@@ -394,7 +436,7 @@
 
 .contacts {position: relative; display: flex;
 	.content__text {margin-top: 0;}
-	&__leftside {width: 50%; background-color: #1a1a23; box-sizing: border-box; padding-top: 160px; padding-bottom: 150px;
+	&__leftside {width: 50%; background-color: #111e2b; box-sizing: border-box; padding-top: 160px; padding-bottom: 150px;
 		.container {padding: 0 100px;}
 	}
 	&__map {width: 50%; background-color: #ccc;

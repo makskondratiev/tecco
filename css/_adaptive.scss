@@ -9,8 +9,8 @@ $darktwo: #1f2124;
 			&:before {content: ""; width: 57%; height: 100%; position: absolute; left: auto; bottom: auto; right: 0; top: 0; background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); z-index: 1; transform: scale3d(1,1,1); transition: all 0.25s ease-in-out;}
 			&:after {content: ""; width: 100%; height: 180px; position: absolute; right: auto; top: auto; left: 0; bottom: 0; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); z-index: 1; transform: scale3d(1,1,1); transition: all 0.25s ease-in-out;}
 			&:hover, &.active {
-				&:before {background: linear-gradient(to right, rgba(34,34,31,0) 0%,rgba(34,34,31,1) 50%,rgba(34,34,31,1) 100%);}
-				&:after {background: linear-gradient(to bottom, rgba(34,34,31,0) 0%,rgba(34,34,31,1) 50%,rgba(34,34,31,1) 100%);}
+				&:before {background: linear-gradient(to right, rgba(#111e2b,0) 0%,rgba(#111e2b,1) 50%,rgba(#111e2b,1) 100%);}
+				&:after {background: linear-gradient(to bottom, rgba(#111e2b,0) 0%,rgba(#111e2b,1) 50%,rgba(#111e2b,1) 100%);}
 			}
 		}
 		p {position: relative; z-index: 2; color: #221f1f !important;}
@@ -52,7 +52,7 @@ $darktwo: #1f2124;
 
 
 
-@media (max-width:1800px) {
+@media (max-width:1950px) {
 	.button {line-height: 62px; font-size: 30px;}
 	.content__bgphone {max-width: 750px;}
 
@@ -69,7 +69,7 @@ $darktwo: #1f2124;
 	.technology .content__scroll-link br {display: none;}
 }
 
-@media (max-width:1600px) {
+@media (max-width:1950px) {
 	.technology__column {width: 31.6%;}
 	.services__quote {right: 70px;}
 	.services__quotetext {font-size: 30px;}
@@ -94,8 +94,22 @@ $darktwo: #1f2124;
 	.content {padding-left:360px;}
 	.header__logoblock, li.header__caseslink a, .header__menu a {padding-left:30px; padding-right:30px;}
 	.header__menuicon, .header__menuicon_arrow, li.header__caseslink .header__menuicon, .header__square_language {right:30px;}
-    .cases__list.squares > li {padding: 270px 10px 50px; height: 410px;}
     .cases__heading {font-size:35px;}
+    .content__heading {font-size:40px;}
+    .content__scroll-link {font-size:29px;}
+    .content_main {padding-top:220px; padding-bottom:90px;}
+    .content__scroll-link {margin-top:200px}
+    .content__text {font-size:28px; margin-top:50px;}
+    .services__quotetext {font-size:27px;}
+    .services__quoteauthor {font-size:20px;}
+    .services__quote {height: auto; padding-bottom: 140px;}
+    .services__list {margin-top:60px;}
+    .company .content__text, .company__abouttext {margin-top:50px;}
+    .company__abouttext {font-size:25px}
+    .company__feature-name {font-size:30px}
+    .company__quotetext {font-size:28px;}
+    .company__moreinfo {margin-top:140px;}
+    .company {padding-bottom:100px}
 }
 
 @media (max-width:1440px) {
@@ -122,6 +136,8 @@ $darktwo: #1f2124;
 	.case .content__text {font-size: 30px;}
 	.case__about__text {font-size: 30px;}
 	.case__about__text_small {font-size: 18px;}
+    .content__scroll-link {margin-top:120px}
+    .content_main {padding-top:160px;}
 }
 
 @media (max-width:1280px) {
@@ -132,7 +148,8 @@ $darktwo: #1f2124;
 	.technology__name {font-size: 24px;}
 	.technology__card {min-height: 200px; max-height: 200px;}
 	.technology__icon {width: 130px; height: 130px;}
-	.content__heading {font-size: 45px;}
+	.content__heading {font-size: 36px;}
+    .content__bgphone {max-width:420px;}
 	.technology .content__text {margin-top: 82px;}
 	.squareblock {width: 450px; height: 450px;}
 	.services__quote {position: static; margin-top: 90px;}
@@ -152,11 +169,13 @@ $darktwo: #1f2124;
 	.cases .content-tabs .container {padding: 0 30px;}
 	.content-tabs__list a {font-size: 16px;}
 	.cases .content-tabs__list li {margin-left: 24px;}
-	.cases__list.squares > li {padding-top: 250px; height: 400px;}
 	.case__text {margin-top: 200px;}
 	.case__firstscreen {height: auto;}
 	.case__about__block {width: auto;}
 	.cases__list.squares > li {width: 50%;}
+    .content__scroll-link {font-size:24px;}
+    .content_main {padding-top:120px;}
+    .cases__heading {font-size:28px;}
 }
 
 @media (max-width:1120px) {
@@ -164,7 +183,9 @@ $darktwo: #1f2124;
 	.content__scroll-link {font-size: 24px;}
 	.technology__column {width: 47.7%;}
 	.content-tabs__list li {margin-left: 50px;}
-	.content-tabs__list a {font-size: 20px;}
+    .cases .content-tabs__switcher li svg {width:20px;}
+    .cases .content-tabs__list {padding-right:115px;}
+    .cases .content-tabs__switcher li {padding:0 15px;}
 	.company .content__text {width: 100%;}
 	.company__abouttext {width: 100%;}
 	.company__features li {width: 100%;}
@@ -175,7 +196,6 @@ $darktwo: #1f2124;
 	.company__moreinfo .content__text {width: auto;}
 	.cases .content-tabs .container {padding: 0;}
 	.cases .content-tabs__list li {margin-left: 24px !important;}
-	.cases .content-tabs__list {padding-right: 160px;}
 	.cases__textblock {margin-right: 60px;}
 	.case .content-tabs .container {padding: 0 30px;}
 	.case__text {margin-top: 100px;}
@@ -207,7 +227,7 @@ $darktwo: #1f2124;
 	.header__logo img {width: 143px; height: 35px;}
 	.header__square {position: relative;}
 	.header__logotext {display: none;}
-	.header__side {width: 400px; position: fixed; top: 69px; right: 0; background-color: #f5f5f6; z-index: 5; padding-bottom: 80px; transform: translate3d(100%,0,0); transition: all 0.25s ease-in-out; overflow-y: scroll; height: 60%;}
+	.header__side {width: 400px; position: fixed; top: 69px; right: 0; background-color: #f5f5f6; z-index: 5; padding-bottom: 80px; transform: translate3d(100%,0,0); transition: all 0.25s ease-in-out; overflow-y: scroll; height: calc(100vh - 69px); box-sizing:border-box;}
 	.header__side.active {transform: translate3d(0,0,0);}
 	.header__square_language {top: auto; right: auto; width: auto; height: auto; margin-top: 33px; margin-left: 42px;}
 	.header__square-list {display: inline-block; opacity: 1; pointer-events: all; vertical-align: top;}
@@ -234,7 +254,7 @@ $darktwo: #1f2124;
 	.content__scroll-link {display: block; margin-top: 194px; text-align: center; padding-left: 0;}
 	.content__scroll-link:before {right: 0; top: -180px;}
 	.content__bgmain {display: none;}
-	.content__bgphone {position: static; transform: translate(0); max-width: 100%; margin-top: 53px;}
+	.content__bgphone {position: static; transform: translate(0); width:85%; max-width: 100%; margin-top: 53px;}
 	.content_main .content__heading {text-align: center;}
 	.content_main .scrollbutton {bottom: auto; top: -97px;}
 
@@ -317,7 +337,8 @@ $darktwo: #1f2124;
 	.cases .content-tabs__list {padding-right: 24px;}
 	.cases .content-tabs__switcher {display: none;}
 	.cases__list > li {text-align: center; height: 640px;}
-	.cases__textblock {margin: auto; position: absolute; bottom: 100px; left: 0; right: 0; text-align: center; z-index: 2;}
+    .cases__list > li:after {transform:none}
+    .cases__list.squares .cases__textblock {transform:none}
 	.cases__text {display: none;}
 	.cases__arrow {display: none;}
 	.cases__social {display: none;}
@@ -343,8 +364,26 @@ $darktwo: #1f2124;
 	.case__contactblock .container {padding: 0 47px;}
 	.case__contactblock .squareblock {width: 100%; height: 550px;}
     
-    .cases__list.squares > li {padding-top:390px}
+    .cases__list.squares > li {padding-top:50px !important; min-height:640px;}
     .cases__list.squares .cases__textblock {opacity:1 !important}
+    
+    .cases__list.squares > li {height:auto !important;}
+    .cases .content-tabs {padding-left:0}
+    .content-tabs__list a {font-size:26px;}
+    .content-tabs__list li.active {box-shadow:inset 0 -3px 0 0 #221f1f}
+    .cases__heading {font-size:43px;}
+    .cases__list.squares > li {padding-bottom:90px;}
+    .header__logoblock {padding:17px 39px;}
+    .header__burgermenu {right:0}
+    .cases .content-tabs__list li:first-child {margin-left:0 !important;}
+    .cases .content-tabs__list li:last-child {margin-right:39px !important;}
+    .cases .content-tabs__list {padding-right:0; padding-left:39px;}
+    .content_main {padding-bottom:0}
+    li.header__caseslink a {padding-left:41px;}
+}
+
+@media (min-width:641px) and (max-width:999px) {
+    
 }
 
 @media (max-width:640px) {
@@ -354,7 +393,7 @@ $darktwo: #1f2124;
 	.header__logoblock {padding: 5px 23px;}
 	.header__logo img {width: 89px;}
 	.header__burgermenu svg {width: 28px;}
-	.header__side {width: 250px; top: 45px; right: 0; height: 75%;}
+	.header__side {width: 250px; top: 45px; right: 0; height: calc(100vh - 45px);}
 	.header__square_language {margin-top: 20px; margin-left: 27px;}
 	.header__square-list li {margin-left: 10px;}
 	.header__square a {width: 44px; height: 44px; font-size: 14px; padding: 1px 3px;}
@@ -475,7 +514,7 @@ $darktwo: #1f2124;
 	.case__link {font-size: 18px; margin-top: 42px;}
 	.case__link:after {bottom: -1px; width: 66px;}
 	.case__smalltext {font-size: 14px; margin-top: 51px;}
-	.case__text.content__text {font-size: 22px; margin-top: 139px; padding-top: 55px; padding-bottom: 87px;}
+	.case__text.content__text {font-size: 22px; margin-top: 25px; padding-top: 55px; padding-bottom: 87px;}
 	.case__image {height: 282px;}
 	.case__textblock, .case__textblock_bottom {min-height: 282px; padding: 27px;}
 	.case__designblock p {font-size: 22px;}
@@ -499,6 +538,23 @@ $darktwo: #1f2124;
 	.header__burgermenu span:before, .header__burgermenu span:after {width: 28px; height: 4px;}
 	.header__burgermenu span:before {transform: translate3d(0, -10px, 0);}
 	.header__burgermenu span:after {transform: translate3d(0, 10px, 0);}
+    
+    .header__logoblock {padding:5px 25px;}
+    .cases .content-tabs__list {padding-left:25px;}
+    .cases .content-tabs__list li:last-child {margin-right:25px !important}
+    .content-tabs__list a {font-size:16px;}
+    .cases .content-tabs__list li {padding:11px 0 13px;}
+    .cases .content-tabs {background-color:#f5f5f6; border-top:1px solid #c5c7c9}
+    .cases__list.squares > li {min-height:400px;}
+    .cases__textblock {bottom:0}
+    .cases__list.squares > li {padding-bottom:60px;}
+    .cases__subheading {font-size:14px;}
+    .header__side {width:260px;}
+    .header__menuicon, .header__menuicon_arrow, li.header__caseslink .header__menuicon {right:24px;}
+}
+
+@media (max-width:490px) {
+    .company__cityview {height:369px}
 }
 
 @media (max-width:350px) {
