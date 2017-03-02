@@ -134,8 +134,8 @@ $darktwo: #1f2124;
 	.cases .content-tabs__list li {margin-left: 30px;}
 	.case__textblock, .case__textblock_bottom {padding: 50px 70px 80px;}
 	.case .content__text {font-size: 30px;}
-	.case__about__text {font-size: 30px;}
-	.case__about__text_small {font-size: 18px;}
+	.case__about p, .case__about h3 {font-size: 30px;}
+	.case__about p small, .case__about h3 small {font-size: 18px;}
     .content__scroll-link {margin-top:120px}
     .content_main {padding-top:160px;}
 }
@@ -171,7 +171,7 @@ $darktwo: #1f2124;
 	.cases .content-tabs__list li {margin-left: 24px;}
 	.case__text {margin-top: 200px;}
 	.case__firstscreen {height: auto;}
-	.case__about__block {width: auto;}
+    
 	.cases__list.squares > li {width: 50%;}
     .content__scroll-link {font-size:24px;}
     .content_main {padding-top:120px;}
@@ -204,8 +204,8 @@ $darktwo: #1f2124;
 	.case__infoblock {height: 400px;}
 	.case__designblock {padding-top: 70px;}
 	.case__designblock img {margin-top: 70px;}
-	.case__about__text {font-size: 26px;}
-	.case__about__text_small {font-size: 18px;}
+	.case__about p, .case__about h3 {font-size: 26px;}
+	.case__about p small, .case__about h3 small {font-size: 18px;}
 }
 
 
@@ -380,7 +380,14 @@ $darktwo: #1f2124;
     .cases .content-tabs__list {padding-right:0; padding-left:39px;}
     .content_main {padding-bottom:0}
     li.header__caseslink a {padding-left:41px;}
+    
+    .case__bgtextcontent {position: relative; z-index:2; overflow: hidden; margin-top:100px; padding:0 43px; margin-left:-43px; box-sizing:content-box; width:100%}
+    .case__text.content__text {margin-top:0; padding:150px 0}
+    .case__firstscreen:hover .case__firstscreenbg {transform:none !important}
+    .case__about {padding-bottom:0}
 }
+
+.cases .content-tabs {z-index:8}
 
 @media (min-width:641px) and (max-width:999px) {
     
@@ -551,6 +558,7 @@ $darktwo: #1f2124;
     .cases__subheading {font-size:14px;}
     .header__side {width:260px;}
     .header__menuicon, .header__menuicon_arrow, li.header__caseslink .header__menuicon {right:24px;}
+    .case__bgtextcontent {padding:0 27px; margin-left:-27px; margin-top:50px;}
 }
 
 @media (max-width:490px) {

@@ -38,9 +38,11 @@
 				<p class="cases__text">The Discover Moscow portal and mobile app provide Moscow locals and tourists with lots of interesting facts about the capital’s buildings using a large information catalog and dozens of themed routes compiled by renowned experts. A promo website that introduces users to the results of a large study of history of three famous architectural projects in Moscow was created at the studio.</p>
 			</div>
 			<img class="cases__arrow" src="img/icon_arrow_4.svg" alt="@@" width="31" height="26">
-			<img class="cases__bg" src="img/case1.jpg" alt="@@">
-			<img class="cases__bg cases__bg_big" src="img/case1big.jpg" alt="@@">
-			<img class="cases__bg cases__bg_big filtre" src="img/case1big.jpg" alt="@@">			
+			<div class="cases__bgs">
+			    <img class="cases__bg" src="img/case1.jpg" alt="@@">
+			    <img class="cases__bg cases__bg_big" src="img/case1big.jpg" alt="@@">
+			    <img class="cases__bg cases__bg_big filtre" src="img/case1big.jpg" alt="@@">			
+			</div>
 		</li>
 		<li data-category="mobileapps">
 			<a href="#"></a>

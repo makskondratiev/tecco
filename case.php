@@ -28,13 +28,15 @@
 		<a href="cases.php" class="case__backbutton"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.39 25.16" fill="#221f1f" width="28"><title>icon_arrow_4</title><path d="M314.94,1583.89a1.51,1.51,0,0,0-.11-0.55v0a1.49,1.49,0,0,0-.32-0.49l-11-11a1.5,1.5,0,1,0-2.12,2.12l8.47,8.47H286.05a1.5,1.5,0,0,0,0,3h23.77l-8.57,8.57a1.5,1.5,0,0,0,2.12,2.12L314.51,1585a1.5,1.5,0,0,0,.32-0.49v0a1.51,1.51,0,0,0,.11-0.55" transform="translate(-284.55 -1571.36)"/></svg>Back to case</a>
 	</div>
 	<div class="case__firstscreen">
-		<img class="case__firstscreenbg" src="img/deer.jpg" alt="@@">
 		<div class="container">
 			<img class="case__logo" src="img/logo_venden_white.svg" alt="@@">
 			<p class="case__subheading">Venden responsive website design and development.</p>
 			<a href="#" class="case__link">Visit Website</a>
 			<p class="case__smalltext">The Discover Moscow portal and mobile app provide Moscow locals and tourists with lots of interesting facts about the capital’s buildings using a large information catalog and dozens of themed routes compiled by renowned experts. A promo website that introduces users to the results of a large study of history of three famous architectural projects in Moscow was created at the studio.</p>
-			<p class="case__text content__text">One of the biggest advantages of the service was an abolity to create special product landing pages, so company can use them in marketing cases.</p>
+			<div class="case__bgtextcontent">
+                <img class="case__firstscreenbg" src="img/deer.jpg" alt="@@">
+			    <p class="case__text content__text">One of the biggest advantages of the service was an abolity to create special product landing pages, so company can use them in marketing cases.</p>
+			</div>
 		</div>
 	</div>
 	<div class="case__infoblock">
@@ -81,29 +83,23 @@
 	</div>
 	<div class="case__about">
 		<div class="container">
-			<div class="case__about__block">
-				<p class="case__about__text case__about__text_strong">About project</p>
-				<p class="case__about__text">Fully responsive design created for 3 different brekpoints allows Venden to show their product in most convenient and good looking way</p>
-			</div>
-			<div class="case__about__block">
-				<p class="case__about__text case__about__text_strong">Issue</p>
-				<p class="case__about__text">Fully responsive design created for 3 different brekpoints allows Venden to show their product in most convenient and good looking way</p>
-			</div>
-			<div class="case__about__block last">
-				<p class="case__about__text case__about__text_strong">Solution</p>
-				<p class="case__about__text">Be creative, be proud of making your own design, and feel the wibe of generation progress.</p>
-			</div>
-			<ul class="case__about__list">
-				<li><p>Проведение исследования</p></li>
-				<li><p>Разработка архитектуры, составление технического задания</p></li>
-				<li><p>Разработка прототипа</p></li>
-				<li><p>Разработка веб и мобильного интерфейса</p></li>
-				<li><p>Front end работы</p></li>
-				<li><p>Back end работы</p></li>
-				<li><p>QA</p></li>
-				<li><p>Суппорт проекта</p></li>
+			<h3>About project</h3>
+			<p>Fully responsive design created for 3 different brekpoints allows Venden to show their product in most convenient and good looking way</p>
+			<h3>Issue</h3>
+			<p>Fully responsive design created for 3 different brekpoints allows Venden to show their product in most convenient and good looking way</p>
+			<h3>Solution</h3>
+			<p>Be creative, be proud of making your own design, and feel the wibe of generation progress.</p>
+			<ul>
+				<li>Проведение исследования</li>
+				<li>Разработка архитектуры, составление технического задания</li>
+				<li>Разработка прототипа</li>
+				<li>Разработка веб и мобильного интерфейса</li>
+				<li>Front end работы</li>
+				<li>Back end работы</li>
+				<li>QA</li>
+				<li>Суппорт проекта</li>
 				</ul>
-				<p class="case__about__text case__about__text_small">Fully responsive design created 3 different brekpoints allows Venden to show their product in most convenient and good looking way</p>
+            <p><small>Fully responsive design created 3 different brekpoints allows Venden to show their product in most convenient and good looking way</small></p>
 		</div>
 	</div>
 	<div class="case__contactblock">

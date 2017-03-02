@@ -23,4 +23,4 @@
 <!-- jQuery Mobile -->
 <script src="js/jquery.mobile.custom.js"></script>
 
-<script src="js/scripts.min.js"></script>
+<script src="js/scripts.min.js?v=4"></script>
