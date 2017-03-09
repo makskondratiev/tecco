@@ -1103,7 +1103,8 @@ select, input, textarea {
     flex-direction: column;
     justify-content: flex-end;
     background-size: cover;
-    background-position: left top; }
+    background-position: left top;
+    vertical-align: top; }
     /* line 218, C:/Projects/home/tecco/www/css/default.scss */
     .cases__list.squares > li:hover:after {
       opacity: 1;
