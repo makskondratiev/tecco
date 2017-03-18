@@ -45,38 +45,56 @@
 		<img src="img/cityview.png" alt="@@">
 	</div>
 	<div class="company__quoteblock company__quoteblock_white company__quoteblock_slider">
-		<div class="company__quoteimage">
-		    <img src="img/person_1.jpg" alt="@@" class="active">
-		    <img src="img/person_2.jpg" alt="@@">
-		</div>
-		<div class="company__quote">
-            <div class="company__quotecontent active">
-		        <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
-		        <p class="company__quoteauthor">Максим Кондратьев<br>Tecco IT CEO</p>
+	    <div class="company__quoteslider company__quoteslider_image">
+		    <div class="company__quoteslider-wrapper">
+		        <div class="company__quoteimage"><img src="img/person_1.jpg" alt="@@"></div>
+                <div class="company__quoteimage"><img src="img/person_2.jpg" alt="@@"></div>
+            </div>
+        </div>
+		<div class="company__quoteslider">
+		    <div class="company__quoteslider-wrapper">
+		        <div class="company__quote">
+		            <div class="company__quotecontent">
+		                <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
+		                <p class="company__quoteauthor">Максим Кондратьев<br>Tecco IT CEO</p>
+		            </div>
+		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_5.svg" alt="@@"></a>
+		        </div>
+		        <div class="company__quote company__quote_dark">
+		            <div class="company__quotecontent">
+		                <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
+			            <p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
+		            </div>
+		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_6.svg" alt="@@"></a>
+		        </div>
 		    </div>
-		    <div class="company__quotecontent">
-		        <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
-			    <p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
-		    </div>
-		    <a href="#" class="company__quotearrow"><img src="img/icon_arrow_5.svg" alt="@@"></a>
 		</div>
 	</div>
-	<div class="company__quoteblock company__quoteblock_bottom company__quoteblock_slider">
-	    <div class="company__quote">
-           <div class="company__quotecontent active">
-		        <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
-			    <p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
+	<div class="company__quoteblock company__quoteblock_white company__quoteblock_slider">
+		<div class="company__quoteslider">
+		    <div class="company__quoteslider-wrapper">
+                <div class="company__quote company__quote_dark">
+		            <div class="company__quotecontent">
+		                <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
+			            <p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
+		            </div>
+		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_6.svg" alt="@@"></a>
+		        </div>
+		        <div class="company__quote">
+		            <div class="company__quotecontent">
+		                <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
+		                <p class="company__quoteauthor">Максим Кондратьев<br>Tecco IT CEO</p>
+		            </div>
+		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_5.svg" alt="@@"></a>
+		        </div>
 		    </div>
-            <div class="company__quotecontent">
-		        <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
-		        <p class="company__quoteauthor">Максим Кондратьев<br>Tecco IT CEO</p>
-		    </div>
-		    <a href="#" class="company__quotearrow"><img src="img/icon_arrow_6.svg" alt="@@"></a>
 		</div>
-		<div class="company__quoteimage">
-            <img src="img/person_2.jpg" alt="@@" class="active">
-		    <img src="img/person_1.jpg" alt="@@">
-		</div>
+		<div class="company__quoteslider company__quoteslider_image">
+		    <div class="company__quoteslider-wrapper">
+                <div class="company__quoteimage"><img src="img/person_2.jpg" alt="@@"></div>
+                <div class="company__quoteimage"><img src="img/person_1.jpg" alt="@@"></div>
+            </div>
+        </div>
 	</div>
 	<div class="container container_bottom">
 		<div class="company__logos">

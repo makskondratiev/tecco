@@ -292,14 +292,13 @@
 	&__cityview {height: 913px; position: relative; overflow: hidden;
 		img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
 	}
+    &__quoteslider {overflow:hidden;
+        &-wrapper {display:flex; width: 100%; height: 100%; transform:translate3d(0,0,0); transition: transform 0.5s ease-in-out}
+    }
 	&__quoteblock {display: flex; height: 800px;
         &_slider {
-            .company__quotecontent {display:none;
-                &.active {display:block;}
-            }
-            .company__quoteimage img {display:none;
-                &.active {display:block;}
-            }
+            .company__quotecontent {display:block;}
+            .company__quoteimage img {display:block;}
         }
 		>div {width: 50%; position: relative;
             &:first-child {}
@@ -312,7 +311,9 @@
 		}
 	}
     &__quoteslide {width:100%;}
-	&__quote {background-color: #1a232c; transition: all 0.25s ease-in-out; color: #fff; position: relative; padding: 145px 167px 10px 87px; box-sizing: border-box;}
+	&__quote {background-color: white; transition: all 0.25s ease-in-out; color: #fff; position: relative; padding: 145px 167px 10px 87px; box-sizing: border-box;
+        &_dark {background-color:#1a232c !important; color: #fff !important;}
+    }
 	&__quotetext {font-size: 35px; font-style: italic; font-family: $gothic; letter-spacing: -0.04em; position: relative;
 		&:before {content: "«"; font-size: 105px; line-height: 1.3em; position: absolute; left: 0; top: -136px;}
 	}
@@ -321,7 +322,7 @@
 		&:hover {width: 23px; height: 42px;}
 		img {width: 100%; height: 100%;}
 	}
-	&__quoteimage {position: relative; overflow: hidden;
+	&__quoteimage {position: relative; overflow: hidden; width: 100%; height: 100%;
 		img {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; min-width: 100%; min-height: 100%; width: 0; object-fit: cover;}
 	}
 	&__logos {display: flex; flex-wrap: wrap; align-items: center; margin-top: 83px;
