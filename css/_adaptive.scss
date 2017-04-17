@@ -84,7 +84,7 @@ $darktwo: #1f2124;
 	.company__quote {padding: 145px 87px;}
 	.company__logos div img {max-width: 80%;}
 	.company__cityview {height: 813px;}
-	.company__quoteblock {height: 700px;}
+	.company__quoteblock {min-height: 700px;}
 	.cases .content-tabs__list li {margin-left: 40px;}
 	.content-tabs__list a {font-size: 20px;}
 	.case__tags {position: static; transform: translate(0); margin-top: 15px;}
@@ -129,7 +129,7 @@ $darktwo: #1f2124;
 	.company__cityview {height: 713px;}
 	.company__quotetext {font-size: 30px;}
 	.company__quote {padding: 145px 50px;}
-	.company__quoteblock {height: 600px;}
+	.company__quoteblock {min-height: 600px;}
 	.content-tabs__list a {font-size: 18px;}
 	.cases .content-tabs__list li {margin-left: 30px;}
 	.case__textblock, .case__textblock_bottom {padding: 50px 70px 80px;}
@@ -166,7 +166,7 @@ $darktwo: #1f2124;
 	.company__cityview {height: 600px;}
 	.company__quotetext {font-size: 25px;}
 	.company__quoteauthor {left: 50px; bottom: 38px; font-size: 20px;}
-	.company__quoteblock {height: 500px;}
+	.company__quoteblock {min-height: 500px;}
 	.cases .content-tabs .container {padding: 0 30px;}
 	.content-tabs__list a {font-size: 16px;}
 	.cases .content-tabs__list li {margin-left: 24px;}
@@ -321,7 +321,7 @@ $darktwo: #1f2124;
 	.company__quoteblock {flex-wrap: wrap; height: auto;}
 	.company__quoteblock > div {width: 100%;}
 	.company__quoteimage {height: 643px;}
-	.company__quote {padding: 152px 58px; height: 635px;}
+	.company__quote {padding: 152px 58px; min-height: 635px}
 	.company__quotetext {font-size: 35px;}
 	.company__quoteblock_bottom .company__quoteimage {order: 1;}
 	.company__quoteblock_bottom .company__quote {order: 2;}
@@ -498,7 +498,7 @@ $darktwo: #1f2124;
 	.company__features li {margin-bottom: 73px;}
 	.company__cityview {height: 569px;}
 	.company__quoteimage {height: 402px;}
-	.company__quote {padding: 96px 38px; height: 397px;}
+	.company__quote {padding: 96px 38px; min-height: 397px}
 	.company__quotetext {font-size: 22px;}
 	.company__quotetext:before {font-size: 66px; top: -86px;}
 	.company__quoteauthor {font-size: 15px; left: 34px; bottom: 42px;}
