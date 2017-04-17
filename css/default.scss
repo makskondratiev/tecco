@@ -295,7 +295,7 @@
     &__quoteslider {overflow:hidden;
         &-wrapper {display:flex; width: 100%; height: 100%; transform:translate3d(0,0,0); transition: transform 0.5s ease-in-out}
     }
-	&__quoteblock {display: flex; height: 800px;
+	&__quoteblock {display: flex; min-height: 800px;
         &_slider {
             .company__quotecontent {display:block;}
             .company__quoteimage img {display:block;}
