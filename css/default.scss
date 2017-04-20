@@ -297,6 +297,8 @@
     }
 	&__quoteblock {display: flex; min-height: 800px;
         &_slider {
+			&:nth-child(odd) {background-color: #1a232c;}
+			&:nth-child(even) {background-color: #ffffff;}
             .company__quotecontent {display:block;}
             .company__quoteimage img {display:block;}
         }
@@ -457,7 +459,7 @@
 	&__leftside {width: 50%; background-color: #111e2b; box-sizing: border-box; padding-top: 160px; padding-bottom: 150px;
 		.container {padding: 0 100px;}
 	}
-	&__map {width: 50%; background-color: #ccc;
+	&__map {width: calc((100% - 400px) / 2); background-color: #ccc; position: fixed !important; right: 0; top: 0; height: 100vh;
 		&.active {transform: translateX(0);}
 	}
 	&__address {line-height: 1.7em; position: relative;

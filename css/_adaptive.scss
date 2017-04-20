@@ -79,6 +79,7 @@ $darktwo: #1f2124;
 	.contacts .content__text {font-size: 25px;}
 	.contacts__success {font-size: 25px;}
 	.contacts__address svg {right: -41px; bottom: 8px;}
+	.contacts__map {width: calc((100% - 360px) / 2);}
 	.button {line-height: 60px; font-size: 25px; padding-bottom: 0px;}
 	.company .content__text {width: 80%;}
 	.company__quote {padding: 145px 87px;}
@@ -292,7 +293,7 @@ $darktwo: #1f2124;
 	.services__moreinfo .content__text_link {right: 50px;}
 	.contacts {flex-wrap: wrap;}
 	.contacts__leftside {width: 100%; padding-top: 61px; padding-bottom: 63px;}
-	.contacts__map {width: 100%; transform: translateX(-100%); top: 215px; height: auto; bottom: 150px; position: absolute;}
+	.contacts__map {width: 100%; transform: translateX(-100%); top: 215px; height: auto; bottom: 150px; position: absolute !important;}
 	.contacts .content__text {font-size: 35px;}
 	.contacts__success {font-size: 35px;}
 	.contacts__address > svg {display: none;}

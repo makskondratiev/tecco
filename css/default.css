@@ -1174,6 +1174,10 @@ select, input, textarea {
   .company__quoteblock {
     display: flex;
     min-height: 800px; }
+    .company__quoteblock_slider:nth-child(odd) {
+      background-color: #1a232c; }
+    .company__quoteblock_slider:nth-child(even) {
+      background-color: #ffffff; }
     .company__quoteblock_slider .company__quotecontent {
       display: block; }
     .company__quoteblock_slider .company__quoteimage img {
@@ -1710,8 +1714,12 @@ select, input, textarea {
     .contacts__leftside .container {
       padding: 0 100px; }
   .contacts__map {
-    width: 50%;
-    background-color: #ccc; }
+    width: calc((100% - 400px) / 2);
+    background-color: #ccc;
+    position: fixed !important;
+    right: 0;
+    top: 0;
+    height: 100vh; }
     .contacts__map.active {
       transform: translateX(0); }
   .contacts__address {
@@ -2039,6 +2047,8 @@ select, input, textarea {
   .contacts__address svg {
     right: -41px;
     bottom: 8px; }
+  .contacts__map {
+    width: calc((100% - 360px) / 2); }
   .button {
     line-height: 60px;
     font-size: 25px;
@@ -2536,7 +2546,7 @@ select, input, textarea {
     top: 215px;
     height: auto;
     bottom: 150px;
-    position: absolute; }
+    position: absolute !important; }
   .contacts .content__text {
     font-size: 35px; }
   .contacts__success {
