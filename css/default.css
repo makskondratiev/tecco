@@ -1174,14 +1174,12 @@ select, input, textarea {
   .company__quoteblock {
     display: flex;
     min-height: 800px; }
-    .company__quoteblock_slider:nth-child(odd) {
-      background-color: #1a232c; }
-    .company__quoteblock_slider:nth-child(even) {
-      background-color: #ffffff; }
-    .company__quoteblock_slider .company__quotecontent {
-      display: block; }
-    .company__quoteblock_slider .company__quoteimage img {
-      display: block; }
+    .company__quoteblock_slider {
+      background-color: #fff; }
+      .company__quoteblock_slider .company__quotecontent {
+        display: block; }
+      .company__quoteblock_slider .company__quoteimage img {
+        display: block; }
     .company__quoteblock > div {
       width: 50%;
       position: relative; }
