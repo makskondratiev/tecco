@@ -296,7 +296,7 @@
         &-wrapper {display:flex; width: 100%; height: 100%; transform:translate3d(0,0,0); transition: transform 0.5s ease-in-out}
     }
 	&__quoteblock {display: flex; min-height: 800px;
-        &_slider {
+        &_slider {background-color: #fff;
             .company__quotecontent {display:block;}
             .company__quoteimage img {display:block;}
         }
@@ -457,7 +457,7 @@
 	&__leftside {width: 50%; background-color: #111e2b; box-sizing: border-box; padding-top: 160px; padding-bottom: 150px;
 		.container {padding: 0 100px;}
 	}
-	&__map {width: 50%; background-color: #ccc;
+	&__map {width: calc((100% - 400px) / 2); background-color: #ccc; position: fixed !important; right: 0; top: 0; height: 100vh;
 		&.active {transform: translateX(0);}
 	}
 	&__address {line-height: 1.7em; position: relative;

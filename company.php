@@ -60,12 +60,12 @@
 		            </div>
 		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_5.svg" alt="@@"></a>
 		        </div>
-		        <div class="company__quote company__quote_dark">
+		        <div class="company__quote">
 		            <div class="company__quotecontent">
 		                <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
 			            <p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
 		            </div>
-		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_6.svg" alt="@@"></a>
+		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_5.svg" alt="@@"></a>
 		        </div>
 		    </div>
 		</div>
@@ -73,12 +73,12 @@
 	<div class="company__quoteblock company__quoteblock_white company__quoteblock_slider">
 		<div class="company__quoteslider">
 		    <div class="company__quoteslider-wrapper">
-                <div class="company__quote company__quote_dark">
+                <div class="company__quote">
 		            <div class="company__quotecontent">
 		                <p class="company__quotetext">Безумно остроумная цитата, которая проливает свет на крутость компании и прошаренность ее руководителя</p>
 			            <p class="company__quoteauthor">Евгений Чичваркин<br>Head of sales Dept.</p>
 		            </div>
-		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_6.svg" alt="@@"></a>
+		            <a href="#" class="company__quotearrow"><img src="img/icon_arrow_5.svg" alt="@@"></a>
 		        </div>
 		        <div class="company__quote">
 		            <div class="company__quotecontent">

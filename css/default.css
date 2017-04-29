@@ -595,12 +595,14 @@ select, input, textarea {
 .services .container {
   width: auto;
   padding: 0 90px; }
+
 .services__development {
   background-color: #111e2b;
   padding-top: 127px;
   padding-bottom: 159px; }
   .services__development .container {
     position: relative; }
+
 .services__list {
   margin-top: 94px; }
   .services__list li {
@@ -624,11 +626,13 @@ select, input, textarea {
   .services__list p {
     font-size: 18px;
     font-weight: 300; }
+
 .services__quote {
   position: absolute;
   top: 19px;
   right: 116px;
   width: 34.4%; }
+
 .services__quotetext {
   font-size: 35px;
   font-style: italic;
@@ -637,22 +641,25 @@ select, input, textarea {
   letter-spacing: -0.04em;
   position: relative; }
   .services__quotetext:before {
-    content: "┬л";
+    content: "«";
     font-size: 105px;
     line-height: 1.3em;
     position: absolute;
     left: 0;
     top: -136px; }
+
 .services__quoteauthor {
   font-size: 23px;
   font-family: "Century Gothic", Arial, sans-serif;
   letter-spacing: -0.04em;
   position: absolute;
   bottom: 46px; }
+
 .services__outsourcing {
   color: #221f1f;
   padding-top: 102px;
   padding-bottom: 186px; }
+
 .services__moreinfo {
   margin-top: 128px;
   position: relative;
@@ -878,12 +885,14 @@ select, input, textarea {
         background-color: #221f1f; }
         .cases .content-tabs__switcher li.active svg {
           stroke: #fff; }
+
 .cases .content-tabs__list li {
   margin-left: 49px;
   padding: 16px 0 18px;
   transition: all 0.25s ease-in-out; }
   .cases .content-tabs__list li:first-child {
     margin-left: 0; }
+
 .cases__list {
   overflow: hidden; }
   .cases__list * {
@@ -1020,6 +1029,7 @@ select, input, textarea {
     .cases__list:not(.squares) > li:hover .cases__arrow {
       opacity: 1;
       transform: translate3d(0, 0, 0); }
+
 .cases__bg {
   position: absolute;
   left: -1%;
@@ -1048,11 +1058,13 @@ select, input, textarea {
     transform: translate3d(0, 0, 0);
     opacity: 0;
     transition: all .25s ease-in-out; }
+
 .cases__arrow {
   position: absolute;
   right: 60px;
   bottom: 74px;
   transition: all 0.25s ease-in-out; }
+
 .cases__textblock {
   display: inline-block;
   text-align: left;
@@ -1060,6 +1072,7 @@ select, input, textarea {
   margin-right: 127px;
   transition: all 0.2s ease-in-out;
   transition-delay: 0.1s; }
+
 .cases__heading {
   font-size: 43px;
   font-weight: 600;
@@ -1067,6 +1080,7 @@ select, input, textarea {
   letter-spacing: -0.04em;
   position: relative;
   z-index: 3; }
+
 .cases__subheading {
   font-size: 16px;
   color: #ababac;
@@ -1074,6 +1088,7 @@ select, input, textarea {
   padding-left: 4px;
   position: relative;
   z-index: 3; }
+
 .cases__text {
   font-size: 16px;
   background: linear-gradient(to bottom, #fff 0%, transparent 100%);
@@ -1159,10 +1174,12 @@ select, input, textarea {
   .company__quoteblock {
     display: flex;
     min-height: 800px; }
-    .company__quoteblock_slider .company__quotecontent {
-      display: block; }
-    .company__quoteblock_slider .company__quoteimage img {
-      display: block; }
+    .company__quoteblock_slider {
+      background-color: #fff; }
+      .company__quoteblock_slider .company__quotecontent {
+        display: block; }
+      .company__quoteblock_slider .company__quoteimage img {
+        display: block; }
     .company__quoteblock > div {
       width: 50%;
       position: relative; }
@@ -1206,7 +1223,7 @@ select, input, textarea {
     letter-spacing: -0.04em;
     position: relative; }
     .company__quotetext:before {
-      content: "┬л";
+      content: "«";
       font-size: 105px;
       line-height: 1.3em;
       position: absolute;
@@ -1336,6 +1353,7 @@ select, input, textarea {
     position: relative; }
   .case .content-tabs p {
     display: inline-block; }
+
 .case__name {
   font-size: 22px;
   font-weight: 600;
@@ -1343,6 +1361,7 @@ select, input, textarea {
   font-family: "Century Gothic", Arial, sans-serif;
   padding-left: 13px;
   letter-spacing: -0.04em; }
+
 .case__sitetype {
   font-size: 22px;
   color: #a6a6a6;
@@ -1352,6 +1371,7 @@ select, input, textarea {
   margin-left: 23px;
   line-height: 0.95em;
   letter-spacing: -0.04em; }
+
 .case__tags {
   position: absolute;
   left: 50%;
@@ -1365,6 +1385,7 @@ select, input, textarea {
     color: #a6a6a6;
     font-family: "Century Gothic", Arial, sans-serif;
     letter-spacing: -0.04em; }
+
 .case__backbutton {
   font-size: 22px;
   font-weight: 600;
@@ -1383,6 +1404,7 @@ select, input, textarea {
     bottom: 0;
     margin: auto;
     transform: rotate(180deg); }
+
 .case__firstscreen {
   height: 1087px;
   box-sizing: border-box;
@@ -1408,6 +1430,7 @@ select, input, textarea {
     object-fit: cover;
     z-index: -1;
     transition: all 4s ease-in-out; }
+
 .case__logo {
   margin-left: -11px;
   width: 323px;
@@ -1417,10 +1440,12 @@ select, input, textarea {
     left: 6.3%;
     top: 44.4%;
     margin: 0; }
+
 .case__subheading {
   font-size: 16px;
   color: #ababac;
   margin-top: 20px; }
+
 .case__link {
   font-size: 25px;
   font-weight: 600;
@@ -1443,17 +1468,21 @@ select, input, textarea {
     transform-origin: left center; }
   .case__link:hover:after {
     transform: scale3d(1.3, 1, 1); }
+
 .case__smalltext {
   font-size: 16px;
   margin-top: 84px;
   max-width: 470px; }
+
 .case__text {
   margin-top: 297px;
   max-width: 1080px; }
+
 .case__infoblock {
   height: 570px;
   display: flex;
   flex-wrap: wrap; }
+
 .case__image {
   width: 50%;
   position: relative;
@@ -1469,6 +1498,7 @@ select, input, textarea {
     min-height: 100%;
     width: 0;
     object-fit: cover; }
+
 .case__textblock {
   width: 50%;
   display: flex;
@@ -1477,9 +1507,11 @@ select, input, textarea {
   align-items: center; }
   .case__textblock_bottom {
     padding: 50px 90px 80px 103px; }
+
 .case__infotext {
   color: #32333c;
   margin-top: 0; }
+
 .case__designblock {
   background-color: #d7dbe3;
   text-align: center;
@@ -1496,10 +1528,12 @@ select, input, textarea {
     max-width: 1512px;
     max-height: 708px;
     width: 100%; }
+
 .case__slider {
   margin-top: -3px;
   position: relative;
   overflow: hidden; }
+
 .case__wrapper {
   position: relative;
   height: 100%;
@@ -1510,6 +1544,7 @@ select, input, textarea {
   transform: translate3d(0, 0, 0);
   webkit-font-smoothing: antialiased;
   transition: transform .7s ease-in-out; }
+
 .case__slide {
   height: 100%;
   display: inline-block;
@@ -1517,6 +1552,7 @@ select, input, textarea {
   position: relative; }
   .case__slide img {
     width: 100%; }
+
 .case__slidearrows {
   position: absolute;
   height: 73px;
@@ -1545,12 +1581,15 @@ select, input, textarea {
       transform: rotate(180deg); }
   .case__slidearrows .next {
     right: 0; }
+
 .case__bigimage {
   width: 100%;
   width: auto;
   position: relative; }
+
 .case__bg {
   width: 100%; }
+
 .case__about {
   padding-top: 103px;
   padding-bottom: 100px; }
@@ -1597,6 +1636,7 @@ select, input, textarea {
         margin: auto; }
       .case__about ul li:first-child {
         margin-top: 0; }
+
 .case__contactblock {
   padding-top: 53px;
   padding-bottom: 210px; }
@@ -1672,8 +1712,12 @@ select, input, textarea {
     .contacts__leftside .container {
       padding: 0 100px; }
   .contacts__map {
-    width: 50%;
-    background-color: #ccc; }
+    width: calc((100% - 400px) / 2);
+    background-color: #ccc;
+    position: fixed !important;
+    right: 0;
+    top: 0;
+    height: 100vh; }
     .contacts__map.active {
       transform: translateX(0); }
   .contacts__address {
@@ -1805,6 +1849,7 @@ select, input, textarea {
     transform: translate3d(3px, 0, 0); }
   75% {
     transform: translate3d(-3px, 0, 0); } }
+
 @keyframes bouncey {
   0%, 50%, 100% {
     transform: translate3d(0, 0, 0); }
@@ -1812,6 +1857,7 @@ select, input, textarea {
     transform: translate3d(0, 3px, 0); }
   75% {
     transform: translate3d(0, -3px, 0); } }
+
 .content__scroll-link:hover .scrollbutton svg {
   animation: bouncey 1.5s linear infinite; }
 
@@ -1829,7 +1875,6 @@ select, input, textarea {
 @media (min-width: 1000px) {
   .header__burgermenu {
     display: none; }
-
   li.header__caseslink {
     background-color: #fff;
     overflow: hidden;
@@ -1885,7 +1930,6 @@ select, input, textarea {
       z-index: 2; }
     li.header__caseslink .header__menuheading:after {
       display: none; }
-
   .header__casesimage {
     position: absolute;
     left: 0;
@@ -1895,556 +1939,405 @@ select, input, textarea {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover; }
-
   .contacts__pinsquare {
     display: none; }
-
   .contacts__social {
     display: none; }
-
   .header__square_social {
     display: none; }
-
   .header__menu {
     display: flex;
     flex-direction: column;
     height: 100vh;
     box-sizing: border-box; } }
+
 @media (min-width: 1000px) and (max-height: 1060px) {
   .header__menuheading {
     font-size: 36px; }
-
   .header__menu a {
     padding-top: 30px;
     padding-bottom: 40px; }
-
   .header__menuicon {
     bottom: 40px; } }
+
 @media (min-width: 1000px) and (max-height: 910px) {
   .header__menuheading {
     font-size: 32px; }
-
   .header__menu a {
     padding-top: 25px;
     padding-bottom: 31px; }
-
   .header__menuicon {
     bottom: 30px; }
-
   .header__logo img {
     width: 120px; }
-
   .header__logoblock {
     padding-top: 33px;
     padding-bottom: 33px; }
-
   .header__menu {
     padding-top: 122px; }
-
   .header__square_language {
     top: 43px; }
-
   .header__menuheading:after {
     width: 106px; } }
+
 @media (min-width: 1000px) and (max-height: 770px) {
   .header__menuheading {
     font-size: 29px; }
-
   .header__itemtext {
     margin-top: 20px; }
-
   .header__menu a {
     padding-top: 20px;
     padding-bottom: 27px; }
-
   .header__menuicon {
     bottom: 24px; }
-
   .header__menuheading:after {
     width: 96px; } }
+
 @media (max-width: 1950px) {
   .button {
     line-height: 62px;
     font-size: 30px; }
-
   .content__bgphone {
     max-width: 750px; }
-
   .case .content-tabs .container {
     padding: 0 50px; }
-
   .case__name {
     padding: 0;
     font-size: 20px; }
-
   .case__sitetype {
     font-size: 20px;
     padding-left: 10px;
     margin-left: 13px; }
-
   .case__backbutton {
     font-size: 20px; }
-
   .company__logos div {
     width: 25%; }
-
   .contacts__leftside .container {
     padding: 0 80px; }
-
   .contacts .content__text {
     font-size: 28px; }
-
   .contacts__success {
     font-size: 28px; }
-
   .services__quote {
     height: 600px; }
-
   .technology__column {
     width: 22.6%; }
-
   .technology .content__scroll-link br {
     display: none; } }
+
 @media (max-width: 1950px) {
   .technology__column {
     width: 31.6%; }
-
   .services__quote {
     right: 70px; }
-
   .services__quotetext {
     font-size: 30px; }
-
   .services__textblock {
     width: 53.4%; }
-
   .content__bgphone {
     max-width: 550px; }
-
   .contacts__leftside .container {
     padding: 0 60px; }
-
   .contacts .content__text {
     font-size: 25px; }
-
   .contacts__success {
     font-size: 25px; }
-
   .contacts__address svg {
     right: -41px;
     bottom: 8px; }
-
+  .contacts__map {
+    width: calc((100% - 360px) / 2); }
   .button {
     line-height: 60px;
     font-size: 25px;
     padding-bottom: 0px; }
-
   .company .content__text {
     width: 80%; }
-
   .company__quote {
     padding: 145px 87px; }
-
   .company__logos div img {
     max-width: 80%; }
-
   .company__cityview {
     height: 813px; }
-
   .company__quoteblock {
     min-height: 700px; }
-
   .cases .content-tabs__list li {
     margin-left: 40px; }
-
   .content-tabs__list a {
     font-size: 20px; }
-
   .case__tags {
     position: static;
     transform: translate(0);
     margin-top: 15px; }
-
   .case__tags li:first-child {
     margin-left: 0; }
-
   .case__textblock, .case__textblock_bottom {
     padding: 50px 90px 80px; }
-
   .header {
     width: 360px; }
-
   .content {
     padding-left: 360px; }
-
   .header__logoblock, li.header__caseslink a, .header__menu a {
     padding-left: 30px;
     padding-right: 30px; }
-
   .header__menuicon, .header__menuicon_arrow, li.header__caseslink .header__menuicon, .header__square_language {
     right: 30px; }
-
   .cases__heading {
     font-size: 35px; }
-
   .content__heading {
     font-size: 40px; }
-
   .content__scroll-link {
     font-size: 29px; }
-
   .content_main {
     padding-top: 220px;
     padding-bottom: 90px; }
-
   .content__scroll-link {
     margin-top: 200px; }
-
   .content__text {
     font-size: 28px;
     margin-top: 50px; }
-
   .services__quotetext {
     font-size: 27px; }
-
   .services__quoteauthor {
     font-size: 20px; }
-
   .services__quote {
     height: auto;
     padding-bottom: 140px; }
-
   .services__list {
     margin-top: 60px; }
-
   .company .content__text, .company__abouttext {
     margin-top: 50px; }
-
   .company__abouttext {
     font-size: 25px; }
-
   .company__feature-name {
     font-size: 30px; }
-
   .company__quotetext {
     font-size: 28px; }
-
   .company__moreinfo {
     margin-top: 140px; }
-
   .company {
     padding-bottom: 100px; } }
+
 @media (max-width: 1440px) {
   .content__textblock {
     width: 63.4%; }
-
   .services__textblock {
     width: 53.4%; }
-
   .services__quote {
     right: 50px;
     padding-top: 100px;
     height: 450px; }
-
   .services__quotetext {
     font-size: 24px; }
-
   .services__quotetext:before {
     font-size: 75px;
     top: -96px; }
-
   .services__quoteauthor {
     font-size: 18px; }
-
   .contacts__mapimage:nth-child(1) {
     left: 13%; }
-
   .contacts__mapimage:nth-child(3) {
     right: 4%; }
-
   .contacts__leftside .container {
     padding: 0 40px; }
-
   .contacts__address {
     padding-right: 50px; }
-
   .contacts__address svg {
     right: 0; }
-
   .company__feature-name {
     font-size: 30px; }
-
   .company__feature-name img {
     max-width: 35px; }
-
   .company__cityview {
     height: 713px; }
-
   .company__quotetext {
     font-size: 30px; }
-
   .company__quote {
     padding: 145px 50px; }
-
   .company__quoteblock {
     min-height: 600px; }
-
   .content-tabs__list a {
     font-size: 18px; }
-
   .cases .content-tabs__list li {
     margin-left: 30px; }
-
   .case__textblock, .case__textblock_bottom {
     padding: 50px 70px 80px; }
-
   .case .content__text {
     font-size: 30px; }
-
   .case__about p, .case__about h3 {
     font-size: 30px; }
-
   .case__about p small, .case__about h3 small {
     font-size: 18px; }
-
   .content__scroll-link {
     margin-top: 120px; }
-
   .content_main {
     padding-top: 160px; }
-
   .company__quoteauthor {
     left: 50px; } }
+
 @media (max-width: 1280px) {
   .content__textblock {
     width: 78.4%; }
-
   .content__text {
     font-size: 29px; }
-
   .content__scroll-link {
     font-size: 29px; }
-
   .technology .content__scroll-link {
     margin-top: 85px; }
-
   .technology__name {
     font-size: 24px; }
-
   .technology__card {
     min-height: 200px;
     max-height: 200px; }
-
   .technology__icon {
     width: 130px;
     height: 130px; }
-
   .content__heading {
     font-size: 36px; }
-
   .content__bgphone {
     max-width: 420px; }
-
   .technology .content__text {
     margin-top: 82px; }
-
   .squareblock {
     width: 450px;
     height: 450px; }
-
   .services__quote {
     position: static;
     margin-top: 90px; }
-
   .services__textblock {
     width: 100%; }
-
   .contacts .content__text {
     font-size: 22px; }
-
   .contacts__success {
     font-size: 22px; }
-
   .contacts__phonemail {
     flex-wrap: wrap; }
-
   .contacts .contacts__phone {
     margin-top: 20px; }
-
   .contacts__form input, .contacts__form textarea {
     font-size: 20px; }
-
   .contacts__mapimage {
     width: 100px; }
-
   .company__features li {
     width: 80%;
     min-height: 0;
     padding-bottom: 0;
     margin-bottom: 50px; }
-
   .company__feature-text {
     margin-top: 25px; }
-
   .company__cityview {
     height: 600px; }
-
   .company__quotetext {
     font-size: 25px; }
-
   .company__quoteauthor {
     left: 50px;
     bottom: 38px;
     font-size: 20px; }
-
   .company__quoteblock {
     min-height: 500px; }
-
   .cases .content-tabs .container {
     padding: 0 30px; }
-
   .content-tabs__list a {
     font-size: 16px; }
-
   .cases .content-tabs__list li {
     margin-left: 24px; }
-
   .case__text {
     margin-top: 200px; }
-
   .case__firstscreen {
     height: auto; }
-
   .cases__list.squares > li {
     width: 50%; }
-
   .content__scroll-link {
     font-size: 24px; }
-
   .content_main {
     padding-top: 120px; }
-
   .cases__heading {
     font-size: 28px; } }
+
 @media (max-width: 1120px) {
   .content__text {
     font-size: 24px; }
-
   .content__scroll-link {
     font-size: 24px; }
-
   .technology__column {
     width: 47.7%; }
-
   .content-tabs__list li {
     margin-left: 50px; }
-
   .cases .content-tabs__switcher li svg {
     width: 20px; }
-
   .cases .content-tabs__list {
     padding-right: 115px; }
-
   .cases .content-tabs__switcher li {
     padding: 0 15px; }
-
   .company .content__text {
     width: 100%; }
-
   .company__abouttext {
     width: 100%; }
-
   .company__features li {
     width: 100%; }
-
   .company__cityview {
     height: 500px; }
-
   .company__quotetext {
     font-size: 23px; }
-
   .company__quote {
     padding: 145px 30px; }
-
   .company__quoteauthor {
     left: 30px; }
-
   .company__moreinfo .content__text {
     width: auto; }
-
   .cases .content-tabs .container {
     padding: 0; }
-
   .cases .content-tabs__list li {
     margin-left: 24px !important; }
-
   .cases__textblock {
     margin-right: 60px; }
-
   .case .content-tabs .container {
     padding: 0 30px; }
-
   .case__text {
     margin-top: 100px; }
-
   .case__textblock, .case__textblock_bottom {
     padding: 50px; }
-
   .case .content__text {
     font-size: 26px; }
-
   .case__infoblock {
     height: 400px; }
-
   .case__designblock {
     padding-top: 70px; }
-
   .case__designblock img {
     margin-top: 70px; }
-
   .case__about p, .case__about h3 {
     font-size: 26px; }
-
   .case__about p small, .case__about h3 small {
     font-size: 18px; } }
+
 @media (max-width: 999px) {
   body {
     padding-top: 69px; }
-
   .header {
     width: 100%;
     height: auto;
     z-index: 10;
     overflow: hidden; }
-
   .content {
     width: 100%;
     padding-left: 0; }
-
   .container {
     padding: 0 35px; }
-
   .social {
     display: none; }
-
   .header__logoblock {
     position: relative;
     padding: 17px 35px;
     background-color: #f5f5f6; }
-
   .header__logo {
     display: inline-block; }
-
   .header__logo img {
     width: 143px;
     height: 35px; }
-
   .header__square {
     position: relative; }
-
   .header__logotext {
     display: none; }
-
   .header__side {
     width: 400px;
     position: fixed;
@@ -2458,10 +2351,8 @@ select, input, textarea {
     overflow-y: scroll;
     height: calc(100vh - 69px);
     box-sizing: border-box; }
-
   .header__side.active {
     transform: translate3d(0, 0, 0); }
-
   .header__square_language {
     top: auto;
     right: auto;
@@ -2469,62 +2360,47 @@ select, input, textarea {
     height: auto;
     margin-top: 33px;
     margin-left: 42px; }
-
   .header__square-list {
     display: inline-block;
     opacity: 1;
     pointer-events: all;
     vertical-align: top; }
-
   .header__square-list li {
     display: inline-block;
     margin-left: 17px; }
-
   .header__square-list a {
     border-top: 2px solid #221f1f;
     vertical-align: top; }
-
   .header__square a {
     width: 70px;
     height: 70px;
     font-size: 23px;
     font-weight: 600;
     padding: 2px 6px; }
-
   .header__casesimage {
     display: none; }
-
   .header__menuicon_arrow {
     display: none; }
-
   .header__itemtext {
     color: #131920;
     font-weight: 500;
     margin-top: 9px; }
-
   .header__menu {
     padding-top: 21px; }
-
   .header__caseslink a {
     padding: 39px 41px 16px; }
-
   .header__caseslink .header__menuicon {
     position: absolute;
     right: 35px;
     top: 82px; }
-
   .header__menu li:nth-child(2) a {
     padding: 39px 41px 40px; }
-
   .header__menu li:nth-child(3) .header__itemtext {
     margin-top: 25px; }
-
   .header__menu li:nth-child(3) a {
     padding: 39px 41px 35px; }
-
   .header__menu li:nth-child(4) a {
     padding: 39px 41px 40px; }
-
   .header__square_social {
     top: auto;
     right: auto;
@@ -2532,129 +2408,96 @@ select, input, textarea {
     height: auto;
     margin-top: 40px;
     margin-left: 25px; }
-
   .header__square_social > a {
     display: none; }
-
   .header__square_social li:nth-child(1) svg {
     width: 12px; }
-
   .header__square_social li:nth-child(2) svg {
     width: 22px; }
-
   .header__square_social li:nth-child(3) svg {
     width: 22px; }
-
   .content_main {
     padding-top: 116px;
     text-align: right; }
-
   .content__scroll-link {
     display: block;
     margin-top: 194px;
     text-align: center;
     padding-left: 0; }
-
   .content__scroll-link:before {
     right: 0;
     top: -180px; }
-
   .content__bgmain {
     display: none; }
-
   .content__bgphone {
     position: static;
     transform: translate(0);
     width: 85%;
     max-width: 100%;
     margin-top: 53px; }
-
   .content_main .content__heading {
     text-align: center; }
-
   .content_main .scrollbutton {
     bottom: auto;
     top: -97px; }
-
   .cases__list.squares > li {
     width: 100%; }
-
   .technology .container {
     padding: 0 39px; }
-
   .content__heading {
     font-size: 51px; }
-
   .technology {
     padding-top: 91px; }
-
   .technology__icon {
     width: 107px;
     height: 107px;
     right: 31px;
     top: 0; }
-
   .content__text {
     font-size: 35px; }
-
   .technology .content__text {
     margin-top: 120px; }
-
   .content__textblock {
     width: 100%; }
-
   .content__scroll-link {
     font-size: 35px; }
-
   .technology .content__scroll-link {
     padding-left: 0;
     text-align: left;
     margin-top: 165px; }
-
   .scrollbutton {
     top: auto;
     bottom: -138px;
     left: 50%;
     transform: translateX(-50%); }
-
   .technology__list {
     margin-top: 233px; }
-
   .technology__name {
     font-size: 30px; }
-
   .technology__card {
     min-height: 269px;
     max-height: 269px;
     margin-top: 9%; }
-
   .technology .squareblock {
     margin-top: 183px;
     width: 100%;
     height: 564px;
     padding: 40px 45px 47px 36px; }
-
   .technology .squareblock .content__text_link {
     bottom: 88px;
     right: 55px; }
-
   .services .content-tabs {
     display: none; }
-
   .services .container {
     padding: 0 35px; }
-
   .services__development {
     padding-top: 91px;
     padding-bottom: 132px; }
-
   .services .content__text {
     margin-top: 117px; }
-
   .services__list {
     margin-top: 115px;
     padding-left: 4px; }
-
   .services__quote {
     margin-top: 127px;
     margin-left: auto;
@@ -2664,195 +2507,141 @@ select, input, textarea {
     padding-left: 33px;
     padding-bottom: 204px;
     height: auto; }
-
   .services__quotetext:before {
     font-size: 105px;
     top: -136px; }
-
   .services__quotetext {
     font-size: 35px; }
-
   .services__quoteauthor {
     font-size: 23px;
     bottom: 48px; }
-
   .services__outsourcing {
     padding-top: 90px;
     padding-bottom: 175px; }
-
   .services__outsourcing .container {
     padding: 0 40px; }
-
   .content__smalltext {
     margin-top: 70px;
     padding-right: 10px; }
-
   .services__moreinfo {
     margin-top: 113px;
     width: 100%;
     padding-right: 40px;
     height: 550px; }
-
   .services__moreinfo .content__text {
     margin-top: 0; }
-
   .services__moreinfo .content__text_link {
     right: 50px; }
-
   .contacts {
     flex-wrap: wrap; }
-
   .contacts__leftside {
     width: 100%;
     padding-top: 61px;
     padding-bottom: 63px; }
-
   .contacts__map {
     width: 100%;
     transform: translateX(-100%);
     top: 215px;
     height: auto;
     bottom: 150px;
-    position: absolute; }
-
+    position: absolute !important; }
   .contacts .content__text {
     font-size: 35px; }
-
   .contacts__success {
     font-size: 35px; }
-
   .contacts__address > svg {
     display: none; }
-
   .contacts__leftside .container {
     padding: 0 25px; }
-
   .contacts__phonemail {
     margin-top: 86px; }
-
   .contacts .contacts__phone {
     margin-top: 0; }
-
   .contacts__form {
     margin-top: 89px; }
-
   .contacts__form input, .contacts__form textarea {
     font-size: 25px; }
-
   .button {
     line-height: 72px;
     font-size: 35px;
     padding-bottom: 8px; }
-
   .contacts__mapimage {
     width: 136px; }
-
   .contacts__mapimage:nth-child(1) {
     width: 108px;
     left: 13%;
     bottom: 5%; }
-
   .contacts__mapimage:nth-child(2) {
     left: 20%;
     top: 21%; }
-
   .contacts__mapimage:nth-child(3) {
     bottom: 32%;
     right: 7%; }
-
   .company__mainpart {
     padding-top: 91px; }
-
   .company__abouttext {
     margin-top: 123px; }
-
   .company__feature-name {
     font-size: 35px; }
-
   .company__feature-name img {
     max-width: none; }
-
   .company__features {
     margin-top: 124px; }
-
   .company__feature-text {
     margin-top: 58px;
     padding-right: 10px; }
-
   .company__features li {
     margin-bottom: 120px; }
-
   .company__features li:nth-child(1) {
     order: 1; }
-
   .company__features li:nth-child(2) {
     order: 4;
     margin-bottom: 37px; }
-
   .company__features li:nth-child(3) {
     order: 2; }
-
   .company__features li:nth-child(4) {
     order: 3; }
-
   .company__cityview {
     height: 914px; }
-
   .company__quoteblock {
     flex-wrap: wrap;
     height: auto; }
-
   .company__quoteblock > div {
     width: 100%; }
-
   .company__quoteimage {
     height: 643px; }
-
   .company__quote {
     padding: 152px 58px;
     min-height: 635px; }
-
   .company__quotetext {
     font-size: 35px; }
-
   .company__quoteblock_bottom .company__quoteimage {
     order: 1; }
-
   .company__quoteblock_bottom .company__quote {
     order: 2; }
-
   .company__quoteauthor {
     left: 56px;
     bottom: 69px;
     font-size: 23px; }
-
   .company__quoteblock_bottom .company__quoteauthor {
     bottom: 81px; }
-
   .company__logos {
     margin-top: 26px; }
-
   .company__logos div {
     width: 50%;
     margin-top: 54px; }
-
   .company__logos div:nth-child(8) {
     display: none; }
-
   .company__logos div:nth-child(9) {
     display: none; }
-
   .company .container_bottom {
     padding: 0 45px; }
-
   .company__moreinfo {
     width: 100%;
     margin-top: 171px;
     height: 551px; }
-
   .company {
     padding-bottom: 160px; }
-
   .cases .content-tabs {
     position: fixed;
     top: 69px;
@@ -2861,162 +2650,117 @@ select, input, textarea {
     white-space: nowrap;
     overflow-x: scroll;
     z-index: 5; }
-
   .cases .content-tabs__list {
     padding-right: 24px; }
-
   .cases .content-tabs__switcher {
     display: none; }
-
   .cases__list > li {
     text-align: center;
     height: 640px; }
-
   .cases__list > li:after {
     transform: none; }
-
   .cases__list.squares .cases__textblock {
     transform: none; }
-
   .cases__text {
     display: none; }
-
   .cases__arrow {
     display: none; }
-
   .cases__social {
     display: none; }
-
   .cases__list > li:after {
     opacity: 1; }
-
   .case .content-tabs {
     display: none; }
-
   .case__firstscreen {
     background-image: -moz-linear-gradient(135deg, #4a4f65 0%, #252730 51%, #020812 99%);
     background-image: -webkit-linear-gradient(135deg, #4a4f65 0%, #252730 51%, #020812 99%);
     background-image: -ms-linear-gradient(135deg, #4a4f65 0%, #252730 51%, #020812 99%);
     padding-top: 79px;
     padding-bottom: 0; }
-
   .case__firstscreen .container {
     padding: 0 43px;
     position: relative; }
-
   .case__logo {
     margin-left: 2px; }
-
   .case__subheading {
     padding-left: 13px; }
-
   .case__smalltext {
     max-width: 100%; }
-
   .case__text.content__text {
     font-size: 35px;
     margin-top: 222px;
     padding-top: 87px;
     padding-bottom: 138px; }
-
   .case__firstscreen > img {
     z-index: 0;
     top: auto;
     min-height: 30%; }
-
   .case__image {
     width: 100%;
     height: 453px; }
-
   .case__textblock, .case__textblock_bottom {
     width: 100%;
     min-height: 453px;
     padding: 44px; }
-
   .case__infoblock {
     height: auto; }
-
   .case .content__text {
     font-size: 35px; }
-
   .case__designblock {
     padding-top: 42px;
     padding-bottom: 33px; }
-
   .case__designblock img {
     margin-top: 39px;
     width: 95%; }
-
   .case__slider {
     margin-top: 3px; }
-
   .case__slidearrows {
     top: auto;
     bottom: 0;
     transform: translate(0); }
-
   .case__logo_bottom {
     width: 130px;
     top: 37.4%; }
-
   .case__contactblock {
     padding-top: 43px;
     padding-bottom: 60px; }
-
   .case__contactblock .container {
     padding: 0 47px; }
-
   .case__contactblock .squareblock {
     width: 100%;
     height: 550px; }
-
   .cases__list.squares > li {
     padding-top: 50px !important;
     min-height: 640px; }
-
   .cases__list.squares .cases__textblock {
     opacity: 1 !important; }
-
   .cases__list.squares > li {
     height: auto !important; }
-
   .cases .content-tabs {
     padding-left: 0; }
-
   .content-tabs__list a {
     font-size: 26px; }
-
   .content-tabs__list li.active {
     box-shadow: inset 0 -3px 0 0 #221f1f; }
-
   .cases__heading {
     font-size: 43px; }
-
   .cases__list.squares > li {
     padding-bottom: 90px; }
-
   .header__logoblock {
     padding: 17px 39px; }
-
   .header__burgermenu {
     right: 0; }
-
   .cases .content-tabs__list li:first-child {
     margin-left: 0 !important; }
-
   .cases .content-tabs__list li:last-child {
     margin-right: 39px !important; }
-
   .cases .content-tabs__list {
     padding-right: 0;
     padding-left: 39px; }
-
   .content_main {
     padding-bottom: 0; }
-
   li.header__caseslink a {
     padding-left: 41px; }
-
   .case__bgtextcontent {
     position: relative;
     z-index: 2;
@@ -3026,536 +2770,393 @@ select, input, textarea {
     margin-left: -43px;
     box-sizing: content-box;
     width: 100%; }
-
   .case__text.content__text {
     margin-top: 0;
     padding: 150px 0; }
-
   .case__firstscreen:hover .case__firstscreenbg {
     transform: none !important; }
-
   .case__about {
     padding-bottom: 0; }
-
   .company__quoteslider_image {
     order: -1; } }
+
 .cases .content-tabs {
   z-index: 8; }
 
 @media (max-width: 640px) {
   body {
     padding-top: 45px; }
-
   .container {
     padding: 0 25px; }
-
   .header__logoblock {
     padding: 5px 23px; }
-
   .header__logo img {
     width: 89px; }
-
   .header__burgermenu svg {
     width: 28px; }
-
   .header__side {
     width: 250px;
     top: 45px;
     right: 0;
     height: calc(100vh - 45px); }
-
   .header__square_language {
     margin-top: 20px;
     margin-left: 27px; }
-
   .header__square-list li {
     margin-left: 10px; }
-
   .header__square a {
     width: 44px;
     height: 44px;
     font-size: 14px;
     padding: 1px 3px; }
-
   .header__itemtext {
     font-size: 12px;
     margin-top: 5px; }
-
   .header__menu li a {
     padding-top: 16px !important;
     padding-left: 27px !important; }
-
   .header__caseslink a {
     padding-bottom: 19px; }
-
   .header__caseslink .header__menuicon {
     right: 20px;
     top: 37px;
     width: 24px; }
-
   .header__square_social {
     margin-left: 27px;
     margin-top: 17px; }
-
   .header__square_social li:nth-child(1) svg {
     width: 8px; }
-
   .header__square_social li:nth-child(2) svg {
     width: 14px; }
-
   .header__square_social li:nth-child(3) svg {
     width: 14px; }
-
   .header__menuheading {
     font-size: 26px; }
-
   .header__menuheading:after {
     width: 98px; }
-
   .header__menu li:nth-child(2) .header__menuicon {
     width: 16px;
     top: 17px;
     right: 24px; }
-
   .header__menu li:nth-child(3) .header__itemtext {
     margin-top: 15px; }
-
   .header__menu li:nth-child(3) .header__menuicon {
     width: 23px;
     top: 87px;
     right: 21px; }
-
   .header__menu li:nth-child(4) .header__menuicon {
     width: 25px;
     top: 17px;
     right: 22px; }
-
   .header__menu li:nth-child(5) .header__menuicon {
     width: 24px;
     top: 20px;
     right: 22px; }
-
   .header__square_social .header__square-list li:first-child {
     margin-left: 0; }
-
   .header__menu li:nth-child(2) a {
     padding-bottom: 32px; }
-
   .header__menu li:nth-child(3) a {
     padding-bottom: 31px; }
-
   .header__menu li:nth-child(4) a {
     padding-bottom: 34px; }
-
   .header__menu li:nth-child(5) a {
     padding-bottom: 34px; }
-
   .content_main {
     padding-top: 72px; }
-
   .content__scroll-link {
     display: block;
     margin-top: 120px;
     text-align: center;
     padding-left: 0;
     font-size: 22px; }
-
   .content__scroll-link:before {
     right: 0;
     top: -110px;
     width: 40px;
     height: 40px; }
-
   .content__bgmain {
     display: none; }
-
   .content__bgphone {
     margin-top: 30px; }
-
   .content__heading {
     font-size: 32px; }
-
   .technology .container {
     padding: 0 25px; }
-
   .technology {
     padding-top: 56px;
     padding-bottom: 60px; }
-
   .technology__icon {
     width: 67px;
     height: 67px;
     right: 18px; }
-
   .content__text {
     font-size: 22px; }
-
   .technology .content__text {
     margin-top: 76px; }
-
   .technology .content__scroll-link {
     margin-top: 103px;
     letter-spacing: -0.045em; }
-
   .scrollbutton {
     bottom: -86px;
     width: 32px;
     height: 32px; }
-
   .scrollbutton svg {
     width: 15px; }
-
   .technology__column {
     width: 100%; }
-
   .technology__list {
     margin-top: 131px; }
-
   .technology .squareblock {
     margin-top: 53px;
     padding: 25px 45px 47px 24px;
     height: 353px; }
-
   .technology .squareblock .content__text_link {
     bottom: 55px;
     left: 24px;
     right: 32px; }
-
   .technology .squareblock .content__text_link:after {
     width: 123px; }
-
   .technology .squareblock .content__text_link svg {
     width: 16px; }
-
   .services__development {
     padding-top: 56px;
     padding-bottom: 83px; }
-
   .services .container {
     padding: 0 22px; }
-
   .services .content__text {
     margin-top: 74px; }
-
   .services__list p {
     font-size: 14px; }
-
   .services__list {
     margin-top: 73px;
     padding-left: 0; }
-
   .services__list li {
     padding-left: 16px; }
-
   .services__quote {
     margin-top: 79px;
     padding: 86px 15px 128px 20px; }
-
   .services__quotetext:before {
     font-size: 66px;
     top: -85px; }
-
   .services__quotetext {
     font-size: 22px; }
-
   .services__quoteauthor {
     font-size: 14px;
     bottom: 30px; }
-
   .services__outsourcing .container {
     padding: 0 26px; }
-
   .services__outsourcing {
     padding-top: 56px;
     padding-bottom: 108px; }
-
   .content__smalltext {
     font-size: 14px;
     margin-top: 43px; }
-
   .services__moreinfo {
     margin-top: 77px;
     height: 344px;
     padding: 24px 27px; }
-
   .services__moreinfo .content__text {
     margin-top: 0; }
-
   .services__moreinfo .content__text_link {
     right: 28px;
     left: 26px;
     bottom: 47px; }
-
   .services__moreinfo .content__text_link:after {
     width: 123px; }
-
   .services__moreinfo .content__text_link svg {
     width: 16px; }
-
   .content_main .scrollbutton {
     top: -60px; }
-
   .contacts .content__text {
     font-size: 22px; }
-
   .contacts__success {
     font-size: 22px; }
-
   .contacts__leftside {
     padding-top: 36px;
     padding-bottom: 40px; }
-
   .contacts__leftside .container {
     padding: 0 19px; }
-
   .contacts__pinsquare {
     width: 55px;
     height: 55px;
     right: -18px;
     bottom: -12px; }
-
   .contacts__phonemail {
     margin-top: 54px; }
-
   .contacts__mail:after {
     width: 76px; }
-
   .contacts__social {
     margin-top: 39px; }
-
   .contacts__social li {
     width: 34px;
     height: 34px;
     margin-left: 12px; }
-
   .contacts__pinsquare svg {
     width: 20px; }
-
   .contacts__social li svg {
     height: 70%;
     width: 65%; }
-
   .contacts__form {
     margin-top: 55px; }
-
   .contacts__form input, .contacts__form textarea {
     font-size: 16px;
     padding: 0 10px; }
-
   .contacts__form input {
     line-height: 44px;
     padding-bottom: 4px; }
-
   .contacts__form textarea {
     margin-top: 27px;
     padding: 13px 10px;
     height: 195px; }
-
   .contacts__form .button {
     margin-top: 28px;
     line-height: 45px;
     font-size: 22px;
     padding-bottom: 5px; }
-
   .contacts__map {
     top: 180px;
     bottom: 0; }
-
   .contacts__mapimage {
     width: 90px; }
-
   .contacts__mapimage:nth-child(1) {
     width: 68px; }
-
   .company__mainpart {
     padding-top: 56px;
     padding-bottom: 0; }
-
   .company .content__text {
     margin-top: 51px; }
-
   .company__abouttext {
     margin-top: 84px;
     font-size: 18px; }
-
   .company__features {
     margin-top: 82px; }
-
   .company__feature-name {
     font-size: 22px; }
-
   .company__feature-name img {
     max-width: 31px; }
-
   .company__feature-text {
     font-size: 14px;
     padding-right: 0;
     margin-top: 35px; }
-
   .company__feature-text br {
     display: none; }
-
   .company__features li {
     margin-bottom: 73px; }
-
   .company__cityview {
     height: 569px; }
-
   .company__quoteimage {
     height: 402px; }
-
   .company__quote {
     padding: 96px 38px;
     min-height: 397px; }
-
   .company__quotetext {
     font-size: 22px; }
-
   .company__quotetext:before {
     font-size: 66px;
     top: -86px; }
-
   .company__quoteauthor {
     font-size: 15px;
     left: 34px;
     bottom: 42px; }
-
   .company__quotearrow {
     right: 28px;
     bottom: 39px; }
-
   .company__logos {
     margin-top: 24px; }
-
   .company__logos div {
     margin-top: 20px; }
-
   .company .container_bottom {
     padding: 0 28px; }
-
   .company__moreinfo {
     margin-top: 82px;
     padding: 26px 23px;
     height: 346px; }
-
   .company__moreinfo .content__text {
     margin-top: 0; }
-
   .company__moreinfo .content__text_link {
     left: 22px;
     bottom: 47px; }
-
   .company__moreinfo .content__text_link:after {
     bottom: -4px;
     width: 122px; }
-
   .company__moreinfo .content__text_link svg {
     width: 16px; }
-
   .company {
     padding-bottom: 100px; }
-
   .cases__list > li {
     height: 400px; }
-
   .cases .content-tabs {
     top: 45px; }
-
   .cases__heading {
     font-size: 27px; }
-
   .cases__subheading {
     padding: 0;
     font-size: 10px; }
-
   .cases__textblock {
     width: auto;
     bottom: 60px; }
-
   .case__firstscreen .container {
     padding: 0 27px; }
-
   .case__firstscreen {
     padding-top: 29px; }
-
   .case__logo {
     margin-left: 0;
     width: 203px; }
-
   .case__subheading {
     padding-left: 8px;
     font-size: 12px;
     margin-top: -6px; }
-
   .case__link {
     font-size: 18px;
     margin-top: 42px; }
-
   .case__link:after {
     bottom: -1px;
     width: 66px; }
-
   .case__smalltext {
     font-size: 14px;
     margin-top: 51px; }
-
   .case__text.content__text {
     font-size: 22px;
     margin-top: 25px;
     padding-top: 55px;
     padding-bottom: 87px; }
-
   .case__image {
     height: 282px; }
-
   .case__textblock, .case__textblock_bottom {
     min-height: 282px;
     padding: 27px; }
-
   .case__designblock p {
     font-size: 22px; }
-
   .case__designblock {
     padding-top: 28px;
     padding-bottom: 21px; }
-
   .case__designblock img {
     margin-top: 25px; }
-
   .case__slidearrows {
     height: 45px; }
-
   .case__slidearrows div {
     width: 45px;
     height: 45px; }
-
   .case__slidearrows div svg {
     height: 25px; }
-
   .case__logo_bottom {
     width: 82px;
     top: 31.4%; }
-
   .case__contactblock {
     padding-top: 28px;
     padding-bottom: 38px; }
-
   .case__contactblock .container {
     padding: 0 28px; }
-
   .case__contactblock .squareblock {
     height: 344px;
     padding: 24px 104px 24px 24px; }
-
   .case__contactblock .content__text_link {
     bottom: 48px; }
-
   .case__contactblock .content__text_link:after {
     width: 122px; }
-
   .case__contactblock .content__text_link svg {
     width: 15px; }
-
   .squareblock__social {
     right: 24px;
     top: 27px;
@@ -3563,82 +3164,63 @@ select, input, textarea {
     height: 60px;
     padding: 37px 5px 0;
     font-size: 13px; }
-
   .squareblock__social svg {
     right: 2px;
     top: 5px;
     height: 21px; }
-
   .case .content__text {
     font-size: 22px; }
-
   .header__burgermenu {
     width: 28px;
     height: 24px;
     margin-top: 5px; }
-
   .header__burgermenu span {
     width: 28px;
     height: 4px; }
-
   .header__burgermenu span:before, .header__burgermenu span:after {
     width: 28px;
     height: 4px; }
-
   .header__burgermenu span:before {
     transform: translate3d(0, -10px, 0); }
-
   .header__burgermenu span:after {
     transform: translate3d(0, 10px, 0); }
-
   .header__logoblock {
     padding: 5px 25px; }
-
   .cases .content-tabs__list {
     padding-left: 25px; }
-
   .cases .content-tabs__list li:last-child {
     margin-right: 25px !important; }
-
   .content-tabs__list a {
     font-size: 16px; }
-
   .cases .content-tabs__list li {
     padding: 11px 0 13px; }
-
   .cases .content-tabs {
     background-color: #f5f5f6;
     border-top: 1px solid #c5c7c9; }
-
   .cases__list.squares > li {
     min-height: 400px; }
-
   .cases__textblock {
     bottom: 0; }
-
   .cases__list.squares > li {
     padding-bottom: 60px; }
-
   .cases__subheading {
     font-size: 14px; }
-
   .header__side {
     width: 260px; }
-
   .header__menuicon, .header__menuicon_arrow, li.header__caseslink .header__menuicon {
     right: 24px; }
-
   .case__bgtextcontent {
     padding: 0 27px;
     margin-left: -27px;
     margin-top: 50px; } }
+
 @media (max-width: 490px) {
   .company__cityview {
     height: 369px; } }
+
 @media (max-width: 350px) {
   .technology .squareblock .content__text_link {
     font-size: 20px; }
-
   .services__moreinfo .content__text_link {
     font-size: 20px; } }
 
