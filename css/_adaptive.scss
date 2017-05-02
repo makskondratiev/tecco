@@ -125,7 +125,7 @@ $darktwo: #1f2124;
 	.contacts__leftside .container {padding: 0 40px;}
 	.contacts__address {padding-right: 50px;}
 	.contacts__address svg {right: 0;}
-	.company__feature-name {font-size: 30px;}
+	.company__feature-name {font-size: 30px; padding-right: 65px;}
 	.company__feature-name img {max-width: 35px;}
 	.company__cityview {height: 713px;}
 	.company__quotetext {font-size: 30px;}
@@ -267,6 +267,7 @@ $darktwo: #1f2124;
 	.technology__icon {width: 107px; height: 107px; right: 31px; top: 0;}
 	.content__text {font-size: 35px;}
 	.technology .content__text {margin-top: 120px;}
+	.technology .content__heading {padding-right: 130px;}
 	.content__textblock {width: 100%;}
 	.content__scroll-link {font-size: 35px;}
 	.technology .content__scroll-link {padding-left: 0; text-align: left; margin-top: 165px;}
@@ -309,7 +310,7 @@ $darktwo: #1f2124;
 	.contacts__mapimage:nth-child(3) {bottom: 32%; right: 7%;}
 	.company__mainpart {padding-top: 91px;}
 	.company__abouttext {margin-top: 123px;}
-	.company__feature-name {font-size: 35px;}
+	.company__feature-name {font-size: 35px; padding-right: 100px;}
 	.company__feature-name img {max-width: none;}
 	.company__features {margin-top: 124px;}
 	.company__feature-text {margin-top: 58px; padding-right: 10px;}
@@ -442,6 +443,7 @@ $darktwo: #1f2124;
 	.content__text {font-size: 22px;}
 	.technology .content__text {margin-top: 76px;}
 	.technology .content__scroll-link {margin-top: 103px; letter-spacing: -0.045em;}
+	.technology .content__heading {padding-right: 80px;}
 	.scrollbutton {bottom: -86px; width: 32px; height: 32px;}
 	.scrollbutton svg {width: 15px;}
 	.technology__column {width: 100%;}
@@ -492,7 +494,7 @@ $darktwo: #1f2124;
 	.company .content__text {margin-top: 51px;}
 	.company__abouttext {margin-top: 84px; font-size: 18px;}
 	.company__features {margin-top: 82px;}
-	.company__feature-name {font-size: 22px;}
+	.company__feature-name {font-size: 22px; padding-right: 60px;}
 	.company__feature-name img {max-width: 31px;}
 	.company__feature-text {font-size: 14px; padding-right: 0; margin-top: 35px;}
 	.company__feature-text br {display: none;}
