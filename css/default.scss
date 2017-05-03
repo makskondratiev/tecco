@@ -285,7 +285,7 @@
 	&__features {display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 137px; width: 100%; max-width: 1120px;
 		li {width: 42%; padding-bottom: 50px; box-sizing: border-box; min-height: 388px;}
 	}
-	&__feature-name {font-size: 35px; font-family: $gothic; letter-spacing: -0.04em; position: relative;
+	&__feature-name {font-size: 35px; font-family: $gothic; letter-spacing: -0.04em; position: relative; padding-right: 100px;
 		img {position: absolute; right: 7px; top: 0; bottom: 0; margin: auto;}
 	}
 	&__feature-text {font-size: 18px; font-weight: 300; margin-top: 58px; line-height: 1.8em;}

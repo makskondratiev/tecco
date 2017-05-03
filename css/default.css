@@ -1136,7 +1136,8 @@ select, input, textarea {
     font-size: 35px;
     font-family: "Century Gothic", Arial, sans-serif;
     letter-spacing: -0.04em;
-    position: relative; }
+    position: relative;
+    padding-right: 100px; }
     .company__feature-name img {
       position: absolute;
       right: 7px;
@@ -2145,7 +2146,8 @@ select, input, textarea {
   .contacts__address svg {
     right: 0; }
   .company__feature-name {
-    font-size: 30px; }
+    font-size: 30px;
+    padding-right: 65px; }
   .company__feature-name img {
     max-width: 35px; }
   .company__cityview {
@@ -2457,6 +2459,8 @@ select, input, textarea {
     font-size: 35px; }
   .technology .content__text {
     margin-top: 120px; }
+  .technology .content__heading {
+    padding-right: 130px; }
   .content__textblock {
     width: 100%; }
   .content__scroll-link {
@@ -2582,7 +2586,8 @@ select, input, textarea {
   .company__abouttext {
     margin-top: 123px; }
   .company__feature-name {
-    font-size: 35px; }
+    font-size: 35px;
+    padding-right: 100px; }
   .company__feature-name img {
     max-width: none; }
   .company__features {
@@ -2897,6 +2902,8 @@ select, input, textarea {
   .technology .content__scroll-link {
     margin-top: 103px;
     letter-spacing: -0.045em; }
+  .technology .content__heading {
+    padding-right: 80px; }
   .scrollbutton {
     bottom: -86px;
     width: 32px;
@@ -3032,7 +3039,8 @@ select, input, textarea {
   .company__features {
     margin-top: 82px; }
   .company__feature-name {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-right: 60px; }
   .company__feature-name img {
     max-width: 31px; }
   .company__feature-text {
